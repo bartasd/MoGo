@@ -35,7 +35,7 @@ body {
         left: 18.75vw;
         p {
           font-size: 30px;
-          font-family: Montserrat;
+          font-family: "Montserrat";
           font-weight: bold;
           display: inline-block;
           color: white;
@@ -63,10 +63,32 @@ body {
         }
       }
     }
+    .logo {
+      margin-left: 18.75vw;
+      margin-top: 16vh;
+      width: 63vw;
+      height: 77vh;
+      text-align: center;
+      p {
+        font-family: "Montserrat";
+        font-weight: bold;
+        font-size: 150px;
+        color: white;
+
+        line-height: 1rem;
+      }
+      p:first-of-type {
+        font-family: "Kaushan-Script";
+        font-weight: normal;
+        font-size: 72px;
+      }
+    }
+    .alt_nav {
+    }
   }
   .content {
     height: 500px;
     width: 100vw;
-    background-color: blue;
+    background-color: yellow;
   }
 }
