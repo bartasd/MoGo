@@ -1,3 +1,71 @@
-
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/static/Montserrat-Bold.ttf") format("truetype"), url("./fonts/static/Montserrat-Regular.ttf") format "truetype";
+}
+@font-face {
+  font-family: "Kaushan-Script";
+  src: url("./fonts/KaushanScript-Regular.ttf") format("truetype");
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+body .nav {
+  width: 100vw;
+  height: 100vh;
+  background-color: yellow;
+  position: relative;
+  background: linear-gradient(rgb(233, 130, 131), rgb(240, 217, 138));
+}
+body .nav img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  opacity: 0.1;
+}
+body .nav .links {
+  position: relative;
+  height: 7%;
+  width: 100%;
+}
+body .nav .links a {
+  position: absolute;
+  line-height: 0;
+  left: 18.75vw;
+}
+body .nav .links a p {
+  font-size: 30px;
+  font-family: Montserrat;
+  font-weight: bold;
+  display: inline-block;
+  color: white;
+}
+body .nav .links .right {
+  position: absolute;
+  top: 55%;
+  left: 48.96vw;
+}
+body .nav .links .right a {
+  margin-right: 3vw;
+  left: 0;
+  position: relative;
+}
+body .nav .links .right a p {
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+body .nav .links .right a:last-of-type {
+  margin-right: 0;
+}
+body .nav .links .right i {
+  color: white;
+}
+body .content {
+  height: 500px;
+  width: 100vw;
+  background-color: blue;
+}
 
 /*# sourceMappingURL=index.css.map */
