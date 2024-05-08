@@ -1,3 +1,7 @@
+$MAIN_COLOR: white;
+$HOVER_COLOR: #fce38a;
+$HOVER_COLOR2: #f38181;
+
 @font-face {
   font-family: "Montserrat";
   src: url("./fonts/static/Montserrat-Bold.ttf") format("truetype"),
@@ -14,7 +18,6 @@ body {
   .nav {
     width: 100vw;
     height: 100vh;
-    background-color: yellow;
     position: relative;
     background: linear-gradient(
       rgb(233, 130, 131, 0.8),
@@ -41,7 +44,7 @@ body {
           font-family: "Montserrat";
           font-weight: bold;
           display: inline-block;
-          color: white;
+          color: $MAIN_COLOR;
         }
       }
       .right {
@@ -58,11 +61,27 @@ body {
             margin: 0;
           }
         }
+        a:hover {
+          p {
+            color: $HOVER_COLOR;
+          }
+        }
         a:last-of-type {
           margin-right: 0;
         }
         i {
-          color: white;
+          color: $MAIN_COLOR;
+        }
+        i:hover {
+          color: $HOVER_COLOR;
+        }
+        a:hover::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 4px;
+          background-color: $HOVER_COLOR;
+          top: 40px;
         }
       }
     }
@@ -76,8 +95,7 @@ body {
         font-family: "Montserrat";
         font-weight: bold;
         font-size: 150px;
-        color: white;
-
+        color: $MAIN_COLOR;
         line-height: 1rem;
       }
       p:first-of-type {
@@ -85,13 +103,87 @@ body {
         font-weight: normal;
         font-size: 72px;
       }
-    }
-    .alt_nav {
+      div {
+        width: 60px;
+        height: 0px;
+        border: 2px solid $MAIN_COLOR;
+        margin-left: calc(50% - 30px);
+        margin-bottom: 50px;
+      }
+      div:nth-of-type(2) {
+        width: 155px;
+        height: 26px;
+        margin-left: calc(50% - 80.5px);
+        border: 3px solid $MAIN_COLOR;
+        color: $MAIN_COLOR;
+        padding-top: 9px;
+        font-family: "Montserrat";
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 14px;
+        background: transparent;
+      }
+      div:nth-of-type(2):hover {
+        background-color: $HOVER_COLOR2;
+        border-color: $HOVER_COLOR2;
+        cursor: pointer;
+      }
+      .alt_nav {
+        height: 82px;
+        width: 63vw;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        bottom: 0;
+        border: none;
+        a {
+          p {
+            font-family: "Montserrat";
+            font-weight: normal;
+            font-size: 18px;
+            span {
+              font-size: 24px;
+              font-weight: bold;
+              padding-right: 5px;
+            }
+          }
+          border-top: 2px solid $MAIN_COLOR;
+          position: absolute;
+          left: 0;
+          width: 23%;
+          height: 100%;
+          text-decoration: none;
+          padding-top: 15px;
+          text-align: left;
+        }
+        a:nth-of-type(2) {
+          left: 25%;
+        }
+        a:nth-of-type(3) {
+          left: 50%;
+        }
+        a:nth-of-type(4) {
+          left: 75%;
+        }
+        a:hover {
+          p {
+            color: $HOVER_COLOR2;
+          }
+        }
+        a:hover::before {
+          content: "";
+          position: absolute;
+          width: 40%;
+          height: 4px;
+          background-color: $HOVER_COLOR2;
+          top: -3px;
+        }
+      }
     }
   }
   .content {
     height: 500px;
     width: 100vw;
-    background-color: yellow;
+    background-color: #fce38a;
   }
 }

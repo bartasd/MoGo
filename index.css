@@ -13,7 +13,6 @@ body {
 body .nav {
   width: 100vw;
   height: 100vh;
-  background-color: yellow;
   position: relative;
   background: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8));
 }
@@ -56,11 +55,25 @@ body .nav .links .right a p {
   font-weight: normal;
   margin: 0;
 }
+body .nav .links .right a:hover p {
+  color: #fce38a;
+}
 body .nav .links .right a:last-of-type {
   margin-right: 0;
 }
 body .nav .links .right i {
   color: white;
+}
+body .nav .links .right i:hover {
+  color: #fce38a;
+}
+body .nav .links .right a:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #fce38a;
+  top: 40px;
 }
 body .nav .logo {
   margin-left: 18.75vw;
@@ -81,10 +94,84 @@ body .nav .logo p:first-of-type {
   font-weight: normal;
   font-size: 72px;
 }
+body .nav .logo div {
+  width: 60px;
+  height: 0px;
+  border: 2px solid white;
+  margin-left: calc(50% - 30px);
+  margin-bottom: 50px;
+}
+body .nav .logo div:nth-of-type(2) {
+  width: 155px;
+  height: 26px;
+  margin-left: calc(50% - 80.5px);
+  border: 3px solid white;
+  color: white;
+  padding-top: 9px;
+  font-family: "Montserrat";
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  background: transparent;
+}
+body .nav .logo div:nth-of-type(2):hover {
+  background-color: #f38181;
+  border-color: #f38181;
+  cursor: pointer;
+}
+body .nav .logo .alt_nav {
+  height: 82px;
+  width: 63vw;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  border: none;
+}
+body .nav .logo .alt_nav a {
+  border-top: 2px solid white;
+  position: absolute;
+  left: 0;
+  width: 23%;
+  height: 100%;
+  text-decoration: none;
+  padding-top: 15px;
+  text-align: left;
+}
+body .nav .logo .alt_nav a p {
+  font-family: "Montserrat";
+  font-weight: normal;
+  font-size: 18px;
+}
+body .nav .logo .alt_nav a p span {
+  font-size: 24px;
+  font-weight: bold;
+  padding-right: 5px;
+}
+body .nav .logo .alt_nav a:nth-of-type(2) {
+  left: 25%;
+}
+body .nav .logo .alt_nav a:nth-of-type(3) {
+  left: 50%;
+}
+body .nav .logo .alt_nav a:nth-of-type(4) {
+  left: 75%;
+}
+body .nav .logo .alt_nav a:hover p {
+  color: #f38181;
+}
+body .nav .logo .alt_nav a:hover::before {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 4px;
+  background-color: #f38181;
+  top: -3px;
+}
 body .content {
   height: 500px;
   width: 100vw;
-  background-color: yellow;
+  background-color: #fce38a;
 }
 
 /*# sourceMappingURL=index.css.map */
