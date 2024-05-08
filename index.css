@@ -170,7 +170,7 @@ body {
   top: -3px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
   .nav .logo {
     width: 100vw;
     margin-left: 0;
@@ -212,6 +212,71 @@ body {
   }
   .nav .logo .alt_nav a p span {
     font-size: 18px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .nav .links .right {
+    left: 40vw;
+  }
+  .nav .links .right a {
+    margin-right: 2vw;
+  }
+  .nav .links .right a p {
+    font-size: 12px;
+  }
+  .nav .logo {
+    width: 63vw;
+    margin-left: 18.75vw;
+  }
+  .nav .logo p {
+    font-size: 90px;
+  }
+  .nav .logo p:first-of-type {
+    font-size: 65px;
+  }
+  .nav .logo .alt_nav {
+    width: 63vw;
+  }
+  .nav .logo .alt_nav a p {
+    font-size: 14px;
+  }
+  .nav .logo .alt_nav a p span {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .nav .links .right {
+    left: 48.96vw;
+  }
+  .nav .links .right a {
+    margin-right: 3vw;
+  }
+  .nav .links .right a p {
+    font-size: 14px;
+  }
+  .nav .logo {
+    width: 63vw;
+    margin-left: 18.75vw;
+  }
+  .nav .logo p {
+    font-size: 120px;
+  }
+  .nav .logo p:first-of-type {
+    font-size: 72px;
+  }
+  .nav .logo .alt_nav {
+    width: 63vw;
+  }
+  .nav .logo .alt_nav a p {
+    font-size: 18px;
+  }
+  .nav .logo .alt_nav a p span {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1251px) {
+  .nav .logo p {
+    font-size: 150px;
   }
 }
 .content {

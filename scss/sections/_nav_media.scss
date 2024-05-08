@@ -1,5 +1,4 @@
-// ideti MEDIA IKI 320
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
   .nav {
     .logo {
       width: 100vw;
@@ -24,9 +23,6 @@
       }
     }
   }
-}
-
-@media screen and (min-width: 321px) {
 }
 
 @media screen and (min-width: 481px) {
@@ -56,18 +52,88 @@
   }
 }
 
-@media screen and (min-width: 481px) {
-  //asdasd
-}
-
 @media screen and (min-width: 769px) {
-  //asdasd
+  .nav {
+    .links {
+      .right {
+        left: 40vw;
+        a {
+          margin-right: 2vw;
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    .logo {
+      width: 63vw;
+      margin-left: 18.75vw;
+      p {
+        font-size: 90px;
+      }
+      p:first-of-type {
+        font-size: 65px;
+      }
+      .alt_nav {
+        width: 63vw;
+        a {
+          p {
+            font-size: 14px;
+            span {
+              font-size: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 1025px) {
-  //asdasd
+  .nav {
+    .links {
+      .right {
+        left: 48.96vw;
+        a {
+          margin-right: 3vw;
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .logo {
+      width: 63vw;
+      margin-left: 18.75vw;
+      p {
+        font-size: 120px;
+      }
+      p:first-of-type {
+        font-size: 72px;
+      }
+      .alt_nav {
+        width: 63vw;
+        a {
+          p {
+            font-size: 18px;
+            span {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
-@media screen and (min-width: 1250px) {
-  //asdasd
+@media screen and (min-width: 1251px) {
+  .nav {
+    .logo {
+      p {
+        font-size: 150px;
+      }
+    }
+  }
 }
