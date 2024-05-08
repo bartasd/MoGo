@@ -1,0 +1,13 @@
+// RESET
+@import "./reset";
+// SOME ADDITIONAL STUFF
+@import "./fonts";
+@import "./variables";
+// SECTIONS
+@import "./sections/nav";
+
+.content {
+  height: 500px;
+  width: 100vw;
+  background-color: #fce38a;
+}

@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 @font-face {
   font-family: "Montserrat";
   src: url("./fonts/static/Montserrat-Bold.ttf") format("truetype"), url("./fonts/static/Montserrat-Regular.ttf") format "truetype";
@@ -6,68 +11,64 @@
   font-family: "Kaushan-Script";
   src: url("./fonts/KaushanScript-Regular.ttf") format("truetype");
 }
-body {
-  margin: 0;
-  padding: 0;
-}
-body .nav {
+.nav {
   width: 100vw;
   height: 100vh;
   position: relative;
   background: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8));
 }
-body .nav img {
+.nav img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   position: absolute;
   z-index: -1;
 }
-body .nav .links {
+.nav .links {
   position: relative;
   height: 7%;
   width: 100%;
 }
-body .nav .links a {
+.nav .links a {
   position: absolute;
   line-height: 0;
   left: 18.75vw;
 }
-body .nav .links a p {
+.nav .links a p {
   font-size: 30px;
   font-family: "Montserrat";
   font-weight: bold;
   display: inline-block;
   color: white;
 }
-body .nav .links .right {
+.nav .links .right {
   position: absolute;
   top: 55%;
   left: 48.96vw;
 }
-body .nav .links .right a {
+.nav .links .right a {
   margin-right: 3vw;
   left: 0;
   position: relative;
 }
-body .nav .links .right a p {
+.nav .links .right a p {
   font-size: 14px;
   font-weight: normal;
   margin: 0;
 }
-body .nav .links .right a:hover p {
+.nav .links .right a:hover p {
   color: #fce38a;
 }
-body .nav .links .right a:last-of-type {
+.nav .links .right a:last-of-type {
   margin-right: 0;
 }
-body .nav .links .right i {
+.nav .links .right i {
   color: white;
 }
-body .nav .links .right i:hover {
+.nav .links .right i:hover {
   color: #fce38a;
 }
-body .nav .links .right a:hover::before {
+.nav .links .right a:hover::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -75,33 +76,33 @@ body .nav .links .right a:hover::before {
   background-color: #fce38a;
   top: 40px;
 }
-body .nav .logo {
+.nav .logo {
   margin-left: 18.75vw;
   margin-top: 16vh;
   width: 63vw;
   height: 77vh;
   text-align: center;
 }
-body .nav .logo p {
+.nav .logo p {
   font-family: "Montserrat";
   font-weight: bold;
   font-size: 150px;
   color: white;
   line-height: 1rem;
 }
-body .nav .logo p:first-of-type {
+.nav .logo p:first-of-type {
   font-family: "Kaushan-Script";
   font-weight: normal;
   font-size: 72px;
 }
-body .nav .logo div {
+.nav .logo div {
   width: 60px;
   height: 0px;
   border: 2px solid white;
   margin-left: calc(50% - 30px);
   margin-bottom: 50px;
 }
-body .nav .logo div:nth-of-type(2) {
+.nav .logo div:nth-of-type(2) {
   width: 155px;
   height: 26px;
   margin-left: calc(50% - 80.5px);
@@ -114,12 +115,12 @@ body .nav .logo div:nth-of-type(2) {
   line-height: 14px;
   background: transparent;
 }
-body .nav .logo div:nth-of-type(2):hover {
+.nav .logo div:nth-of-type(2):hover {
   background-color: #f38181;
   border-color: #f38181;
   cursor: pointer;
 }
-body .nav .logo .alt_nav {
+.nav .logo .alt_nav {
   height: 82px;
   width: 63vw;
   margin: 0;
@@ -128,7 +129,7 @@ body .nav .logo .alt_nav {
   bottom: 0;
   border: none;
 }
-body .nav .logo .alt_nav a {
+.nav .logo .alt_nav a {
   border-top: 2px solid white;
   position: absolute;
   left: 0;
@@ -138,29 +139,29 @@ body .nav .logo .alt_nav a {
   padding-top: 15px;
   text-align: left;
 }
-body .nav .logo .alt_nav a p {
+.nav .logo .alt_nav a p {
   font-family: "Montserrat";
   font-weight: normal;
   font-size: 18px;
 }
-body .nav .logo .alt_nav a p span {
+.nav .logo .alt_nav a p span {
   font-size: 24px;
   font-weight: bold;
   padding-right: 5px;
 }
-body .nav .logo .alt_nav a:nth-of-type(2) {
+.nav .logo .alt_nav a:nth-of-type(2) {
   left: 25%;
 }
-body .nav .logo .alt_nav a:nth-of-type(3) {
+.nav .logo .alt_nav a:nth-of-type(3) {
   left: 50%;
 }
-body .nav .logo .alt_nav a:nth-of-type(4) {
+.nav .logo .alt_nav a:nth-of-type(4) {
   left: 75%;
 }
-body .nav .logo .alt_nav a:hover p {
+.nav .logo .alt_nav a:hover p {
   color: #f38181;
 }
-body .nav .logo .alt_nav a:hover::before {
+.nav .logo .alt_nav a:hover::before {
   content: "";
   position: absolute;
   width: 40%;
@@ -168,7 +169,52 @@ body .nav .logo .alt_nav a:hover::before {
   background-color: #f38181;
   top: -3px;
 }
-body .content {
+
+@media screen and (max-width: 320px) {
+  .nav .logo {
+    width: 100vw;
+    margin-left: 0;
+  }
+  .nav .logo p {
+    font-size: 45px;
+  }
+  .nav .logo p:first-of-type {
+    font-size: 35px;
+  }
+  .nav .logo .alt_nav {
+    width: 90vw;
+    margin-left: 5vw;
+  }
+  .nav .logo .alt_nav a p {
+    font-size: 12px;
+  }
+  .nav .logo .alt_nav a p span {
+    display: none;
+  }
+}
+@media screen and (min-width: 481px) {
+  .nav .logo {
+    width: 100vw;
+    margin-left: 0;
+  }
+  .nav .logo p {
+    font-size: 80px;
+  }
+  .nav .logo p:first-of-type {
+    font-size: 60px;
+  }
+  .nav .logo .alt_nav {
+    width: 90vw;
+    margin-left: 5vw;
+  }
+  .nav .logo .alt_nav a p {
+    font-size: 12px;
+  }
+  .nav .logo .alt_nav a p span {
+    font-size: 18px;
+  }
+}
+.content {
   height: 500px;
   width: 100vw;
   background-color: #fce38a;
