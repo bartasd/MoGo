@@ -40,6 +40,12 @@
           font-weight: normal;
           margin: 0;
         }
+        i {
+          color: $MAIN_COLOR;
+        }
+        i:hover {
+          color: $HOVER_COLOR;
+        }
       }
       a:hover {
         p {
@@ -49,11 +55,36 @@
       a:last-of-type {
         margin-right: 0;
       }
-      i {
-        color: $MAIN_COLOR;
+      a:hover::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: $HOVER_COLOR;
+        top: 40px;
       }
-      i:hover {
-        color: $HOVER_COLOR;
+    }
+    .collapse {
+      position: absolute;
+      top: 55%;
+      right: 8vw;
+      a {
+        left: 0;
+        position: relative;
+        i {
+          color: $MAIN_COLOR;
+        }
+        i:hover {
+          color: $HOVER_COLOR;
+        }
+      }
+      a:hover {
+        i {
+          color: $HOVER_COLOR;
+        }
+      }
+      a:last-of-type {
+        margin-right: 0;
       }
       a:hover::before {
         content: "";
@@ -63,6 +94,46 @@
         background-color: $HOVER_COLOR;
         top: 40px;
       }
+    }
+    .drop-down {
+      position: absolute;
+      right: 8vw;
+      top: 55%;
+      width: 20vw;
+      background-color: beige;
+      border-radius: 10px;
+      display: none;
+      a {
+        position: relative;
+        display: block;
+        margin: 0;
+        right: auto;
+        left: 0;
+        margin-top: 20px;
+        text-align: center;
+        p {
+          color: $HOVER_COLOR2;
+          font-size: 16px;
+        }
+        i {
+          color: $HOVER_COLOR2;
+          font-size: 16px;
+        }
+      }
+      a:last-of-type {
+        margin-bottom: 20px;
+      }
+      a:hover {
+        p {
+          color: $HOVER_COLOR;
+        }
+        i {
+          color: $HOVER_COLOR;
+        }
+      }
+    }
+    .active-drop-down {
+      display: block;
     }
   }
   .logo {
@@ -162,4 +233,5 @@
   }
 }
 
-@import "./nav_media";
+@import "./nav_media_h";
+@import "./nav_media_v";
