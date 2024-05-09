@@ -1,9 +1,14 @@
 @font-face {
   font-family: "Montserrat";
-  src: url("./fonts/static/Montserrat-Bold.ttf") format("truetype"),
-    url("./fonts/static/Montserrat-Regular.ttf") format ("truetype");
+  src: url("../fonts/static/Montserrat-Bold.ttf") format("truetype"),
+    url("../fonts/static/Montserrat-Regular.ttf") format ("truetype");
 }
 @font-face {
   font-family: "Kaushan-Script";
-  src: url("./fonts/KaushanScript-Regular.ttf") format("truetype");
+  src: url("../fonts/KaushanScript-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/static/Roboto-Regular.ttf") format("truetype");
 }

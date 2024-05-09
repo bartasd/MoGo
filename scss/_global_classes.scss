@@ -1,0 +1,27 @@
+.spacer {
+  width: 60px;
+  height: 0px;
+  border: 2px solid $MAIN_COLOR;
+  margin-left: calc(50% - 30px);
+  margin-bottom: 50px;
+}
+
+.line {
+  margin: 0;
+  text-align: center;
+}
+
+.line1 {
+  font-size: 24px;
+  font-weight: normal;
+  font-family: "Kaushan-Script";
+  padding-top: 90px;
+}
+
+.line2 {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Montserrat";
+  margin-top: 20px;
+  margin-bottom: 40px;
+}

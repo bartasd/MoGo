@@ -5,12 +5,44 @@ body {
 
 @font-face {
   font-family: "Montserrat";
-  src: url("./fonts/static/Montserrat-Bold.ttf") format("truetype"), url("./fonts/static/Montserrat-Regular.ttf") format "truetype";
+  src: url("../fonts/static/Montserrat-Bold.ttf") format("truetype"), url("../fonts/static/Montserrat-Regular.ttf") format "truetype";
 }
 @font-face {
   font-family: "Kaushan-Script";
-  src: url("./fonts/KaushanScript-Regular.ttf") format("truetype");
+  src: url("../fonts/KaushanScript-Regular.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/static/Roboto-Regular.ttf") format("truetype");
+}
+.spacer {
+  width: 60px;
+  height: 0px;
+  border: 2px solid white;
+  margin-left: calc(50% - 30px);
+  margin-bottom: 50px;
+}
+
+.line {
+  margin: 0;
+  text-align: center;
+}
+
+.line1 {
+  font-size: 24px;
+  font-weight: normal;
+  font-family: "Kaushan-Script";
+  padding-top: 90px;
+}
+
+.line2 {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Montserrat";
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
 .nav {
   width: 100vw;
   height: 100vh;
@@ -161,13 +193,6 @@ body {
   font-family: "Kaushan-Script";
   font-weight: normal;
   font-size: 72px;
-}
-.nav .logo div {
-  width: 60px;
-  height: 0px;
-  border: 2px solid white;
-  margin-left: calc(50% - 30px);
-  margin-bottom: 50px;
 }
 .nav .logo div:nth-of-type(2) {
   width: 155px;
@@ -367,7 +392,7 @@ body {
     display: none;
   }
 }
-@media screen and (max-height: 650px) and (min-width: 481px) {
+@media screen and (max-height: 700px) and (min-width: 481px) {
   .nav .logo {
     width: 100vw;
     margin-left: 0;
@@ -404,10 +429,142 @@ body {
     width: 90vw;
   }
 }
+.aboutus {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.aboutus .container {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 70%;
+}
+.aboutus .container p {
+  padding: 0 25vw;
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+  font-weight: 400;
+  font-family: "Roboto";
+  text-align: center;
+}
+.aboutus .container .photo-holder {
+  position: relative;
+  width: calc(60vw + 72px);
+  height: 25vh;
+  margin-top: 50px;
+  margin-left: calc(20vw - 32px);
+}
+.aboutus .container .photo-holder div {
+  position: absolute;
+  display: inline-block;
+  width: 20vw;
+  height: 24.5vh;
+  margin: 0;
+  margin-right: 30px;
+}
+.aboutus .container .photo-holder div span {
+  display: none;
+  padding-top: 9vh;
+  color: white;
+}
+.aboutus .container .photo-holder div span i {
+  display: block;
+  text-align: center;
+  font-size: 24px;
+}
+.aboutus .container .photo-holder div span p {
+  margin-top: 15px;
+  position: relative;
+  color: white;
+  padding: 0;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Montserrat";
+}
+.aboutus .container .photo-holder div:first-of-type {
+  background: url(../../assets/pc.png);
+  background-size: cover;
+}
+.aboutus .container .photo-holder div:nth-of-type(2) {
+  left: calc(20vw + 34px);
+  background: url(../../assets/headphones.png);
+  background-size: cover;
+}
+.aboutus .container .photo-holder div:last-of-type {
+  left: calc(40vw + 68px);
+  margin-right: 0;
+  background: url(../../assets/grass.png);
+  background-size: cover;
+}
+.aboutus .container .photo-holder div:hover {
+  border-right: 4px solid #95e1d3;
+  border-bottom: 4px solid #95e1d3;
+}
+.aboutus .container .photo-holder div:hover span {
+  display: block;
+}
+.aboutus .container .photo-holder div:first-of-type:hover {
+  background: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8)), url(../../assets/pc.png);
+}
+.aboutus .container .photo-holder div:nth-of-type(2):hover {
+  background: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8)), url(../../assets/headphones.png);
+}
+.aboutus .container .photo-holder div:last-of-type:hover {
+  margin-right: 0;
+  background: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8)), url(../../assets/grass.png);
+}
+.aboutus .container2 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 30%;
+  background-color: #95e1d3;
+}
+.aboutus .container2 div {
+  position: absolute;
+  width: 12.5vw;
+  height: 100%;
+  text-align: center;
+}
+.aboutus .container2 div p {
+  color: white;
+  font-size: 72px;
+  font-weight: bold;
+  font-family: "Montserrat";
+  margin-top: 32%;
+  margin-bottom: 0;
+}
+.aboutus .container2 div p:last-of-type {
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: 10%;
+}
+.aboutus .container2 div:first-of-type {
+  left: 18.75vw;
+}
+.aboutus .container2 div:last-of-type {
+  right: 18.75vw;
+}
+.aboutus .container2 div:nth-of-type(2) {
+  left: 31.25vw;
+}
+.aboutus .container2 div:nth-of-type(3) {
+  left: 43.75vw;
+}
+.aboutus .container2 div:nth-of-type(4) {
+  left: 56.25vw;
+}
+
 .content {
+  display: block;
   height: 500px;
   width: 100vw;
-  background-color: #fce38a;
+  background-color: #c50b34;
 }
 
 /*# sourceMappingURL=index.css.map */

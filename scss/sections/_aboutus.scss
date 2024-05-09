@@ -1,0 +1,134 @@
+.aboutus {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  // background-color: yellow;
+  margin: 0;
+  padding: 0;
+  .container {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 70%;
+    p {
+      padding: 0 25vw;
+      font-size: 15px;
+      line-height: 24px;
+      color: #999999;
+      font-weight: 400;
+      font-family: "Roboto";
+      text-align: center;
+    }
+    .photo-holder {
+      position: relative;
+      width: calc(60vw + 72px);
+      height: 25vh;
+      margin-top: 50px;
+      margin-left: calc(20vw - 32px);
+      div {
+        position: absolute;
+        display: inline-block;
+        width: 20vw;
+        height: 24.5vh;
+        margin: 0;
+        margin-right: 30px;
+        span {
+          display: none;
+          padding-top: 9vh;
+          color: $MAIN_COLOR;
+          i {
+            display: block;
+            text-align: center;
+            font-size: 24px;
+          }
+          p {
+            margin-top: 15px;
+            position: relative;
+            color: $MAIN_COLOR;
+            padding: 0;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: "Montserrat";
+          }
+        }
+      }
+      div:first-of-type {
+        background: url(../../assets/pc.png);
+        background-size: cover;
+      }
+      div:nth-of-type(2) {
+        left: calc(20vw + 34px);
+        background: url(../../assets/headphones.png);
+        background-size: cover;
+      }
+      div:last-of-type {
+        left: calc(40vw + 68px);
+        margin-right: 0;
+        background: url(../../assets/grass.png);
+        background-size: cover;
+      }
+      div:hover {
+        border-right: 4px solid $CUSTUM_GREEN;
+        border-bottom: 4px solid $CUSTUM_GREEN;
+        span {
+          display: block;
+        }
+      }
+      div:first-of-type:hover {
+        background: $CUSTUM_GRADIENT, url(../../assets/pc.png);
+      }
+      div:nth-of-type(2):hover {
+        background: $CUSTUM_GRADIENT, url(../../assets/headphones.png);
+      }
+      div:last-of-type:hover {
+        margin-right: 0;
+        background: $CUSTUM_GRADIENT, url(../../assets/grass.png);
+      }
+    }
+  }
+  .container2 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 30%;
+    background-color: $CUSTUM_GREEN;
+    div {
+      position: absolute;
+      width: 12.5vw;
+      height: 100%;
+      text-align: center;
+      p {
+        color: $MAIN_COLOR;
+        font-size: 72px;
+        font-weight: bold;
+        font-family: "Montserrat";
+        margin-top: 32%;
+        margin-bottom: 0;
+      }
+      p:last-of-type {
+        font-size: 14px;
+        font-weight: normal;
+        margin-top: 10%;
+      }
+    }
+    div:first-of-type {
+      left: 18.75vw;
+    }
+    div:last-of-type {
+      right: 18.75vw;
+    }
+    div:nth-of-type(2) {
+      left: 31.25vw;
+    }
+    div:nth-of-type(3) {
+      left: 43.75vw;
+    }
+    div:nth-of-type(4) {
+      left: 56.25vw;
+    }
+  }
+}
+
+@import "./aboutus_media_h";
+@import "./aboutus_media_v";
