@@ -1,0 +1,29 @@
+.wedo {
+  width: 100vw;
+  height: 117vh;
+  .wedo_content {
+    text-align: center;
+    width: 62.5vw;
+    height: 88.5%;
+    background-color: darkgreen;
+    margin-left: 18.75vw;
+    p {
+      margin: 0 6.5vw;
+      font-size: 15px;
+      line-height: 24px;
+      color: #999999;
+      font-weight: 400;
+      font-family: "Roboto";
+    }
+    .wedo_content2 {
+    }
+  }
+  .wedo_footer {
+    width: 100vw;
+    height: 11.5%;
+    background-color: coral;
+  }
+}
+
+@import "./wedo_media_h";
+@import "./wedo_media_v";

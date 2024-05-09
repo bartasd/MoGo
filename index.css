@@ -614,6 +614,67 @@ body {
   left: 66.66%;
 }
 
+.design {
+  width: 100vw;
+  height: 83.33vh;
+  background-color: rgba(217, 217, 217, 0.5058823529);
+  position: relative;
+}
+.design img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -2;
+  opacity: 0.3;
+}
+.design .phone-stabilizer {
+  position: absolute;
+  width: 420px;
+  height: 65%;
+  left: calc(50% - 210px);
+  bottom: 0;
+}
+.design .BigPhone {
+  width: 100%;
+  height: auto;
+  z-index: 0;
+  opacity: 1;
+}
+.design .SmallPhone {
+  width: 57%;
+  height: auto;
+  z-index: 1;
+  opacity: 1;
+  bottom: -15%;
+  left: 75%;
+}
+
+.wedo {
+  width: 100vw;
+  height: 117vh;
+}
+.wedo .wedo_content {
+  text-align: center;
+  width: 62.5vw;
+  height: 88.5%;
+  background-color: darkgreen;
+  margin-left: 18.75vw;
+}
+.wedo .wedo_content p {
+  margin: 0 6.5vw;
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+  font-weight: 400;
+  font-family: "Roboto";
+}
+.wedo .wedo_footer {
+  width: 100vw;
+  height: 11.5%;
+  background-color: coral;
+}
+
 .content {
   display: block;
   height: 500px;
