@@ -440,6 +440,9 @@ body {
   margin: 0;
   padding: 0;
 }
+.aboutus .spacer {
+  border-color: #f38181;
+}
 .aboutus .container {
   margin: 0;
   padding: 0;
@@ -568,6 +571,9 @@ body {
   width: 100vw;
   height: 63.73vh;
 }
+.services .spacer {
+  border-color: #f38181;
+}
 .services .service-cont {
   width: 62.5vw;
   height: calc(100% - 278px);
@@ -620,6 +626,9 @@ body {
   background-color: rgba(217, 217, 217, 0.5058823529);
   position: relative;
 }
+.design .spacer {
+  border-color: #f38181;
+}
 .design img {
   width: 100%;
   height: 100%;
@@ -658,6 +667,9 @@ body {
   width: 62.5vw;
   height: 88.2vh;
   margin-left: 18.75vw;
+}
+.wedo .wedo_content .spacer {
+  border-color: #f38181;
 }
 .wedo .wedo_content p {
   margin: 0 6.5vw;
@@ -834,6 +846,64 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #444;
+}
+
+.ourteam {
+  width: 100vw;
+  height: 127.45vh;
+}
+.ourteam div:first-of-type {
+  background-color: yellow;
+  width: 62.5vw;
+  margin-left: 18.75vw;
+  height: 102.95vh;
+}
+.ourteam div:first-of-type p:last-of-type {
+  text-align: center;
+  margin-left: 6.25vw;
+  margin-right: 6.25vw;
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+  font-weight: 400;
+  font-family: "Roboto";
+}
+.ourteam div:first-of-type .spacer {
+  width: 60px;
+  height: 0px;
+  border: 2px solid white;
+  margin-left: calc(50% - 30px);
+  margin-bottom: 50px;
+  border-color: #f38181;
+}
+.ourteam div:first-of-type .photos {
+  width: 100%;
+  height: 45.88vh;
+  background-color: white;
+  position: relative;
+  margin-top: 9.8vh;
+}
+.ourteam div:first-of-type .photos div {
+  position: absolute;
+  width: calc(33.3333333333% - 3vw);
+  height: 100%;
+  background-color: blue;
+  margin-left: 0;
+}
+.ourteam div:first-of-type .photos div img {
+  height: 100%;
+  width: 100%;
+}
+.ourteam div:first-of-type .photos div:nth-of-type(2) {
+  left: calc(33.3333333333% + 1.5vw);
+}
+.ourteam div:first-of-type .photos div:nth-of-type(3) {
+  left: calc(66.6666666667% + 3vw);
+}
+.ourteam div:last-of-type {
+  background-color: brown;
+  width: 100vw;
+  height: 24.5vh;
 }
 
 .content {

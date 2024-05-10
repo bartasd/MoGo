@@ -1,0 +1,59 @@
+.ourteam {
+  width: 100vw;
+  height: 127.45vh;
+  div:first-of-type {
+    background-color: yellow;
+    width: $CW;
+    margin-left: $ML;
+    height: 102.95vh;
+    p:last-of-type {
+      text-align: center;
+      margin-left: 6.25vw;
+      margin-right: 6.25vw;
+      font-size: 15px;
+      line-height: 24px;
+      color: #999999;
+      font-weight: 400;
+      font-family: "Roboto";
+    }
+    .spacer {
+      width: 60px;
+      height: 0px;
+      border: 2px solid $MAIN_COLOR;
+      margin-left: calc(50% - 30px);
+      margin-bottom: 50px;
+      border-color: $HOVER_COLOR2;
+    }
+    .photos {
+      width: 100%;
+      height: 45.88vh;
+      background-color: white;
+      position: relative;
+      margin-top: 9.8vh;
+      div {
+        position: absolute;
+        width: calc(100% / 3 - 2 * 1.5vw);
+        height: 100%;
+        background-color: blue;
+        margin-left: 0;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      div:nth-of-type(2) {
+        left: calc(100% / 3 + 1.5vw);
+      }
+      div:nth-of-type(3) {
+        left: calc(2 * 100% / 3 + 2 * 1.5vw);
+      }
+    }
+  }
+  div:last-of-type {
+    background-color: brown;
+    width: 100vw;
+    height: 24.5vh;
+  }
+}
+
+@import "./ourteam_media";

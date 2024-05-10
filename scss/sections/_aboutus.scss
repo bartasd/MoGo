@@ -5,6 +5,9 @@
   // background-color: yellow;
   margin: 0;
   padding: 0;
+  .spacer {
+    border-color: $HOVER_COLOR2;
+  }
   .container {
     margin: 0;
     padding: 0;
@@ -130,5 +133,4 @@
   }
 }
 
-@import "./aboutus_media_h";
-@import "./aboutus_media_v";
+@import "./aboutus_media";

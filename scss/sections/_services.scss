@@ -1,6 +1,9 @@
 .services {
   width: 100vw;
   height: 63.73vh;
+  .spacer {
+    border-color: $HOVER_COLOR2;
+  }
   .service-cont {
     width: 62.5vw;
     height: calc(100% - 278px);
@@ -48,5 +51,4 @@
   }
 }
 
-@import "./services_media_v";
-@import "./services_media_h";
+@import "./services_media";

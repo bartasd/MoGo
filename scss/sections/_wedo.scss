@@ -5,6 +5,9 @@
     width: 62.5vw;
     height: 88.2vh;
     margin-left: 18.75vw;
+    .spacer {
+      border-color: $HOVER_COLOR2;
+    }
     p {
       margin: 0 6.5vw;
       font-size: 15px;
@@ -185,5 +188,4 @@
   }
 }
 
-@import "./wedo_media_h";
-@import "./wedo_media_v";
+@import "./wedo_media";

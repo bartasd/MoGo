@@ -45,7 +45,6 @@ const angles = document.getElementsByClassName("angle");
 const isDropped = [false, false, false];
 
 function openDroper(i, close = false) {
-  console.log("dropped: ", i, " menu.");
   if (!isDropped[i] && !close) {
     for (let idx = 0; idx < drops.length; idx++) {
       if (idx == i) {

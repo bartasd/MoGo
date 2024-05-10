@@ -1,3 +1,5 @@
+// HORIZONTAL
+
 @media screen and (max-width: 480px) {
   .nav {
     .links {
@@ -158,6 +160,52 @@
       }
       .drop-down {
         display: none;
+      }
+    }
+  }
+}
+
+// VERTICAL
+
+@media screen and (max-height: 700px) and (min-width: 481px) {
+  .nav {
+    .logo {
+      width: 100vw;
+      margin-left: 0;
+      p {
+        font-size: 45px;
+      }
+      p:first-of-type {
+        font-size: 35px;
+      }
+      .alt_nav {
+        width: 90vw;
+        margin-left: 5vw;
+        a {
+          p {
+            font-size: 12px;
+            span {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-height: 700px) and (min-width: 1024px) {
+  .nav {
+    .logo {
+      width: 90vw;
+      margin-left: 5vw;
+      p {
+        font-size: 100px;
+      }
+      p:first-of-type {
+        font-size: 50px;
+      }
+      .alt_nav {
+        width: 90vw;
       }
     }
   }
