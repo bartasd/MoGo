@@ -13,7 +13,7 @@ body {
 }
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/static/Roboto-Regular.ttf") format("truetype");
+  src: url("../fonts/static/Roboto-Regular.ttf") format("truetype"), url("../fonts/static/Roboto-LightItalic.ttf") format("truetype");
 }
 .spacer {
   width: 60px;
@@ -652,13 +652,11 @@ body {
 
 .wedo {
   width: 100vw;
-  height: 117vh;
 }
 .wedo .wedo_content {
   text-align: center;
   width: 62.5vw;
-  height: 88.5%;
-  background-color: darkgreen;
+  height: 88.2vh;
   margin-left: 18.75vw;
 }
 .wedo .wedo_content p {
@@ -669,10 +667,173 @@ body {
   font-weight: 400;
   font-family: "Roboto";
 }
+.wedo .wedo_content .wedo_content2 {
+  margin: 0;
+  margin-top: 50px;
+  width: 100%;
+  height: calc(100% - 278px - 50px);
+  text-align: none;
+  position: relative;
+}
+.wedo .wedo_content .wedo_content2 div {
+  position: absolute;
+  width: 50%;
+  height: 312px;
+  left: 0;
+  text-align: center;
+  overflow: hidden;
+}
+.wedo .wedo_content .wedo_content2 div img {
+  width: clamp(468px, 100%, 100%);
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wedo .wedo_content .wedo_content2 div:first-of-type {
+  width: 47.85%;
+}
+.wedo .wedo_content .wedo_content2 div:last-of-type {
+  left: 50%;
+}
+.wedo .wedo_content .wedo_content2 div:last-of-type .drop {
+  position: relative;
+  display: block;
+  width: 99%;
+  height: 16%;
+  border: 1px solid #999999;
+  left: 0;
+  cursor: pointer;
+}
+.wedo .wedo_content .wedo_content2 div:last-of-type .drop img {
+  position: absolute;
+  left: 2.66%;
+  top: 10px;
+  height: 30px;
+  width: auto;
+  margin: 0;
+  display: inline-block;
+}
+.wedo .wedo_content .wedo_content2 div:last-of-type .drop p {
+  position: absolute;
+  left: clamp(35px + 5.32%, 10%, 10%);
+  top: 15px;
+  margin: 0;
+  text-align: left;
+  display: inline-block;
+  font-family: "Montserat";
+  font-weight: normal;
+  font-size: 14px;
+  color: #333;
+}
+.wedo .wedo_content .wedo_content2 div:last-of-type .drop i {
+  position: absolute;
+  right: 3.66%;
+  top: 15px;
+  font-weight: normal;
+  font-size: 14px;
+  color: #333;
+}
+.wedo .wedo_content .wedo_content2 div:last-of-type .drop textarea {
+  position: absolute;
+  left: 2.66%;
+  top: 50px;
+  font-weight: normal;
+  font-size: 14px;
+  color: #333;
+  min-height: calc(100% - 63px);
+  max-height: calc(100% - 63px);
+  min-width: 92.5%;
+  max-width: 92.5%;
+  resize: none;
+  border: none;
+  outline: none;
+}
+.wedo .wedo_content .wedo_content2 div:last-of-type .drop textarea::-webkit-scrollbar {
+  width: 5px;
+}
+.wedo .wedo_content .wedo_content2 div:last-of-type .drop textarea::-webkit-scrollbar-thumb {
+  background-color: #95e1d3;
+  border-radius: 2px;
+}
+.wedo .wedo_content .wedo_content2 div:last-of-type .drop textarea::-webkit-scrollbar-thumb:hover {
+  background-color: #f38181;
+}
+.wedo .wedo_content .wedo_content2 div:last-of-type .dropped-list {
+  width: 99%;
+  height: 66%;
+}
 .wedo .wedo_footer {
   width: 100vw;
-  height: 11.5%;
-  background-color: coral;
+  height: 28.4vh;
+  background-color: #f8f8f8;
+}
+.wedo .wedo_footer div {
+  width: 62.5vw;
+  height: 100%;
+  margin-left: 18.75vw;
+  position: relative;
+}
+.wedo .wedo_footer div i {
+  position: absolute;
+  height: 21px;
+  color: #cccccc;
+  left: 1.75%;
+  top: calc(50% - 10.5px);
+  cursor: pointer;
+}
+.wedo .wedo_footer div i:last-of-type {
+  left: calc(98.25% - 12px);
+}
+.wedo .wedo_footer div div {
+  margin-left: 0;
+  height: 51.72%;
+  top: 24.14%;
+}
+.wedo .wedo_footer div div:first-of-type {
+  position: absolute;
+  left: 0;
+  left: 5.7vw;
+  width: 14.68848vh;
+  border: 2px solid #95e1d3;
+  background-color: white;
+}
+.wedo .wedo_footer div div:first-of-type img {
+  position: absolute;
+  width: 42.66%;
+  top: 28.76%;
+  left: 28.76%;
+}
+.wedo .wedo_footer div div:last-of-type {
+  position: absolute;
+  left: 16.66vw;
+  width: 40vw;
+}
+.wedo .wedo_footer div div:last-of-type .spacer2 {
+  all: unset;
+  width: 60px;
+  height: 0px;
+  border: 2px solid #f38181;
+  display: inline-block;
+}
+.wedo .wedo_footer div div:last-of-type p {
+  margin: 0;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: italic;
+  line-height: 30px;
+  color: #999999;
+  font-weight: 300;
+  width: 80%;
+}
+.wedo .wedo_footer div div:last-of-type p:last-of-type {
+  display: inline-block;
+  margin-bottom: 10%;
+  margin-left: 5px;
+  padding-top: 10px;
+  font-family: "Kaushan-Script";
+  font-size: 16px;
+  font-weight: 400;
+  color: #444;
 }
 
 .content {

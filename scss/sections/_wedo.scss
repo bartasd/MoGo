@@ -1,11 +1,9 @@
 .wedo {
   width: 100vw;
-  height: 117vh;
   .wedo_content {
     text-align: center;
     width: 62.5vw;
-    height: 88.5%;
-    background-color: darkgreen;
+    height: 88.2vh;
     margin-left: 18.75vw;
     p {
       margin: 0 6.5vw;
@@ -16,12 +14,174 @@
       font-family: "Roboto";
     }
     .wedo_content2 {
+      margin: 0;
+      margin-top: 50px;
+      width: 100%;
+      height: calc(100% - 278px - 50px);
+      text-align: none;
+      position: relative;
+
+      div {
+        position: absolute;
+        width: 50%;
+        height: 312px;
+        left: 0;
+        text-align: center;
+        overflow: hidden;
+        img {
+          width: clamp(468px, 100%, 100%);
+          height: auto;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+      div:first-of-type {
+        width: 47.85%;
+      }
+      div:last-of-type {
+        left: 50%;
+        .drop {
+          position: relative;
+          display: block;
+          width: 99%;
+          height: 16%;
+          border: 1px solid #999999;
+          left: 0;
+          cursor: pointer;
+          img {
+            position: absolute;
+            left: 2.66%;
+            top: 10px;
+            height: 30px;
+            width: auto;
+            margin: 0;
+            display: inline-block;
+          }
+          p {
+            position: absolute;
+            left: clamp(calc(35px + 5.32%), 10%, 10%);
+            top: 15px;
+            margin: 0;
+            text-align: left;
+            display: inline-block;
+            font-family: "Montserat";
+            font-weight: normal;
+            font-size: 14px;
+            color: #333;
+          }
+          i {
+            position: absolute;
+            right: 3.66%;
+            top: 15px;
+            font-weight: normal;
+            font-size: 14px;
+            color: #333;
+          }
+          textarea {
+            position: absolute;
+            left: 2.66%;
+            top: 50px;
+            font-weight: normal;
+            font-size: 14px;
+            color: #333;
+            min-height: calc(100% - 63px);
+            max-height: calc(100% - 63px);
+            min-width: 92.5%;
+            max-width: 92.5%;
+            resize: none;
+            border: none;
+            outline: none;
+          }
+          textarea::-webkit-scrollbar {
+            width: 5px;
+          }
+          textarea::-webkit-scrollbar-thumb {
+            background-color: $CUSTUM_GREEN;
+            border-radius: 2px;
+          }
+          textarea::-webkit-scrollbar-thumb:hover {
+            background-color: $HOVER_COLOR2;
+          }
+        }
+        .dropped-list {
+          width: 99%;
+          height: 66%;
+        }
+      }
     }
   }
   .wedo_footer {
     width: 100vw;
-    height: 11.5%;
-    background-color: coral;
+    height: 28.4vh;
+    background-color: $GREY_BACK;
+    div {
+      width: 62.5vw;
+      height: 100%;
+      margin-left: 18.75vw;
+      position: relative;
+      i {
+        position: absolute;
+        height: 21px;
+        color: #cccccc;
+        left: 1.75%;
+        top: calc(50% - 10.5px);
+        cursor: pointer;
+      }
+      i:last-of-type {
+        left: calc(98.25% - 12px);
+      }
+      div {
+        margin-left: 0;
+        height: 51.72%;
+        top: 24.14%;
+      }
+      div:first-of-type {
+        position: absolute;
+        left: 0;
+        left: 5.7vw;
+        width: calc(28.4vh * 0.5172);
+        border: 2px solid $CUSTUM_GREEN;
+        background-color: white;
+        img {
+          position: absolute;
+          width: 42.66%;
+          top: 28.76%;
+          left: 28.76%;
+        }
+      }
+      div:last-of-type {
+        position: absolute;
+        left: 16.66vw;
+        width: 40vw;
+        .spacer2 {
+          all: unset;
+          width: 60px;
+          height: 0px;
+          border: 2px solid $HOVER_COLOR2;
+          display: inline-block;
+        }
+        p {
+          margin: 0;
+          font-family: "Roboto";
+          font-size: 16px;
+          font-style: italic;
+          line-height: 30px;
+          color: #999999;
+          font-weight: 300;
+          width: 80%;
+        }
+        p:last-of-type {
+          display: inline-block;
+          margin-bottom: 10%;
+          margin-left: 5px;
+          padding-top: 10px;
+          font-family: "Kaushan-Script";
+          font-size: 16px;
+          font-weight: 400;
+          color: #444;
+        }
+      }
+    }
   }
 }
 

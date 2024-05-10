@@ -1,3 +1,5 @@
+// DROP DOWN NAVIGATION MENU
+
 const collMenu = document.getElementById("collapse");
 const openDrop = document.getElementById("drop-down");
 const exitDrop = document.getElementById("exit-drop-down");
@@ -33,3 +35,93 @@ if (collMenu) {
 if (exitDrop) {
   exitDrop.addEventListener("click", exitDropDown);
 }
+
+// --------------------------------------------------
+
+// WHAT WE DO SECTION
+
+const drops = document.getElementsByClassName("drop");
+const angles = document.getElementsByClassName("angle");
+const isDropped = [false, false, false];
+
+function openDroper(i, close = false) {
+  console.log("dropped: ", i, " menu.");
+  if (!isDropped[i] && !close) {
+    for (let idx = 0; idx < drops.length; idx++) {
+      if (idx == i) {
+        drops[idx].classList.add("dropped-list");
+        isDropped[idx] = true;
+        angles[idx].classList.add("fa-angle-up");
+        angles[idx].classList.remove("fa-angle-down");
+      } else {
+        drops[idx].classList.remove("dropped-list");
+        isDropped[idx] = false;
+        angles[idx].classList.add("fa-angle-down");
+        angles[idx].classList.remove("fa-angle-up");
+      }
+    }
+  } else if (isDropped[i] && close) {
+    drops[i].classList.remove("dropped-list");
+    isDropped[i] = false;
+    angles[i].classList.add("fa-angle-down");
+    angles[i].classList.remove("fa-angle-up");
+  }
+}
+
+if (drops.length > 0) {
+  for (let i = 0; i < drops.length; i++) {
+    drops[i].addEventListener("click", () => {
+      openDroper(i);
+    });
+    angles[i].addEventListener("click", (e) => {
+      e.stopPropagation();
+      openDroper(i, true);
+    });
+  }
+} else {
+  isDropped.forEach((_, i) => {
+    isDropped[i] = false;
+  });
+}
+
+// import comments from "./data/comments.json";
+// console.log(comments);
+
+let comments = [];
+const slideLeft = document.getElementById("slideLeft");
+const slideRight = document.getElementById("slideRight");
+const commentatorName = document.getElementById("commentator");
+const commentatorText = document.getElementById("commentator-text");
+let id = 0;
+
+async function changeCommentator(negative = false, initial = false) {
+  if (!initial) {
+    negative ? id-- : id++;
+    if (id == -1) {
+      id = 2;
+    } else if (id == 3) {
+      id = 0;
+    }
+  }
+  fetch("http://127.0.0.1:8080/data/comments.json")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.json();
+    })
+    .then((data) => {
+      commentatorName.innerText = data[id].name;
+      commentatorText.innerText = data[id].comment;
+    })
+    .catch((error) => {
+      console.error("There was a problem with the fetch operation:", error);
+    });
+}
+
+if (slideLeft) {
+  slideLeft.addEventListener("click", () => changeCommentator(true));
+  slideRight.addEventListener("click", () => changeCommentator(false));
+}
+
+changeCommentator(true, true);
