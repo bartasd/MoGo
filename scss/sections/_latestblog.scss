@@ -1,0 +1,45 @@
+.latestBlog {
+  width: 100vw;
+  height: 95vh;
+  font-size: 0;
+  .blog {
+    width: $CW;
+    margin-left: $ML;
+    height: 75.5vh;
+    .spacer {
+      border-color: $HOVER_COLOR2;
+    }
+    .stories {
+      width: 100%;
+      height: calc(100% - 278px);
+      background-color: pink;
+      font-size: 0;
+      .story {
+        display: inline-block;
+        margin-left: 1.5vw;
+        width: calc((100% - 3vw) / 3);
+        height: 100%;
+        background-color: aquamarine;
+        .img_cont {
+          height: 50%;
+          width: 100%;
+          overflow: hidden;
+          img {
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+      }
+      .story:first-of-type {
+        margin-left: 0;
+      }
+    }
+  }
+  .map {
+    width: 100vw;
+    height: 19.5vh;
+    background-color: orange;
+  }
+}
+
+@import "./latestblog_media";

@@ -966,7 +966,6 @@ body {
 .someofwork {
   height: 160vh;
   width: 100vw;
-  background-color: chocolate;
 }
 .someofwork .intro {
   width: 62.5vw;
@@ -1208,6 +1207,50 @@ body {
   color: #999999;
   font-family: "Roboto";
   margin-top: 30px;
+}
+
+.latestBlog {
+  width: 100vw;
+  height: 95vh;
+  font-size: 0;
+}
+.latestBlog .blog {
+  width: 62.5vw;
+  margin-left: 18.75vw;
+  height: 75.5vh;
+}
+.latestBlog .blog .spacer {
+  border-color: #f38181;
+}
+.latestBlog .blog .stories {
+  width: 100%;
+  height: calc(100% - 278px);
+  background-color: pink;
+  font-size: 0;
+}
+.latestBlog .blog .stories .story {
+  display: inline-block;
+  margin-left: 1.5vw;
+  width: calc((100% - 3vw) / 3);
+  height: 100%;
+  background-color: aquamarine;
+}
+.latestBlog .blog .stories .story .img_cont {
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+}
+.latestBlog .blog .stories .story .img_cont img {
+  object-fit: cover;
+  object-position: center;
+}
+.latestBlog .blog .stories .story:first-of-type {
+  margin-left: 0;
+}
+.latestBlog .map {
+  width: 100vw;
+  height: 19.5vh;
+  background-color: orange;
 }
 
 .content {
