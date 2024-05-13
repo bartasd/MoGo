@@ -468,6 +468,7 @@ body {
 .aboutus .container .photo-holder div {
   position: absolute;
   display: inline-block;
+  background-color: #95e1d3;
   width: 20vw;
   height: 24.5vh;
   margin: 0;
@@ -508,8 +509,8 @@ body {
   background-size: cover;
 }
 .aboutus .container .photo-holder div:hover {
-  border-right: 4px solid #95e1d3;
-  border-bottom: 4px solid #95e1d3;
+  box-shadow: 0.5vw 0.5vw 0 0 #95e1d3;
+  transform: translate(-0.5vw, -0.5vw);
 }
 .aboutus .container .photo-holder div:hover span {
   display: block;
@@ -853,7 +854,6 @@ body {
   height: 127.45vh;
 }
 .ourteam div:first-of-type {
-  background-color: yellow;
   width: 62.5vw;
   margin-left: 18.75vw;
   height: 102.95vh;
@@ -878,32 +878,89 @@ body {
 }
 .ourteam div:first-of-type .photos {
   width: 100%;
-  height: 45.88vh;
-  background-color: white;
+  height: calc(45.88vh + 100px);
   position: relative;
   margin-top: 9.8vh;
 }
-.ourteam div:first-of-type .photos div {
-  position: absolute;
+.ourteam div:first-of-type .photos .person {
   width: calc(33.3333333333% - 3vw);
   height: 100%;
-  background-color: blue;
   margin-left: 0;
+  position: absolute;
+  text-align: center;
 }
-.ourteam div:first-of-type .photos div img {
-  height: 100%;
+.ourteam div:first-of-type .photos .person p {
+  font-family: "Montserrat";
+  font-size: 14px;
+  color: #333333;
+  font-weight: 400;
+}
+.ourteam div:first-of-type .photos .person p:last-of-type {
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+  font-weight: 300;
+  font-style: italic;
+  font-family: "Roboto";
+  margin-left: 0;
+  margin-right: 0;
+}
+.ourteam div:first-of-type .photos .person .picture {
   width: 100%;
+  margin-left: 0;
+  height: calc(100% - 100px);
+  background-size: cover;
 }
-.ourteam div:first-of-type .photos div:nth-of-type(2) {
+.ourteam div:first-of-type .photos .person .picture:hover {
+  transform: translate(-0.5vw, -0.5vw);
+  box-shadow: 0.5vw 0.5vw 0 0 #95e1d3;
+}
+.ourteam div:first-of-type .photos .person .pic1 {
+  background: url(../../assets/person1.png);
+}
+.ourteam div:first-of-type .photos .person .pic2 {
+  background: url(../../assets/person2.png);
+}
+.ourteam div:first-of-type .photos .person .pic3 {
+  background: url(../../assets/person3.png);
+}
+.ourteam div:first-of-type .photos .person .pic1:hover {
+  background: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8)), url(../../assets/person1.png);
+}
+.ourteam div:first-of-type .photos .person .pic2:hover {
+  background: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8)), url(../../assets/person2.png);
+}
+.ourteam div:first-of-type .photos .person .pic3:hover {
+  background: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8)), url(../../assets/person3.png);
+}
+.ourteam div:first-of-type .photos .person:nth-of-type(2) {
   left: calc(33.3333333333% + 1.5vw);
 }
-.ourteam div:first-of-type .photos div:nth-of-type(3) {
+.ourteam div:first-of-type .photos .person:nth-of-type(3) {
   left: calc(66.6666666667% + 3vw);
 }
-.ourteam div:last-of-type {
-  background-color: brown;
+.ourteam .some_logos {
   width: 100vw;
   height: 24.5vh;
+  background-color: #f8f8f8;
+}
+.ourteam .some_logos div {
+  margin-left: 18.75vw;
+  width: 62.5vw;
+  height: 100%;
+  font-size: 0;
+}
+.ourteam .some_logos div .some_logo {
+  display: inline-block;
+  margin: 0;
+  width: 10.4166666667vw;
+  height: 100%;
+}
+.ourteam .some_logos div .some_logo img {
+  width: 80%;
+  height: auto;
+  margin-left: 10%;
+  margin-top: calc(50% - 82px);
 }
 
 .content {
