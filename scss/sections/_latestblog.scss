@@ -12,14 +12,13 @@
     .stories {
       width: 100%;
       height: calc(100% - 278px);
-      background-color: pink;
       font-size: 0;
       .story {
         display: inline-block;
         margin-left: 1.5vw;
         width: calc((100% - 3vw) / 3);
         height: 100%;
-        background-color: aquamarine;
+        position: relative;
         .img_cont {
           height: 50%;
           width: 100%;
@@ -27,6 +26,63 @@
           img {
             object-fit: cover;
             object-position: center;
+          }
+        }
+        .date {
+          position: absolute;
+          top: 33.33%;
+          left: -2.6%;
+          width: 15.8%;
+          height: 14%;
+          background-color: $CUSTUM_GREEN;
+          p {
+            margin: 0;
+            font-size: 30px;
+            color: $MAIN_COLOR;
+            font-weight: 700;
+            font-family: "Montserrat";
+            text-align: center;
+          }
+          p:last-of-type {
+            font-weight: lighter;
+            font-size: 12px;
+            font-style: italic;
+          }
+        }
+        .str_txt {
+          font-size: 14px;
+          text-transform: uppercase;
+          color: #333;
+          font-family: "Montserrat";
+        }
+        .str_txt:nth-of-type(2) {
+          font-size: 15px;
+          line-height: 24px;
+          color: #999;
+          font-weight: 400;
+          font-family: "Roboto";
+          text-transform: none;
+          border-bottom: 1px solid #e5e5e5;
+          padding-bottom: 5%;
+        }
+        span {
+          text-transform: none;
+          padding: 0;
+          padding-top: 5%;
+          font-size: 15px;
+          p {
+            font-style: italic;
+            display: inline-block;
+            font-family: "Roboto";
+            background-color: white;
+            width: 50px;
+            line-height: 24px;
+            color: #999;
+            font-weight: 300;
+          }
+          i {
+            padding-right: 2.5%;
+            color: $CUSTUM_GREEN;
           }
         }
       }
@@ -38,7 +94,27 @@
   .map {
     width: 100vw;
     height: 19.5vh;
-    background-color: orange;
+    position: relative;
+    overflow: hidden;
+    opacity: 1;
+    .bkg3 {
+      position: absolute;
+      width: 100vw;
+      opacity: 0.2;
+    }
+    .line1 {
+      padding-top: 20px;
+    }
+    .line {
+      font-size: 24px;
+      color: #f38181;
+      font-weight: 700;
+      font-family: "Montserrat";
+      text-align: center;
+    }
+    .spacer {
+      border-color: $HOVER_COLOR2;
+    }
   }
 }
 
