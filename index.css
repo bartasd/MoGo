@@ -963,6 +963,253 @@ body {
   margin-top: calc(50% - 82px);
 }
 
+.someofwork {
+  height: 160vh;
+  width: 100vw;
+  background-color: chocolate;
+}
+.someofwork .intro {
+  width: 62.5vw;
+  margin-left: 18.75vw;
+  height: 40vh;
+}
+.someofwork .intro .spacer {
+  border-color: #f38181;
+}
+.someofwork .intro p {
+  text-align: center;
+  margin-left: 6.25vw;
+  margin-right: 6.25vw;
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+  font-weight: 400;
+  font-family: "Roboto";
+}
+.someofwork .gallery {
+  width: 100vw;
+  height: 77vh;
+  font-size: 0;
+}
+.someofwork .gallery .vert_gal {
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center bottom;
+}
+.someofwork .gallery .vert_gal div {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center bottom;
+}
+.someofwork .gallery .vert1 div:first-of-type {
+  background-image: url("../../assets/gal1.png");
+}
+.someofwork .gallery .vert1 div:last-of-type {
+  background-image: url("../../assets/gal2.png");
+}
+.someofwork .gallery .vert1 div:first-of-type:hover {
+  background-image: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8)), url("../../assets/gal1.png");
+}
+.someofwork .gallery .vert1 div:last-of-type:hover {
+  background-image: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8)), url("../../assets/gal2.png");
+}
+.someofwork .gallery .vert2 div:first-of-type {
+  background-image: url("../../assets/gal3.png");
+}
+.someofwork .gallery .vert2 div:last-of-type {
+  background-image: url("../../assets/gal4.png");
+}
+.someofwork .gallery .vert2 div:first-of-type:hover {
+  background-image: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8)), url("../../assets/gal3.png");
+}
+.someofwork .gallery .vert2 div:last-of-type:hover {
+  background-image: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8)), url("../../assets/gal4.png");
+}
+.someofwork .gallery .vert3 {
+  background-image: url("../../assets/gal5.png");
+}
+.someofwork .gallery .vert3:hover {
+  background-image: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8)), url("../../assets/gal5.png");
+}
+.someofwork .gallery .vert4 div:first-of-type {
+  background-image: url("../../assets/gal6.png");
+  background-position: center top;
+}
+.someofwork .gallery .vert4 div:last-of-type {
+  background-image: url("../../assets/gal7.png");
+  background-position: top;
+}
+.someofwork .gallery .vert4 div:first-of-type:hover {
+  background-image: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8)), url("../../assets/gal6.png");
+}
+.someofwork .gallery .vert4 div:last-of-type:hover {
+  background-image: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8)), url("../../assets/gal7.png");
+}
+.someofwork .sldr {
+  width: 100vw;
+  height: 43vh;
+  background-color: #f8f8f8;
+}
+.someofwork .sldr div {
+  width: 62.5vw;
+  height: 100%;
+  margin-left: 18.75vw;
+  position: relative;
+}
+.someofwork .sldr div i {
+  position: absolute;
+  height: 21px;
+  color: #cccccc;
+  left: 1.75%;
+  top: calc(50% - 10.5px);
+  cursor: pointer;
+}
+.someofwork .sldr div i:last-of-type {
+  left: calc(98.25% - 12px);
+}
+.someofwork .sldr div div {
+  margin-left: 0;
+  height: 51.72%;
+  top: 24.14%;
+}
+.someofwork .sldr div div:first-of-type {
+  position: absolute;
+  left: 0;
+  left: 5.7vw;
+  width: 22.2396vh;
+  height: 22.2396vh;
+  margin-right: 2.6vw;
+  overflow: hidden;
+  border-radius: 11.1198vh;
+}
+.someofwork .sldr div div:first-of-type img {
+  width: 100%;
+  height: 100%;
+}
+.someofwork .sldr div div:last-of-type {
+  position: absolute;
+  left: 21.66vw;
+  top: 32%;
+  width: 35vw;
+}
+.someofwork .sldr div div:last-of-type .spacer2 {
+  all: unset;
+  width: 60px;
+  height: 0px;
+  border: 2px solid #f38181;
+  display: inline-block;
+}
+.someofwork .sldr div div:last-of-type p {
+  margin: 0;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: italic;
+  line-height: 30px;
+  color: #999999;
+  font-weight: 300;
+  width: 80%;
+}
+.someofwork .sldr div div:last-of-type p:last-of-type {
+  display: inline-block;
+  margin-bottom: 10%;
+  margin-left: 5px;
+  padding-top: 10px;
+  font-family: "Kaushan-Script";
+  font-size: 16px;
+  font-weight: 400;
+  color: #444;
+}
+
+.peopleSay {
+  width: 100vw;
+  height: 81.37vh;
+  position: relative;
+  overflow: hidden;
+}
+.peopleSay img {
+  object-fit: contain;
+  opacity: 0.3;
+  position: absolute;
+}
+.peopleSay .peopleToSay {
+  position: absolute;
+  left: 18.75vw;
+  top: 278px;
+  width: 62.5vw;
+  height: calc(100% - 278px);
+  font-size: 0;
+}
+.peopleSay .peopleToSay .sayingPeople {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  height: 50%;
+}
+.peopleSay .peopleToSay .sayingPeople div:first-of-type {
+  position: absolute;
+  left: 2vw;
+  width: 6vw;
+  height: 6vw;
+  border-radius: 3vw;
+  overflow: hidden;
+}
+.peopleSay .peopleToSay .sayingPeople div:first-of-type img {
+  opacity: 1;
+  margin: 0;
+  padding: 0;
+  object-fit: contain;
+}
+.peopleSay .peopleToSay .sayingPeople div:last-of-type {
+  opacity: 1;
+  position: absolute;
+  left: 10vw;
+  width: 20vw;
+  height: 9vw;
+  overflow: hidden;
+}
+.peopleSay .peopleToSay .sayingPeople div:last-of-type div {
+  left: 0;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  background-color: transparent;
+}
+.peopleSay .peopleToSay .sayingPeople div:last-of-type div .spacer {
+  position: relative;
+  width: 60px;
+  height: 0px;
+  border: 2px solid #f38181;
+  left: 0;
+  border-radius: 0;
+}
+.peopleSay .peopleToSay .sayingPeople div:last-of-type p {
+  font-size: 14px;
+  color: #333333;
+  font-weight: 400;
+  font-family: "Montserrat";
+}
+.peopleSay .peopleToSay .sayingPeople div:last-of-type p:nth-of-type(2) {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 300;
+  font-style: italic;
+  font-family: "Roboto";
+}
+.peopleSay .peopleToSay .sayingPeople div:last-of-type p:last-of-type {
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+  font-family: "Roboto";
+  margin-top: 30px;
+}
+
 .content {
   display: block;
   height: 500px;

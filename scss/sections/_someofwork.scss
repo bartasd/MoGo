@@ -1,3 +1,171 @@
 .someofwork {
+  height: 160vh;
+  width: 100vw;
+  background-color: chocolate;
+  .intro {
+    width: $CW;
+    margin-left: $ML;
+    height: 40vh;
+    .spacer {
+      border-color: $HOVER_COLOR2;
+    }
+    p {
+      text-align: center;
+      margin-left: 6.25vw;
+      margin-right: 6.25vw;
+      font-size: 15px;
+      line-height: 24px;
+      color: #999999;
+      font-weight: 400;
+      font-family: "Roboto";
+    }
+  }
+  .gallery {
+    width: 100vw;
+    height: 77vh;
+    font-size: 0;
+
+    .vert_gal {
+      display: inline-block;
+      width: 25%;
+      height: 100%;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center bottom;
+      div {
+        width: 100%;
+        height: 50%;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center bottom;
+      }
+    }
+
+    .vert1 {
+      div:first-of-type {
+        background-image: url("../../assets/gal1.png");
+      }
+      div:last-of-type {
+        background-image: url("../../assets/gal2.png");
+      }
+
+      div:first-of-type:hover {
+        background-image: $CUSTUM_GRADIENT, url("../../assets/gal1.png");
+      }
+      div:last-of-type:hover {
+        background-image: $CUSTUM_GRADIENT, url("../../assets/gal2.png");
+      }
+    }
+    .vert2 {
+      div:first-of-type {
+        background-image: url("../../assets/gal3.png");
+      }
+      div:last-of-type {
+        background-image: url("../../assets/gal4.png");
+      }
+      div:first-of-type:hover {
+        background-image: $CUSTUM_GRADIENT, url("../../assets/gal3.png");
+      }
+      div:last-of-type:hover {
+        background-image: $CUSTUM_GRADIENT, url("../../assets/gal4.png");
+      }
+    }
+    .vert3 {
+      background-image: url("../../assets/gal5.png");
+    }
+    .vert3:hover {
+      background-image: $CUSTUM_GRADIENT, url("../../assets/gal5.png");
+    }
+    .vert4 {
+      div:first-of-type {
+        background-image: url("../../assets/gal6.png");
+        background-position: center top;
+      }
+      div:last-of-type {
+        background-image: url("../../assets/gal7.png");
+        background-position: top;
+      }
+      div:first-of-type:hover {
+        background-image: $CUSTUM_GRADIENT, url("../../assets/gal6.png");
+      }
+      div:last-of-type:hover {
+        background-image: $CUSTUM_GRADIENT, url("../../assets/gal7.png");
+      }
+    }
+  }
+  .sldr {
+    width: 100vw;
+    height: 43vh;
+    background-color: $GREY_BACK;
+    div {
+      width: 62.5vw;
+      height: 100%;
+      margin-left: 18.75vw;
+      position: relative;
+      i {
+        position: absolute;
+        height: 21px;
+        color: #cccccc;
+        left: 1.75%;
+        top: calc(50% - 10.5px);
+        cursor: pointer;
+      }
+      i:last-of-type {
+        left: calc(98.25% - 12px);
+      }
+      div {
+        margin-left: 0;
+        height: 51.72%;
+        top: 24.14%;
+      }
+      div:first-of-type {
+        position: absolute;
+        left: 0;
+        left: 5.7vw;
+        width: calc(43vh * 0.5172);
+        height: calc(43vh * 0.5172);
+        margin-right: 2.6vw;
+        overflow: hidden;
+        border-radius: calc(43vh * 0.5172 / 2);
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      div:last-of-type {
+        position: absolute;
+        left: 21.66vw;
+        top: 32%;
+        width: 35vw;
+        .spacer2 {
+          all: unset;
+          width: 60px;
+          height: 0px;
+          border: 2px solid $HOVER_COLOR2;
+          display: inline-block;
+        }
+        p {
+          margin: 0;
+          font-family: "Roboto";
+          font-size: 16px;
+          font-style: italic;
+          line-height: 30px;
+          color: #999999;
+          font-weight: 300;
+          width: 80%;
+        }
+        p:last-of-type {
+          display: inline-block;
+          margin-bottom: 10%;
+          margin-left: 5px;
+          padding-top: 10px;
+          font-family: "Kaushan-Script";
+          font-size: 16px;
+          font-weight: 400;
+          color: #444;
+        }
+      }
+    }
+  }
 }
 @import "./someofwork_media";
