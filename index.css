@@ -789,6 +789,7 @@ body {
   left: 1.75%;
   top: calc(50% - 10.5px);
   cursor: pointer;
+  font-size: 24px;
 }
 .wedo .wedo_footer div i:last-of-type {
   left: calc(98.25% - 12px);
@@ -1055,7 +1056,7 @@ body {
   position: relative;
 }
 .someofwork .sldr div i {
-  font-size: 21px;
+  font-size: 24px;
   position: absolute;
   color: #cccccc;
   left: 1.75%;
@@ -1417,21 +1418,24 @@ body {
   height: 100%;
   width: 35%;
   left: 42.5%;
+  position: absolute;
 }
 .footer .footer_cont .footer_cont_inner .blogs p {
+  position: absolute;
   font-size: 14px;
   color: #333333;
   font-weight: 400;
   font-family: "Montserrat";
 }
 .footer .footer_cont .footer_cont_inner .blogs p:first-of-type {
-  margin-top: 10%;
+  top: 10%;
 }
 .footer .footer_cont .footer_cont_inner .blogs .blg {
   width: 100%;
   height: 22%;
   position: relative;
   margin-top: 6%;
+  top: calc((14.0625vw - 2px) / 3 - 6%);
 }
 .footer .footer_cont .footer_cont_inner .blogs .blg .img_cnt {
   position: absolute;
@@ -1454,11 +1458,13 @@ body {
   height: 100%;
 }
 .footer .footer_cont .footer_cont_inner .blogs .blg div p {
+  position: absolute;
   font-size: 12px;
   line-height: 18px;
   color: #333333;
   font-weight: 400;
   font-family: "Montserrat";
+  width: 75%;
 }
 .footer .footer_cont .footer_cont_inner .blogs .blg div p:last-of-type {
   font-size: 13px;
@@ -1467,6 +1473,7 @@ body {
   font-weight: 300;
   font-style: italic;
   font-family: "Roboto";
+  top: 50%;
 }
 .footer .footer_cont .footer_cont_inner .instagram {
   height: 100%;
