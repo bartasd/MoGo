@@ -8,7 +8,7 @@
       }
     }
     .logo {
-      width: 100vw;
+      width: 100%;
       margin-left: 0;
       p {
         font-size: 45px;
@@ -17,8 +17,8 @@
         font-size: 35px;
       }
       .alt_nav {
-        width: 90vw;
-        margin-left: 5vw;
+        width: 90%;
+        margin-left: 5%;
         a {
           p {
             font-size: 12px;
@@ -40,7 +40,7 @@
   }
   .nav {
     .logo {
-      width: 100vw;
+      width: 100%;
       margin-left: 0;
       p {
         font-size: 80px;
@@ -49,8 +49,8 @@
         font-size: 60px;
       }
       .alt_nav {
-        width: 90vw;
-        margin-left: 5vw;
+        width: 90%;
+        margin-left: 5%;
         a {
           p {
             font-size: 12px;
@@ -68,9 +68,9 @@
   .nav {
     .links {
       .right {
-        left: 40vw;
+        left: 40%;
         a {
-          margin-right: 2vw;
+          margin-right: 2%;
           p {
             font-size: 12px;
           }
@@ -85,8 +85,8 @@
     }
 
     .logo {
-      width: 63vw;
-      margin-left: 18.75vw;
+      width: 63%;
+      margin-left: 18.75%;
       p {
         font-size: 90px;
       }
@@ -94,7 +94,7 @@
         font-size: 65px;
       }
       .alt_nav {
-        width: 63vw;
+        width: 63%;
         a {
           p {
             font-size: 14px;
@@ -112,9 +112,9 @@
   .nav {
     .links {
       .right {
-        left: 48.96vw;
+        left: 48.96%;
         a {
-          margin-right: 3vw;
+          margin-right: 3%;
           p {
             font-size: 14px;
           }
@@ -129,8 +129,8 @@
     }
 
     .logo {
-      width: 63vw;
-      margin-left: 18.75vw;
+      width: 63%;
+      margin-left: 18.75%;
       p {
         font-size: 120px;
       }
@@ -138,7 +138,7 @@
         font-size: 72px;
       }
       .alt_nav {
-        width: 63vw;
+        width: 63%;
         a {
           p {
             font-size: 18px;
@@ -170,7 +170,7 @@
 @media screen and (max-height: 700px) and (min-width: 481px) {
   .nav {
     .logo {
-      width: 100vw;
+      width: 100%;
       margin-left: 0;
       p {
         font-size: 45px;
@@ -179,8 +179,8 @@
         font-size: 35px;
       }
       .alt_nav {
-        width: 90vw;
-        margin-left: 5vw;
+        width: 90%;
+        margin-left: 5%;
         a {
           p {
             font-size: 12px;
@@ -196,8 +196,8 @@
 @media screen and (min-height: 700px) and (min-width: 1024px) {
   .nav {
     .logo {
-      width: 90vw;
-      margin-left: 5vw;
+      width: 90%;
+      margin-left: 5%;
       p {
         font-size: 100px;
       }
@@ -205,7 +205,7 @@
         font-size: 50px;
       }
       .alt_nav {
-        width: 90vw;
+        width: 90%;
       }
     }
   }

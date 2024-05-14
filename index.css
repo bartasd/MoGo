@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-size: 0;
 }
 
 @font-face {
@@ -48,10 +49,10 @@ body {
 }
 
 .nav {
-  width: 100vw;
   height: 100vh;
   position: relative;
   background: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8));
+  overflow: hidden;
 }
 .nav img {
   width: 100%;
@@ -68,7 +69,7 @@ body {
 .nav .links a {
   position: absolute;
   line-height: 0;
-  left: 18.75vw;
+  left: 18.75%;
 }
 .nav .links a p {
   font-size: 30px;
@@ -80,10 +81,10 @@ body {
 .nav .links .right {
   position: absolute;
   top: 55%;
-  left: 48.96vw;
+  left: 48.96%;
 }
 .nav .links .right a {
-  margin-right: 3vw;
+  margin-right: 3%;
   left: 0;
   position: relative;
 }
@@ -115,7 +116,7 @@ body {
 .nav .links .collapse {
   position: absolute;
   top: 55%;
-  right: 8vw;
+  right: 8%;
 }
 .nav .links .collapse a {
   left: 0;
@@ -271,7 +272,7 @@ body {
     display: none;
   }
   .nav .logo {
-    width: 100vw;
+    width: 100%;
     margin-left: 0;
   }
   .nav .logo p {
@@ -281,8 +282,8 @@ body {
     font-size: 35px;
   }
   .nav .logo .alt_nav {
-    width: 90vw;
-    margin-left: 5vw;
+    width: 90%;
+    margin-left: 5%;
   }
   .nav .logo .alt_nav a p {
     font-size: 12px;
@@ -296,7 +297,7 @@ body {
     display: none;
   }
   .nav .logo {
-    width: 100vw;
+    width: 100%;
     margin-left: 0;
   }
   .nav .logo p {
@@ -306,8 +307,8 @@ body {
     font-size: 60px;
   }
   .nav .logo .alt_nav {
-    width: 90vw;
-    margin-left: 5vw;
+    width: 90%;
+    margin-left: 5%;
   }
   .nav .logo .alt_nav a p {
     font-size: 12px;
@@ -318,10 +319,10 @@ body {
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .nav .links .right {
-    left: 40vw;
+    left: 40%;
   }
   .nav .links .right a {
-    margin-right: 2vw;
+    margin-right: 2%;
   }
   .nav .links .right a p {
     font-size: 12px;
@@ -333,8 +334,8 @@ body {
     display: none;
   }
   .nav .logo {
-    width: 63vw;
-    margin-left: 18.75vw;
+    width: 63%;
+    margin-left: 18.75%;
   }
   .nav .logo p {
     font-size: 90px;
@@ -343,7 +344,7 @@ body {
     font-size: 65px;
   }
   .nav .logo .alt_nav {
-    width: 63vw;
+    width: 63%;
   }
   .nav .logo .alt_nav a p {
     font-size: 14px;
@@ -354,10 +355,10 @@ body {
 }
 @media screen and (min-width: 1025px) and (max-width: 1250px) {
   .nav .links .right {
-    left: 48.96vw;
+    left: 48.96%;
   }
   .nav .links .right a {
-    margin-right: 3vw;
+    margin-right: 3%;
   }
   .nav .links .right a p {
     font-size: 14px;
@@ -369,8 +370,8 @@ body {
     display: none;
   }
   .nav .logo {
-    width: 63vw;
-    margin-left: 18.75vw;
+    width: 63%;
+    margin-left: 18.75%;
   }
   .nav .logo p {
     font-size: 120px;
@@ -379,7 +380,7 @@ body {
     font-size: 72px;
   }
   .nav .logo .alt_nav {
-    width: 63vw;
+    width: 63%;
   }
   .nav .logo .alt_nav a p {
     font-size: 18px;
@@ -398,7 +399,7 @@ body {
 }
 @media screen and (max-height: 700px) and (min-width: 481px) {
   .nav .logo {
-    width: 100vw;
+    width: 100%;
     margin-left: 0;
   }
   .nav .logo p {
@@ -408,8 +409,8 @@ body {
     font-size: 35px;
   }
   .nav .logo .alt_nav {
-    width: 90vw;
-    margin-left: 5vw;
+    width: 90%;
+    margin-left: 5%;
   }
   .nav .logo .alt_nav a p {
     font-size: 12px;
@@ -420,8 +421,8 @@ body {
 }
 @media screen and (min-height: 700px) and (min-width: 1024px) {
   .nav .logo {
-    width: 90vw;
-    margin-left: 5vw;
+    width: 90%;
+    margin-left: 5%;
   }
   .nav .logo p {
     font-size: 100px;
@@ -430,12 +431,11 @@ body {
     font-size: 50px;
   }
   .nav .logo .alt_nav {
-    width: 90vw;
+    width: 90%;
   }
 }
 .aboutus {
   display: block;
-  width: 100vw;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -446,11 +446,11 @@ body {
 .aboutus .container {
   margin: 0;
   padding: 0;
-  width: 100vw;
+  width: 100%;
   height: 70%;
 }
 .aboutus .container p {
-  padding: 0 25vw;
+  padding: 0 25%;
   font-size: 15px;
   line-height: 24px;
   color: #999999;
@@ -460,10 +460,10 @@ body {
 }
 .aboutus .container .photo-holder {
   position: relative;
-  width: calc(60vw + 72px);
+  width: calc(60% + 72px);
   height: 25vh;
   margin-top: 50px;
-  margin-left: calc(20vw - 32px);
+  margin-left: calc(20% - 32px);
 }
 .aboutus .container .photo-holder div {
   position: absolute;
@@ -473,6 +473,7 @@ body {
   height: 24.5vh;
   margin: 0;
   margin-right: 30px;
+  background-color: blue;
 }
 .aboutus .container .photo-holder div span {
   display: none;
@@ -529,13 +530,13 @@ body {
   position: relative;
   margin: 0;
   padding: 0;
-  width: 100vw;
+  width: 100%;
   height: 30%;
   background-color: #95e1d3;
 }
 .aboutus .container2 div {
   position: absolute;
-  width: 12.5vw;
+  width: 12.5%;
   height: 100%;
   text-align: center;
 }
@@ -553,32 +554,31 @@ body {
   margin-top: 10%;
 }
 .aboutus .container2 div:first-of-type {
-  left: 18.75vw;
+  left: 18.75%;
 }
 .aboutus .container2 div:last-of-type {
-  right: 18.75vw;
+  right: 18.75%;
 }
 .aboutus .container2 div:nth-of-type(2) {
-  left: 31.25vw;
+  left: 31.25%;
 }
 .aboutus .container2 div:nth-of-type(3) {
-  left: 43.75vw;
+  left: 43.75%;
 }
 .aboutus .container2 div:nth-of-type(4) {
-  left: 56.25vw;
+  left: 56.25%;
 }
 
 .services {
-  width: 100vw;
   height: 63.73vh;
 }
 .services .spacer {
   border-color: #f38181;
 }
 .services .service-cont {
-  width: 62.5vw;
+  width: 62.5%;
   height: calc(100% - 278px);
-  margin-left: 18.75vw;
+  margin-left: 18.75%;
 }
 .services .service-cont .service-cont-inner {
   position: relative;
@@ -622,7 +622,6 @@ body {
 }
 
 .design {
-  width: 100vw;
   height: 83.33vh;
   background-color: rgba(217, 217, 217, 0.5058823529);
   position: relative;
@@ -660,14 +659,11 @@ body {
   left: 75%;
 }
 
-.wedo {
-  width: 100vw;
-}
 .wedo .wedo_content {
   text-align: center;
-  width: 62.5vw;
+  width: 62.5%;
   height: 88.2vh;
-  margin-left: 18.75vw;
+  margin-left: 18.75%;
 }
 .wedo .wedo_content .spacer {
   border-color: #f38181;
@@ -776,14 +772,14 @@ body {
   height: 66%;
 }
 .wedo .wedo_footer {
-  width: 100vw;
+  width: 100%;
   height: 28.4vh;
   background-color: #f8f8f8;
 }
 .wedo .wedo_footer div {
-  width: 62.5vw;
+  width: 62.5%;
   height: 100%;
-  margin-left: 18.75vw;
+  margin-left: 18.75%;
   position: relative;
 }
 .wedo .wedo_footer div i {
@@ -850,18 +846,17 @@ body {
 }
 
 .ourteam {
-  width: 100vw;
   height: 127.45vh;
 }
 .ourteam div:first-of-type {
-  width: 62.5vw;
-  margin-left: 18.75vw;
+  width: 62.5%;
+  margin-left: 18.75%;
   height: 102.95vh;
 }
 .ourteam div:first-of-type p:last-of-type {
   text-align: center;
-  margin-left: 6.25vw;
-  margin-right: 6.25vw;
+  margin-left: 6.25%;
+  margin-right: 6.25%;
   font-size: 15px;
   line-height: 24px;
   color: #999999;
@@ -883,7 +878,7 @@ body {
   margin-top: 9.8vh;
 }
 .ourteam div:first-of-type .photos .person {
-  width: calc(33.3333333333% - 3vw);
+  width: 30.3333333333%;
   height: 100%;
   margin-left: 0;
   position: absolute;
@@ -912,8 +907,8 @@ body {
   background-size: cover;
 }
 .ourteam div:first-of-type .photos .person .picture:hover {
-  transform: translate(-0.5vw, -0.5vw);
-  box-shadow: 0.5vw 0.5vw 0 0 #95e1d3;
+  transform: translate(-0.5%, -0.5%);
+  box-shadow: 0.5% 0.5% 0 0 #95e1d3;
 }
 .ourteam div:first-of-type .photos .person .pic1 {
   background: url(../../assets/person1.png);
@@ -934,26 +929,26 @@ body {
   background: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8)), url(../../assets/person3.png);
 }
 .ourteam div:first-of-type .photos .person:nth-of-type(2) {
-  left: calc(33.3333333333% + 1.5vw);
+  left: 34.8333333333%;
 }
 .ourteam div:first-of-type .photos .person:nth-of-type(3) {
-  left: calc(66.6666666667% + 3vw);
+  left: 69.6666666667%;
 }
 .ourteam .some_logos {
-  width: 100vw;
+  width: 100%;
   height: 24.5vh;
   background-color: #f8f8f8;
 }
 .ourteam .some_logos div {
-  margin-left: 18.75vw;
-  width: 62.5vw;
+  margin-left: 18.75%;
+  width: 62.5%;
   height: 100%;
   font-size: 0;
 }
 .ourteam .some_logos div .some_logo {
   display: inline-block;
   margin: 0;
-  width: 10.4166666667vw;
+  width: 10.4166666667%;
   height: 100%;
 }
 .ourteam .some_logos div .some_logo img {
@@ -965,11 +960,10 @@ body {
 
 .someofwork {
   height: 160vh;
-  width: 100vw;
 }
 .someofwork .intro {
-  width: 62.5vw;
-  margin-left: 18.75vw;
+  width: 62.5%;
+  margin-left: 18.75%;
   height: 40vh;
 }
 .someofwork .intro .spacer {
@@ -977,8 +971,8 @@ body {
 }
 .someofwork .intro p {
   text-align: center;
-  margin-left: 6.25vw;
-  margin-right: 6.25vw;
+  margin-left: 6.25%;
+  margin-right: 6.25%;
   font-size: 15px;
   line-height: 24px;
   color: #999999;
@@ -986,7 +980,7 @@ body {
   font-family: "Roboto";
 }
 .someofwork .gallery {
-  width: 100vw;
+  width: 100%;
   height: 77vh;
   font-size: 0;
 }
@@ -1050,19 +1044,19 @@ body {
   background-image: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8)), url("../../assets/gal7.png");
 }
 .someofwork .sldr {
-  width: 100vw;
+  width: 100%;
   height: 43vh;
   background-color: #f8f8f8;
 }
 .someofwork .sldr div {
-  width: 62.5vw;
+  width: 62.5%;
   height: 100%;
-  margin-left: 18.75vw;
+  margin-left: 18.75%;
   position: relative;
 }
 .someofwork .sldr div i {
+  font-size: 21px;
   position: absolute;
-  height: 21px;
   color: #cccccc;
   left: 1.75%;
   top: calc(50% - 10.5px);
@@ -1079,10 +1073,10 @@ body {
 .someofwork .sldr div div:first-of-type {
   position: absolute;
   left: 0;
-  left: 5.7vw;
+  left: 5.7%;
   width: 22.2396vh;
   height: 22.2396vh;
-  margin-right: 2.6vw;
+  margin-right: 2.6%;
   overflow: hidden;
   border-radius: 11.1198vh;
 }
@@ -1092,9 +1086,9 @@ body {
 }
 .someofwork .sldr div div:last-of-type {
   position: absolute;
-  left: 21.66vw;
+  left: calc(22.2396vh + 11.4%);
   top: 32%;
-  width: 35vw;
+  width: 35%;
 }
 .someofwork .sldr div div:last-of-type .spacer2 {
   all: unset;
@@ -1125,7 +1119,6 @@ body {
 }
 
 .peopleSay {
-  width: 100vw;
   height: 81.37vh;
   position: relative;
   overflow: hidden;
@@ -1137,9 +1130,9 @@ body {
 }
 .peopleSay .peopleToSay {
   position: absolute;
-  left: 18.75vw;
+  left: 18.75%;
   top: 278px;
-  width: 62.5vw;
+  width: 62.5%;
   height: calc(100% - 278px);
   font-size: 0;
 }
@@ -1151,7 +1144,7 @@ body {
 }
 .peopleSay .peopleToSay .sayingPeople div:first-of-type {
   position: absolute;
-  left: 2vw;
+  left: 6.4%;
   width: 6vw;
   height: 6vw;
   border-radius: 3vw;
@@ -1210,13 +1203,12 @@ body {
 }
 
 .latestBlog {
-  width: 100vw;
   height: 95vh;
   font-size: 0;
 }
 .latestBlog .blog {
-  width: 62.5vw;
-  margin-left: 18.75vw;
+  width: 62.5%;
+  margin-left: 18.75%;
   height: 75.5vh;
 }
 .latestBlog .blog .spacer {
@@ -1304,7 +1296,7 @@ body {
   margin-left: 0;
 }
 .latestBlog .map {
-  width: 100vw;
+  width: 100%;
   height: 19.5vh;
   position: relative;
   overflow: hidden;
@@ -1312,7 +1304,7 @@ body {
 }
 .latestBlog .map .bkg3 {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   opacity: 0.2;
 }
 .latestBlog .map .line1 {
@@ -1331,13 +1323,12 @@ body {
 
 .footer {
   height: 54.9vh;
-  width: 100vw;
   background-color: #f8f8f8;
 }
 .footer .footer_cont {
-  width: 62.5vw;
+  width: 62.5%;
   height: 100%;
-  margin-left: 18.75vw;
+  margin-left: 18.75%;
 }
 .footer .footer_cont .footer_cont_inner {
   width: 100%;
@@ -1376,6 +1367,7 @@ body {
   margin-top: 5%;
   width: 100%;
   border-bottom: 1px solid #e5e5e5;
+  width: 90%;
 }
 .footer .footer_cont .footer_cont_inner .mogo span p {
   width: 80px;
@@ -1432,6 +1424,9 @@ body {
   font-weight: 400;
   font-family: "Montserrat";
 }
+.footer .footer_cont .footer_cont_inner .blogs p:first-of-type {
+  margin-top: 10%;
+}
 .footer .footer_cont .footer_cont_inner .blogs .blg {
   width: 100%;
   height: 22%;
@@ -1476,8 +1471,62 @@ body {
 .footer .footer_cont .footer_cont_inner .instagram {
   height: 100%;
   width: 22.5%;
-  background-color: blue;
   left: 77.5%;
+  position: relative;
+}
+.footer .footer_cont .footer_cont_inner .instagram p {
+  position: absolute;
+  font-size: 14px;
+  color: #333333;
+  font-weight: 400;
+  font-family: "Montserrat";
+}
+.footer .footer_cont .footer_cont_inner .instagram p:first-of-type {
+  top: 10%;
+}
+.footer .footer_cont .footer_cont_inner .instagram p:last-of-type {
+  top: calc((14.0625vw - 2px) / 3 + 14.0625vw + 2px);
+  font-size: 13px;
+  line-height: 24px;
+  color: #333333;
+  font-weight: 300;
+  font-style: italic;
+  font-family: "Roboto";
+}
+.footer .footer_cont .footer_cont_inner .instagram div {
+  position: relative;
+  width: 100%;
+  height: calc(14.0625vw + 2px);
+  background-color: white;
+  top: calc((14.0625vw - 2px) / 3);
+  position: relative;
+}
+.footer .footer_cont .footer_cont_inner .instagram div .rw {
+  top: 0;
+  position: absolute;
+  height: calc((14.0625vw - 2px) / 3);
+}
+.footer .footer_cont .footer_cont_inner .instagram div .rw div {
+  top: 0;
+  width: calc((100% - 2px) / 3);
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+.footer .footer_cont .footer_cont_inner .instagram div .rw div img {
+  height: 100%;
+}
+.footer .footer_cont .footer_cont_inner .instagram div .rw div:nth-of-type(2) {
+  left: calc((100% - 2px) / 3 + 1px);
+}
+.footer .footer_cont .footer_cont_inner .instagram div .rw div:last-of-type {
+  left: calc(2 * (100% - 2px) / 3 + 2px);
+}
+.footer .footer_cont .footer_cont_inner .instagram div .rw:nth-of-type(2) {
+  top: calc((14.0625vw - 2px) / 3 + 1px);
+}
+.footer .footer_cont .footer_cont_inner .instagram div .rw:last-of-type {
+  top: calc(2 * (14.0625vw - 2px) / 3 + 2px);
 }
 .footer .footer_cont .credits {
   width: 100%;

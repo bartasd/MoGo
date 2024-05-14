@@ -1,13 +1,12 @@
 .services {
-  width: 100vw;
   height: 63.73vh;
   .spacer {
     border-color: $HOVER_COLOR2;
   }
   .service-cont {
-    width: 62.5vw;
+    width: 62.5%;
     height: calc(100% - 278px);
-    margin-left: 18.75vw;
+    margin-left: 18.75%;
     .service-cont-inner {
       position: relative;
       width: 100%;
