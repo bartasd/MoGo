@@ -1,4 +1,5 @@
 .nav {
+  font-size: 16px;
   height: 100vh;
   position: relative;
   background: $CUSTUM_GRADIENT;
@@ -20,7 +21,7 @@
       line-height: 0;
       left: $ML;
       p {
-        font-size: 30px;
+        font-size: 2rem;
         font-family: "Montserrat";
         font-weight: bold;
         display: inline-block;
@@ -31,17 +32,19 @@
       position: absolute;
       top: 55%;
       left: 48.96%;
+      width: 32.29%;
       a {
-        margin-right: 3%;
+        margin-right: 8.5%;
         left: 0;
         position: relative;
         p {
-          font-size: 14px;
+          font-size: 1rem;
           font-weight: normal;
           margin: 0;
         }
         i {
           color: $MAIN_COLOR;
+          font-size: 1rem;
         }
         i:hover {
           color: $HOVER_COLOR;
@@ -113,11 +116,11 @@
         text-align: center;
         p {
           color: $HOVER_COLOR2;
-          font-size: 16px;
+          font-size: 1rem;
         }
         i {
           color: $HOVER_COLOR2;
-          font-size: 16px;
+          font-size: 1rem;
         }
       }
       a:last-of-type {
@@ -145,14 +148,14 @@
     p {
       font-family: "Montserrat";
       font-weight: bold;
-      font-size: 150px;
+      font-size: 9.375rem;
       color: $MAIN_COLOR;
       line-height: 1rem;
     }
     p:first-of-type {
       font-family: "Kaushan-Script";
       font-weight: normal;
-      font-size: 72px;
+      font-size: 4.5rem;
     }
     div:nth-of-type(2) {
       width: 155px;
@@ -163,7 +166,7 @@
       padding-top: 9px;
       font-family: "Montserrat";
       font-weight: normal;
-      font-size: 14px;
+      font-size: 1rem;
       line-height: 14px;
       background: transparent;
     }
@@ -184,9 +187,9 @@
         p {
           font-family: "Montserrat";
           font-weight: normal;
-          font-size: 18px;
+          font-size: 1rem;
           span {
-            font-size: 24px;
+            font-size: 1.5rem;
             font-weight: bold;
             padding-right: 5px;
           }
@@ -217,7 +220,7 @@
       a:hover::before {
         content: "";
         position: absolute;
-        width: 40%;
+        width: 25%;
         height: 4px;
         background-color: $HOVER_COLOR2;
         top: -3px;

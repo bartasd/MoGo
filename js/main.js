@@ -15,8 +15,9 @@ const temp = [
 // ----- RESPONSIVE DEBUG -------
 // DELETE AFTER -----------------
 const sections = [];
-const start = 0;
-const stop = 1;
+const debugginSection = 1;
+const start = debugginSection;
+const stop = start + 1;
 
 for (let i = start; i < stop; i++) {
   sections.push(temp[i]);
