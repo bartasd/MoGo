@@ -1,4 +1,5 @@
 .wedo {
+  font-size: 16px;
   .wedo_content {
     text-align: center;
     width: $CW;
@@ -9,8 +10,8 @@
     }
     p {
       margin: 0 6.5vw;
-      font-size: 15px;
-      line-height: 24px;
+      font-size: 1rem;
+      line-height: 1.5rem;
       color: #999999;
       font-weight: 400;
       font-family: "Roboto";
@@ -19,14 +20,14 @@
       margin: 0;
       margin-top: 50px;
       width: 100%;
-      height: calc(100% - 278px - 50px);
+      height: 50%;
       text-align: none;
       position: relative;
 
       div {
         position: absolute;
         width: 50%;
-        height: 312px;
+        height: 380px;
         left: 0;
         text-align: center;
         overflow: hidden;
@@ -46,9 +47,10 @@
           position: relative;
           display: block;
           width: 99%;
-          height: 16%;
+          height: 48px;
           border: 1px solid #999999;
           left: 0;
+          margin-bottom: 10px;
           cursor: pointer;
           img {
             position: absolute;
@@ -61,14 +63,14 @@
           }
           p {
             position: absolute;
-            left: clamp(calc(35px + 5.32%), 10%, 10%);
+            left: 60px;
             top: 15px;
             margin: 0;
             text-align: left;
             display: inline-block;
             font-family: "Montserat";
             font-weight: normal;
-            font-size: 14px;
+            font-size: 1rem;
             color: #333;
           }
           i {
@@ -76,20 +78,24 @@
             right: 3.66%;
             top: 15px;
             font-weight: normal;
-            font-size: 14px;
+            font-size: 1rem;
             color: #333;
           }
           textarea {
             position: absolute;
             left: 2.66%;
-            top: 50px;
+            top: 60px;
+            margin-bottom: 10px;
             font-weight: normal;
-            font-size: 14px;
-            color: #333;
-            min-height: calc(100% - 63px);
-            max-height: calc(100% - 63px);
+            font-size: 1rem;
+            font-style: italic;
+            font-family: "Roboto";
+            color: #999;
+            min-height: calc(100% - 77px);
+            max-height: calc(100% - 77px);
             min-width: 92.5%;
             max-width: 92.5%;
+            line-height: 1.5rem;
             resize: none;
             border: none;
             outline: none;
@@ -105,9 +111,21 @@
             background-color: $HOVER_COLOR2;
           }
         }
+        .drop:last-of-type {
+          margin-bottom: 0;
+        }
+        .drop:before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          background-color: #999999;
+          left: 0;
+          top: 49px;
+        }
         .dropped-list {
           width: 99%;
-          height: 66%;
+          height: 258px;
         }
       }
     }
@@ -128,7 +146,7 @@
         left: 1.75%;
         top: calc(50% - 10.5px);
         cursor: pointer;
-        font-size: 24px;
+        font-size: 1.5rem;
       }
       i:last-of-type {
         left: calc(98.25% - 12px);
@@ -166,9 +184,10 @@
         p {
           margin: 0;
           font-family: "Roboto";
-          font-size: 16px;
+          font-weight: 300;
+          font-size: 1rem;
           font-style: italic;
-          line-height: 30px;
+          line-height: 2.25rem;
           color: #999999;
           font-weight: 300;
           width: 80%;
@@ -179,7 +198,7 @@
           margin-left: 5px;
           padding-top: 10px;
           font-family: "Kaushan-Script";
-          font-size: 16px;
+          font-size: 1rem;
           font-weight: 400;
           color: #444;
         }

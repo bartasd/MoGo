@@ -1,0 +1,146 @@
+// REARANGE DESIGN AT THIS BREAKPOINT
+@media screen and (max-width: 768px) {
+  .wedo {
+    .wedo_content {
+      position: relative;
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 10px;
+      height: auto;
+      .wedo_content2 {
+        div {
+          width: 100%;
+          position: relative;
+        }
+        div:first-of-type {
+          width: 100%;
+        }
+        div:last-of-type {
+          top: 10px;
+          left: 0;
+          height: 400px;
+        }
+      }
+    }
+    .wedo_footer {
+      margin-top: 50px;
+      div {
+        width: 100%;
+        margin-left: 0;
+        div {
+          top: 20%;
+        }
+        div:last-of-type {
+          left: 30vw;
+          width: 60vw;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .wedo {
+    .wedo_content {
+      .line1 {
+        padding-top: 30px;
+      }
+    }
+    .wedo_footer {
+      height: 120px;
+      div {
+        width: 100%;
+        div {
+          margin-left: 0;
+          height: 51.72%;
+          top: 24.14%;
+        }
+        div:first-of-type {
+          width: calc(120px * 0.5172);
+        }
+        div:last-of-type {
+          p {
+            font-size: 0.625rem;
+            line-height: 0.8rem;
+            width: 95%;
+          }
+          p:last-of-type {
+            position: absolute;
+            left: 60px;
+            top: 60px;
+          }
+          .spacer2 {
+            width: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .wedo {
+    .wedo_content {
+      .line1 {
+        padding-top: 30px;
+      }
+    }
+    .wedo_footer {
+      height: 170px;
+      div {
+        width: 100%;
+        div {
+          margin-left: 0;
+          height: 51.72%;
+          top: 24.14%;
+        }
+        div:first-of-type {
+          width: calc(170px * 0.5172);
+        }
+        div:last-of-type {
+          p {
+            font-size: 0.625rem;
+            line-height: 0.8rem;
+            width: 95%;
+          }
+          p:last-of-type {
+            position: absolute;
+            left: 60px;
+            top: 60px;
+          }
+          .spacer2 {
+            width: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .wedo {
+    .wedo_content {
+      height: auto;
+      .wedo_content2 {
+        display: block;
+      }
+    }
+    .wedo_footer {
+      display: block;
+      margin-top: 450px;
+      height: 250px;
+      div {
+        div:first-of-type {
+          width: calc(250px * 0.5172);
+        }
+        div:last-of-type {
+          left: 25vw;
+          p {
+            font-size: 0.8rem;
+            line-height: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}

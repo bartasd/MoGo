@@ -543,6 +543,7 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
+  font-size: 16px;
   position: relative;
 }
 .aboutus .spacer {
@@ -1084,6 +1085,9 @@ body {
   .aboutus .container .photo-holder {
     height: 20vh;
   }
+  .aboutus .container .photo-holder div span {
+    padding-top: 6vh;
+  }
   .aboutus .container2 {
     height: 15%;
     top: 85%;
@@ -1124,11 +1128,15 @@ body {
   .aboutus .container .photo-holder {
     height: 18vh;
   }
+  .aboutus .container .photo-holder div span {
+    padding-top: 5vh;
+  }
   .aboutus .container2 div p {
     font-size: 3rem;
   }
 }
 .services {
+  font-size: 16px;
   height: 63.73vh;
 }
 .services .spacer {
@@ -1146,7 +1154,7 @@ body {
 }
 .services .service-cont .service-cont-inner div {
   position: absolute;
-  width: 33.33%;
+  width: 33.3333333333%;
   height: 100%;
 }
 .services .service-cont .service-cont-inner div img {
@@ -1159,7 +1167,7 @@ body {
   position: absolute;
   left: 25%;
   top: 20%;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: normal;
   font-family: "Montserrat";
   font-weight: 400;
@@ -1167,8 +1175,8 @@ body {
 }
 .services .service-cont .service-cont-inner div p:last-of-type {
   top: 35%;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   color: #999999;
   font-weight: 400;
   font-family: "Roboto";
@@ -1180,7 +1188,215 @@ body {
   left: 66.66%;
 }
 
+@media screen and (max-width: 425px) {
+  .services {
+    height: auto;
+  }
+  .services .service-cont {
+    width: 100%;
+    margin-left: 0;
+  }
+  .services .service-cont .underline {
+    border-bottom: none;
+  }
+  .services .service-cont .service-cont-inner {
+    position: relative;
+    height: auto;
+  }
+  .services .service-cont .service-cont-inner div {
+    width: 100%;
+    height: 80px;
+    position: relative;
+  }
+  .services .service-cont .service-cont-inner div:nth-of-type(2),
+  .services .service-cont .service-cont-inner div:last-of-type {
+    left: 0;
+  }
+  .services .service-cont .service-cont-inner:last-of-type {
+    margin-top: 0px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .services .line1 {
+    padding-top: 20px;
+  }
+  .services .service-cont .service-cont-inner div {
+    height: 120px;
+  }
+  .services .service-cont .service-cont-inner:last-of-type {
+    margin-top: 0px;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 425px) {
+  .services .line1 {
+    padding-top: 20px;
+  }
+  .services .service-cont .service-cont-inner div {
+    height: 120px;
+  }
+  .services .service-cont .service-cont-inner div p {
+    margin-right: 10%;
+  }
+  .services .service-cont .service-cont-inner:last-of-type {
+    margin-top: 0px;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .services {
+    height: 85vh;
+  }
+  .services .line1 {
+    padding-top: 20px;
+  }
+  .services .service-cont {
+    width: 100%;
+    height: calc(100% - 278px);
+    margin-left: 0;
+  }
+  .services .service-cont .service-cont-inner div p {
+    left: 30%;
+    margin-left: 10%;
+    font-size: 0.7rem;
+  }
+  .services .service-cont .service-cont-inner div p:last-of-type {
+    line-height: 1rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 0.7rem;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) and (max-height: 750px) {
+  .services {
+    height: 100vh;
+  }
+  .services .service-cont {
+    height: 100%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .services {
+    height: 70vh;
+  }
+  .services .line1 {
+    padding-top: 90px;
+  }
+  .services .service-cont {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) and (max-height: 810px) {
+  .services {
+    height: 80vh;
+  }
+  .services .service-cont .service-cont-inner div p {
+    font-size: 0.75rem;
+  }
+  .services .service-cont .service-cont-inner div p:last-of-type {
+    font-size: 0.75rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) and (max-height: 625px) {
+  .services {
+    height: 100vh;
+  }
+  .services .service-cont .service-cont-inner div p {
+    font-size: 0.6rem;
+  }
+  .services .service-cont .service-cont-inner div p:last-of-type {
+    font-size: 0.6rem;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .services {
+    height: 80vh;
+  }
+  .services .service-cont .service-cont-inner div p {
+    font-size: 1rem;
+  }
+  .services .service-cont .service-cont-inner div p:last-of-type {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px) and (max-height: 720px) {
+  .services {
+    height: 90vh;
+  }
+  .services .service-cont .service-cont-inner div p {
+    font-size: 0.8rem;
+  }
+  .services .service-cont .service-cont-inner div p:last-of-type {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px) and (max-height: 570px) {
+  .services {
+    height: 100vh;
+  }
+  .services .service-cont .service-cont-inner div p {
+    font-size: 0.6rem;
+  }
+  .services .service-cont .service-cont-inner div p:last-of-type {
+    font-size: 0.6rem;
+  }
+}
+@media screen and (min-width: 1441px) and (max-width: 1919px) and (max-height: 820px) {
+  .services {
+    height: 70vh;
+  }
+  .services .service-cont .service-cont-inner div p {
+    font-size: 1rem;
+  }
+  .services .service-cont .service-cont-inner div p:last-of-type {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1441px) and (max-width: 1919px) and (max-height: 720px) {
+  .services {
+    height: 85vh;
+  }
+  .services .service-cont .service-cont-inner div p {
+    font-size: 0.8rem;
+  }
+  .services .service-cont .service-cont-inner div p:last-of-type {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 1441px) and (max-width: 1919px) and (max-height: 570px) {
+  .services {
+    height: 100vh;
+  }
+  .services .service-cont .service-cont-inner div p {
+    font-size: 0.6rem;
+  }
+  .services .service-cont .service-cont-inner div p:last-of-type {
+    font-size: 0.6rem;
+  }
+}
+@media screen and (min-width: 1920px) and (max-height: 760px) {
+  .services {
+    height: 80vh;
+  }
+  .services .service-cont .service-cont-inner div p {
+    font-size: 0.8rem;
+  }
+  .services .service-cont .service-cont-inner div p:last-of-type {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 1920px) and (max-height: 600px) {
+  .services {
+    height: 100vh;
+  }
+  .services .service-cont .service-cont-inner div p {
+    font-size: 0.6rem;
+  }
+  .services .service-cont .service-cont-inner div p:last-of-type {
+    font-size: 0.6rem;
+  }
+}
 .design {
+  font-size: 16px;
   height: 83.33vh;
   background-color: rgba(217, 217, 217, 0.5058823529);
   position: relative;
@@ -1192,24 +1408,25 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   position: absolute;
   z-index: -2;
   opacity: 0.3;
 }
 .design .phone-stabilizer {
   position: absolute;
-  width: 420px;
   height: 65%;
+  width: 44.4318164063vh;
   left: calc(50% - 210px);
   bottom: 0;
 }
-.design .BigPhone {
+.design .phone-stabilizer .BigPhone {
   width: 100%;
   height: auto;
   z-index: 0;
   opacity: 1;
 }
-.design .SmallPhone {
+.design .phone-stabilizer .SmallPhone {
   width: 57%;
   height: auto;
   z-index: 1;
@@ -1218,6 +1435,161 @@ body {
   left: 75%;
 }
 
+@media screen and (max-height: 510px) {
+  .design .phone-stabilizer {
+    display: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  .design .phone-stabilizer {
+    width: 70vw;
+    height: 85.3333333333vw;
+    left: 7.5vw;
+  }
+}
+@media screen and (max-width: 425px) and (max-height: 670px) {
+  .design .line1 {
+    padding-top: 30px;
+    font-size: 1rem;
+  }
+  .design .line2 {
+    font-size: 1.5rem;
+  }
+  .design .phone-stabilizer {
+    width: 60vw;
+    height: 73.1428571429vw;
+    left: 15vw;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .design .phone-stabilizer {
+    width: 50vw;
+    height: 60.9523809524vw;
+    left: 15vw;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) and (max-height: 830px) {
+  .design .line1 {
+    padding-top: 30px;
+    font-size: 1rem;
+  }
+  .design .line2 {
+    font-size: 1.5rem;
+  }
+  .design .phone-stabilizer {
+    width: 50vw;
+    height: 60.9523809524vw;
+    left: 16vw;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) and (max-height: 740px) {
+  .design .phone-stabilizer {
+    width: 40vw;
+    height: 48.7619047619vw;
+    left: 27vw;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) and (max-height: 620px) {
+  .design .phone-stabilizer {
+    width: 30vw;
+    height: 36.5714285714vw;
+    left: 30vw;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .design .phone-stabilizer {
+    width: 35vw;
+    height: 42.6666666667vw;
+    left: 30vw;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) and (max-height: 800px) {
+  .design .phone-stabilizer {
+    width: 20vw;
+    height: 24.380952381vw;
+    left: 40vw;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) and (max-height: 580px) {
+  .design .phone-stabilizer {
+    width: 15vw;
+    height: 18.2857142857vw;
+    left: 42vw;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .design .phone-stabilizer {
+    width: 25vw;
+    height: 30.4761904762vw;
+    left: 37vw;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px) and (max-height: 810px) {
+  .design .phone-stabilizer {
+    width: 20vw;
+    height: 24.380952381vw;
+    left: 40vw;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px) and (max-height: 700px) {
+  .design .phone-stabilizer {
+    width: 16vw;
+    height: 19.5047619048vw;
+    left: 42vw;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px) and (max-height: 610px) {
+  .design .phone-stabilizer {
+    width: 11vw;
+    height: 13.4095238095vw;
+    left: 44vw;
+  }
+}
+@media screen and (min-width: 1441px) and (max-width: 1919px) and (max-height: 790px) {
+  .design .phone-stabilizer {
+    width: 15vw;
+    height: 18.2857142857vw;
+    left: 42.5vw;
+  }
+}
+@media screen and (min-width: 1441px) and (max-width: 1919px) and (max-height: 700px) {
+  .design .phone-stabilizer {
+    width: 10vw;
+    height: 12.1904761905vw;
+    left: 45vw;
+  }
+}
+@media screen and (min-width: 1441px) and (max-width: 1919px) and (max-height: 560px) {
+  .design .phone-stabilizer {
+    width: 8vw;
+    height: 9.7523809524vw;
+    left: 46vw;
+  }
+}
+@media screen and (min-width: 1920px) and (max-height: 800px) {
+  .design .phone-stabilizer {
+    width: 15vw;
+    height: 18.2857142857vw;
+    left: 42vw;
+  }
+}
+@media screen and (min-width: 1920px) and (max-height: 700px) {
+  .design .phone-stabilizer {
+    width: 10vw;
+    height: 12.1904761905vw;
+    left: 45vw;
+  }
+}
+@media screen and (min-width: 1920px) and (max-height: 560px) {
+  .design .phone-stabilizer {
+    width: 8vw;
+    height: 9.7523809524vw;
+    left: 46vw;
+  }
+}
+.wedo {
+  font-size: 16px;
+}
 .wedo .wedo_content {
   text-align: center;
   width: 62.5%;
@@ -1229,8 +1601,8 @@ body {
 }
 .wedo .wedo_content p {
   margin: 0 6.5vw;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   color: #999999;
   font-weight: 400;
   font-family: "Roboto";
@@ -1239,14 +1611,14 @@ body {
   margin: 0;
   margin-top: 50px;
   width: 100%;
-  height: calc(100% - 278px - 50px);
+  height: 50%;
   text-align: none;
   position: relative;
 }
 .wedo .wedo_content .wedo_content2 div {
   position: absolute;
   width: 50%;
-  height: 312px;
+  height: 380px;
   left: 0;
   text-align: center;
   overflow: hidden;
@@ -1267,9 +1639,10 @@ body {
   position: relative;
   display: block;
   width: 99%;
-  height: 16%;
+  height: 48px;
   border: 1px solid #999999;
   left: 0;
+  margin-bottom: 10px;
   cursor: pointer;
 }
 .wedo .wedo_content .wedo_content2 div:last-of-type .drop img {
@@ -1283,14 +1656,14 @@ body {
 }
 .wedo .wedo_content .wedo_content2 div:last-of-type .drop p {
   position: absolute;
-  left: clamp(35px + 5.32%, 10%, 10%);
+  left: 60px;
   top: 15px;
   margin: 0;
   text-align: left;
   display: inline-block;
   font-family: "Montserat";
   font-weight: normal;
-  font-size: 14px;
+  font-size: 1rem;
   color: #333;
 }
 .wedo .wedo_content .wedo_content2 div:last-of-type .drop i {
@@ -1298,20 +1671,24 @@ body {
   right: 3.66%;
   top: 15px;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 1rem;
   color: #333;
 }
 .wedo .wedo_content .wedo_content2 div:last-of-type .drop textarea {
   position: absolute;
   left: 2.66%;
-  top: 50px;
+  top: 60px;
+  margin-bottom: 10px;
   font-weight: normal;
-  font-size: 14px;
-  color: #333;
-  min-height: calc(100% - 63px);
-  max-height: calc(100% - 63px);
+  font-size: 1rem;
+  font-style: italic;
+  font-family: "Roboto";
+  color: #999;
+  min-height: calc(100% - 77px);
+  max-height: calc(100% - 77px);
   min-width: 92.5%;
   max-width: 92.5%;
+  line-height: 1.5rem;
   resize: none;
   border: none;
   outline: none;
@@ -1326,9 +1703,21 @@ body {
 .wedo .wedo_content .wedo_content2 div:last-of-type .drop textarea::-webkit-scrollbar-thumb:hover {
   background-color: #f38181;
 }
+.wedo .wedo_content .wedo_content2 div:last-of-type .drop:last-of-type {
+  margin-bottom: 0;
+}
+.wedo .wedo_content .wedo_content2 div:last-of-type .drop:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #999999;
+  left: 0;
+  top: 49px;
+}
 .wedo .wedo_content .wedo_content2 div:last-of-type .dropped-list {
   width: 99%;
-  height: 66%;
+  height: 258px;
 }
 .wedo .wedo_footer {
   width: 100%;
@@ -1348,7 +1737,7 @@ body {
   left: 1.75%;
   top: calc(50% - 10.5px);
   cursor: pointer;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 .wedo .wedo_footer div i:last-of-type {
   left: calc(98.25% - 12px);
@@ -1387,9 +1776,10 @@ body {
 .wedo .wedo_footer div div:last-of-type p {
   margin: 0;
   font-family: "Roboto";
-  font-size: 16px;
+  font-weight: 300;
+  font-size: 1rem;
   font-style: italic;
-  line-height: 30px;
+  line-height: 2.25rem;
   color: #999999;
   font-weight: 300;
   width: 80%;
@@ -1400,11 +1790,133 @@ body {
   margin-left: 5px;
   padding-top: 10px;
   font-family: "Kaushan-Script";
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   color: #444;
 }
 
+@media screen and (max-width: 768px) {
+  .wedo .wedo_content {
+    position: relative;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 10px;
+    height: auto;
+  }
+  .wedo .wedo_content .wedo_content2 div {
+    width: 100%;
+    position: relative;
+  }
+  .wedo .wedo_content .wedo_content2 div:first-of-type {
+    width: 100%;
+  }
+  .wedo .wedo_content .wedo_content2 div:last-of-type {
+    top: 10px;
+    left: 0;
+    height: 400px;
+  }
+  .wedo .wedo_footer {
+    margin-top: 50px;
+  }
+  .wedo .wedo_footer div {
+    width: 100%;
+    margin-left: 0;
+  }
+  .wedo .wedo_footer div div {
+    top: 20%;
+  }
+  .wedo .wedo_footer div div:last-of-type {
+    left: 30vw;
+    width: 60vw;
+  }
+}
+@media screen and (max-width: 425px) {
+  .wedo .wedo_content .line1 {
+    padding-top: 30px;
+  }
+  .wedo .wedo_footer {
+    height: 120px;
+  }
+  .wedo .wedo_footer div {
+    width: 100%;
+  }
+  .wedo .wedo_footer div div {
+    margin-left: 0;
+    height: 51.72%;
+    top: 24.14%;
+  }
+  .wedo .wedo_footer div div:first-of-type {
+    width: 62.064px;
+  }
+  .wedo .wedo_footer div div:last-of-type p {
+    font-size: 0.625rem;
+    line-height: 0.8rem;
+    width: 95%;
+  }
+  .wedo .wedo_footer div div:last-of-type p:last-of-type {
+    position: absolute;
+    left: 60px;
+    top: 60px;
+  }
+  .wedo .wedo_footer div div:last-of-type .spacer2 {
+    width: 40px;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .wedo .wedo_content .line1 {
+    padding-top: 30px;
+  }
+  .wedo .wedo_footer {
+    height: 170px;
+  }
+  .wedo .wedo_footer div {
+    width: 100%;
+  }
+  .wedo .wedo_footer div div {
+    margin-left: 0;
+    height: 51.72%;
+    top: 24.14%;
+  }
+  .wedo .wedo_footer div div:first-of-type {
+    width: 87.924px;
+  }
+  .wedo .wedo_footer div div:last-of-type p {
+    font-size: 0.625rem;
+    line-height: 0.8rem;
+    width: 95%;
+  }
+  .wedo .wedo_footer div div:last-of-type p:last-of-type {
+    position: absolute;
+    left: 60px;
+    top: 60px;
+  }
+  .wedo .wedo_footer div div:last-of-type .spacer2 {
+    width: 40px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .wedo .wedo_content {
+    height: auto;
+  }
+  .wedo .wedo_content .wedo_content2 {
+    display: block;
+  }
+  .wedo .wedo_footer {
+    display: block;
+    margin-top: 450px;
+    height: 250px;
+  }
+  .wedo .wedo_footer div div:first-of-type {
+    width: 129.3px;
+  }
+  .wedo .wedo_footer div div:last-of-type {
+    left: 25vw;
+  }
+  .wedo .wedo_footer div div:last-of-type p {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+  }
+}
 .ourteam {
   height: 127.45vh;
 }
@@ -1494,28 +2006,41 @@ body {
 .ourteam div:first-of-type .photos .person:nth-of-type(3) {
   left: 69.6666666667%;
 }
+.ourteam div:first-of-type .photos .person:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 59.2%;
+  height: calc((100% - 100px) * 0.117);
+  background-color: blue;
+  z-index: 1;
+  left: 20.4%;
+  top: calc(50% - 50px - (100% - 100px) * 0.117 / 2);
+  font-size: 0;
+}
 .ourteam .some_logos {
   width: 100%;
   height: 24.5vh;
   background-color: #f8f8f8;
 }
-.ourteam .some_logos div {
+.ourteam .some_logos .logos_cont {
   margin-left: 18.75%;
   width: 62.5%;
   height: 100%;
   font-size: 0;
+  overflow: hidden;
 }
-.ourteam .some_logos div .some_logo {
+.ourteam .some_logos .logos_cont .some_logo {
   display: inline-block;
   margin: 0;
-  width: 10.4166666667%;
+  width: 16.6666666667%;
   height: 100%;
 }
-.ourteam .some_logos div .some_logo img {
+.ourteam .some_logos .logos_cont .some_logo img {
   width: 80%;
   height: auto;
   margin-left: 10%;
-  margin-top: calc(50% - 82px);
+  margin-top: 10%;
 }
 
 .someofwork {

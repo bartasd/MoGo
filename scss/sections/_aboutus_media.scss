@@ -498,6 +498,11 @@
       height: 85%;
       .photo-holder {
         height: 20vh;
+        div {
+          span {
+            padding-top: 6vh;
+          }
+        }
       }
     }
     .container2 {
@@ -554,6 +559,11 @@
       }
       .photo-holder {
         height: 18vh;
+        div {
+          span {
+            padding-top: 5vh;
+          }
+        }
       }
     }
     .container2 {

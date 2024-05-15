@@ -78,13 +78,25 @@
           background: $CUSTUM_GRADIENT, url(../../assets/person3.png);
         }
       }
-      .person:first-of-type {
-      }
       .person:nth-of-type(2) {
         left: calc(100% / 3 + 1.5%);
       }
       .person:nth-of-type(3) {
         left: calc(2 * 100% / 3 + 2 * 1.5%);
+      }
+
+      // PAKEISTI Į NORMALŲ DIV KURIS POSICIIONUTOŲ...
+      .person:hover::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 59.2%;
+        height: calc((100% - 100px) * 0.117);
+        background-color: blue;
+        z-index: 1;
+        left: 20.4%;
+        top: calc(50% - 50px - (100% - 100px) * 0.117 / 2);
+        font-size: 0;
       }
     }
   }
@@ -92,21 +104,22 @@
     width: 100%;
     height: 24.5vh;
     background-color: $GREY_BACK;
-    div {
+    .logos_cont {
       margin-left: $ML;
       width: $CW;
       height: 100%;
       font-size: 0;
+      overflow: hidden;
       .some_logo {
         display: inline-block;
         margin: 0;
-        width: calc($CW/6);
+        width: calc(100% / 6);
         height: 100%;
         img {
           width: 80%;
           height: auto;
           margin-left: 10%;
-          margin-top: calc(50% - 82px);
+          margin-top: 10%;
         }
       }
     }

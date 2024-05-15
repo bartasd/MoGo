@@ -1,0 +1,207 @@
+@media screen and (max-height: 510px) {
+  .design {
+    .phone-stabilizer {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .design {
+    .phone-stabilizer {
+      width: 70vw;
+      height: calc(70vw * 512 / 420);
+      left: 7.5vw;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) and (max-height: 670px) {
+  .design {
+    .line1 {
+      padding-top: 30px;
+      font-size: 1rem;
+    }
+    .line2 {
+      font-size: 1.5rem;
+    }
+    .phone-stabilizer {
+      width: 60vw;
+      height: calc(60vw * 512 / 420);
+      left: 15vw;
+    }
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .design {
+    .phone-stabilizer {
+      width: 50vw;
+      height: calc(50vw * 512 / 420);
+      left: 15vw;
+    }
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) and (max-height: 830px) {
+  .design {
+    .line1 {
+      padding-top: 30px;
+      font-size: 1rem;
+    }
+    .line2 {
+      font-size: 1.5rem;
+    }
+    .phone-stabilizer {
+      width: 50vw;
+      height: calc(50vw * 512 / 420);
+      left: 16vw;
+    }
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) and (max-height: 740px) {
+  .design {
+    .phone-stabilizer {
+      width: 40vw;
+      height: calc(40vw * 512 / 420);
+      left: 27vw;
+    }
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) and (max-height: 620px) {
+  .design {
+    .phone-stabilizer {
+      width: 30vw;
+      height: calc(30vw * 512 / 420);
+      left: 30vw;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .design {
+    .phone-stabilizer {
+      width: 35vw;
+      height: calc(35vw * 512 / 420);
+      left: 30vw;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) and (max-height: 800px) {
+  .design {
+    .phone-stabilizer {
+      width: 20vw;
+      height: calc(20vw * 512 / 420);
+      left: 40vw;
+    }
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) and (max-height: 580px) {
+  .design {
+    .phone-stabilizer {
+      width: 15vw;
+      height: calc(15vw * 512 / 420);
+      left: 42vw;
+    }
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .design {
+    .phone-stabilizer {
+      width: 25vw;
+      height: calc(25vw * 512 / 420);
+      left: 37vw;
+    }
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) and (max-height: 810px) {
+  .design {
+    .phone-stabilizer {
+      width: 20vw;
+      height: calc(20vw * 512 / 420);
+      left: 40vw;
+    }
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) and (max-height: 700px) {
+  .design {
+    .phone-stabilizer {
+      width: 16vw;
+      height: calc(16vw * 512 / 420);
+      left: 42vw;
+    }
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px) and (max-height: 610px) {
+  .design {
+    .phone-stabilizer {
+      width: 11vw;
+      height: calc(11vw * 512 / 420);
+      left: 44vw;
+    }
+  }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1919px) and (max-height: 790px) {
+  .design {
+    .phone-stabilizer {
+      width: 15vw;
+      height: calc(15vw * 512 / 420);
+      left: 42.5vw;
+    }
+  }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1919px) and (max-height: 700px) {
+  .design {
+    .phone-stabilizer {
+      width: 10vw;
+      height: calc(10vw * 512 / 420);
+      left: 45vw;
+    }
+  }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1919px) and (max-height: 560px) {
+  .design {
+    .phone-stabilizer {
+      width: 8vw;
+      height: calc(8vw * 512 / 420);
+      left: 46vw;
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) and (max-height: 800px) {
+  .design {
+    .phone-stabilizer {
+      width: 15vw;
+      height: calc(15vw * 512 / 420);
+      left: 42vw;
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) and (max-height: 700px) {
+  .design {
+    .phone-stabilizer {
+      width: 10vw;
+      height: calc(10vw * 512 / 420);
+      left: 45vw;
+    }
+  }
+}
+@media screen and (min-width: 1920px) and (max-height: 560px) {
+  .design {
+    .phone-stabilizer {
+      width: 8vw;
+      height: calc(8vw * 512 / 420);
+      left: 46vw;
+    }
+  }
+}
