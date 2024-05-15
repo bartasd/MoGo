@@ -19,7 +19,7 @@ const debugginSection = 1;
 const start = debugginSection;
 const stop = start + 1;
 
-for (let i = start; i < stop; i++) {
+for (let i = 0; i < 10; i++) {
   sections.push(temp[i]);
 }
 // DELETE AFTER -----------------
@@ -30,7 +30,8 @@ const files = ["navDropDown", "whatwedo", "slider1", "slider2"];
 function include(files) {
   files.forEach((file) => {
     const script = document.createElement("script");
-    script.src = `./js/_${file}.js`;
+    script.src = `https://github.com/bartasd/MoGo/js/_${file}.js`;
+    //script.src = `./js/_${file}.js`;
     script.type = "text/javascript";
     script.defer = true;
     document.getElementsByTagName("head").item(0).appendChild(script);
@@ -40,7 +41,8 @@ function include(files) {
 async function getHTMLcontent(contents) {
   try {
     const htmlPromises = contents.map((content) => {
-      const file = `http://127.0.0.1:8080/html/_${content}.html`;
+      const file = `https://github.com/bartasd/MoGo/html/_${content}.html`;
+      //const file = `http://127.0.0.1:8080/html/_${content}.html`;
       return fetch(file)
         .then((response) => {
           if (!response.ok) {
