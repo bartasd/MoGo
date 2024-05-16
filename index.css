@@ -1918,19 +1918,21 @@ body {
   }
 }
 .ourteam {
-  height: 127.45vh;
+  display: block;
+  height: auto;
+  font-size: 16px;
 }
 .ourteam div:first-of-type {
   width: 62.5%;
   margin-left: 18.75%;
-  height: 102.95vh;
+  height: auto;
 }
 .ourteam div:first-of-type p:last-of-type {
   text-align: center;
   margin-left: 6.25%;
   margin-right: 6.25%;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   color: #999999;
   font-weight: 400;
   font-family: "Roboto";
@@ -1944,10 +1946,11 @@ body {
   border-color: #f38181;
 }
 .ourteam div:first-of-type .photos {
+  display: block;
   width: 100%;
-  height: calc(45.88vh + 100px);
+  height: 540px;
   position: relative;
-  margin-top: 9.8vh;
+  margin-top: 120px;
 }
 .ourteam div:first-of-type .photos .person {
   width: 30.3333333333%;
@@ -1958,13 +1961,13 @@ body {
 }
 .ourteam div:first-of-type .photos .person p {
   font-family: "Montserrat";
-  font-size: 14px;
+  font-size: 1rem;
   color: #333333;
   font-weight: 400;
 }
 .ourteam div:first-of-type .photos .person p:last-of-type {
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   color: #999999;
   font-weight: 300;
   font-style: italic;
@@ -1978,9 +1981,46 @@ body {
   height: calc(100% - 100px);
   background-size: cover;
 }
+.ourteam div:first-of-type .photos .person .picture .soc-sites {
+  display: block;
+  position: static;
+  width: 59.2%;
+  height: 11.7%;
+  z-index: 2;
+  margin-left: 20.4%;
+  padding-top: 53.8974025974%;
+  font-size: 0;
+  display: none;
+}
+.ourteam div:first-of-type .photos .person .picture .soc-sites div {
+  display: inline-block;
+  height: calc(100% - 2px);
+  width: calc(25% - 1px);
+  margin: 0;
+  padding: 0;
+  background-color: #fce38a;
+  border: 1px solid #f38181;
+  border-right: none;
+  cursor: pointer;
+}
+.ourteam div:first-of-type .photos .person .picture .soc-sites div img {
+  width: 80%;
+  height: 80%;
+  padding: 10%;
+}
+.ourteam div:first-of-type .photos .person .picture .soc-sites div:last-of-type {
+  border-right: 1px solid #f38181;
+  width: calc(25% - 2px);
+}
+.ourteam div:first-of-type .photos .person .picture .soc-sites div:hover {
+  background-color: #f38181;
+}
 .ourteam div:first-of-type .photos .person .picture:hover {
   transform: translate(-0.5%, -0.5%);
   box-shadow: 0.5vw 0.5vw 0 0 #95e1d3;
+}
+.ourteam div:first-of-type .photos .person .picture:hover > .soc-sites {
+  display: block;
 }
 .ourteam div:first-of-type .photos .person .pic1 {
   background: url(../../assets/person1.png);
@@ -1991,36 +2031,32 @@ body {
 .ourteam div:first-of-type .photos .person .pic3 {
   background: url(../../assets/person3.png);
 }
-.ourteam div:first-of-type .photos .person .pic1:hover {
-  background: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8)), url(../../assets/person1.png);
-}
-.ourteam div:first-of-type .photos .person .pic2:hover {
-  background: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8)), url(../../assets/person2.png);
-}
-.ourteam div:first-of-type .photos .person .pic3:hover {
-  background: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8)), url(../../assets/person3.png);
-}
 .ourteam div:first-of-type .photos .person:nth-of-type(2) {
   left: 34.8333333333%;
 }
 .ourteam div:first-of-type .photos .person:nth-of-type(3) {
   left: 69.6666666667%;
 }
-.ourteam div:first-of-type .photos .person:hover::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 59.2%;
-  height: calc((100% - 100px) * 0.117);
-  background-color: blue;
-  z-index: 1;
-  left: 20.4%;
-  top: calc(50% - 50px - (100% - 100px) * 0.117 / 2);
-  font-size: 0;
+.ourteam div:first-of-type .photos .person:has(.soc-sites:hover) > .picture {
+  transform: translate(-0.5%, -0.5%);
+  box-shadow: 0.5vw 0.5vw 0 0 #95e1d3;
+}
+.ourteam div:first-of-type .photos .person:has(.soc-sites:hover) > .pic1,
+.ourteam div:first-of-type .photos .person > .pic1:hover {
+  background: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8)), url(../../assets/person1.png);
+}
+.ourteam div:first-of-type .photos .person:has(.soc-sites:hover) > .pic2,
+.ourteam div:first-of-type .photos .person > .pic2:hover {
+  background: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8)), url(../../assets/person2.png);
+}
+.ourteam div:first-of-type .photos .person:has(.soc-sites:hover) > .pic3,
+.ourteam div:first-of-type .photos .person > .pic3:hover {
+  background: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8)), url(../../assets/person3.png);
 }
 .ourteam .some_logos {
+  display: block;
   width: 100%;
-  height: 24.5vh;
+  height: 231px;
   background-color: #f8f8f8;
 }
 .ourteam .some_logos .logos_cont {
@@ -2033,6 +2069,7 @@ body {
 .ourteam .some_logos .logos_cont .some_logo {
   display: inline-block;
   margin: 0;
+  margin-top: 50px;
   width: 16.6666666667%;
   height: 100%;
 }
@@ -2043,13 +2080,79 @@ body {
   margin-top: 10%;
 }
 
+@media screen and (max-width: 768px) {
+  .ourteam div:first-of-type {
+    height: auto;
+  }
+  .ourteam div:first-of-type .photos {
+    display: block;
+    font-size: 0;
+    height: 1683px;
+  }
+  .ourteam div:first-of-type .photos .person {
+    position: static;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+  }
+  .ourteam div:first-of-type .photos .person .picture {
+    margin-left: calc(50% - 192.5px);
+    height: 470px;
+    width: 385px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+  .ourteam .some_logos {
+    position: static;
+    display: block;
+  }
+}
+@media screen and (max-width: 425px) {
+  .ourteam .some_logos {
+    height: 200px;
+  }
+  .ourteam .some_logos .logos_cont {
+    width: 100%;
+    margin-left: 0;
+  }
+  .ourteam .some_logos .logos_cont .some_logo {
+    margin-top: 65px;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .ourteam .some_logos {
+    height: 200px;
+  }
+  .ourteam .some_logos .logos_cont {
+    width: 100%;
+    margin-left: 0;
+  }
+  .ourteam .some_logos .logos_cont .some_logo {
+    margin-top: 45px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .ourteam .some_logos {
+    height: 230px;
+  }
+  .ourteam .some_logos .logos_cont {
+    width: 100%;
+    margin-left: 0;
+  }
+  .ourteam .some_logos .logos_cont .some_logo {
+    margin-top: 45px;
+  }
+}
 .someofwork {
-  height: 160vh;
+  height: auto;
+  position: static;
+  font-size: 16px;
 }
 .someofwork .intro {
   width: 62.5%;
   margin-left: 18.75%;
-  height: 40vh;
+  height: 408px;
 }
 .someofwork .intro .spacer {
   border-color: #f38181;
@@ -2066,7 +2169,7 @@ body {
 }
 .someofwork .gallery {
   width: 100%;
-  height: 77vh;
+  height: 785.4px;
   font-size: 0;
 }
 .someofwork .gallery .vert_gal {
@@ -2130,7 +2233,7 @@ body {
 }
 .someofwork .sldr {
   width: 100%;
-  height: 43vh;
+  height: 440px;
   background-color: #f8f8f8;
 }
 .someofwork .sldr div {
@@ -2159,11 +2262,11 @@ body {
   position: absolute;
   left: 0;
   left: 5.7%;
-  width: 22.2396vh;
-  height: 22.2396vh;
+  width: 227.568px;
+  height: 227.568px;
   margin-right: 2.6%;
   overflow: hidden;
-  border-radius: 11.1198vh;
+  border-radius: 113.784px;
 }
 .someofwork .sldr div div:first-of-type img {
   width: 100%;
@@ -2171,7 +2274,7 @@ body {
 }
 .someofwork .sldr div div:last-of-type {
   position: absolute;
-  left: calc(22.2396vh + 11.4%);
+  left: calc(227.568px + 11.4%);
   top: 32%;
   width: 35%;
 }
@@ -2185,7 +2288,7 @@ body {
 .someofwork .sldr div div:last-of-type p {
   margin: 0;
   font-family: "Roboto";
-  font-size: 16px;
+  font-size: 1rem;
   font-style: italic;
   line-height: 30px;
   color: #999999;
@@ -2198,13 +2301,101 @@ body {
   margin-left: 5px;
   padding-top: 10px;
   font-family: "Kaushan-Script";
-  font-size: 16px;
   font-weight: 400;
   color: #444;
 }
 
+@media screen and (max-width: 768px) {
+  .someofwork .gallery {
+    height: 1600px;
+  }
+  .someofwork .gallery .vert_gal {
+    height: 400px;
+    width: 100%;
+  }
+  .someofwork .gallery .vert_gal div {
+    height: 50%;
+    object-fit: cover;
+  }
+  .someofwork .sldr {
+    height: 220px;
+  }
+  .someofwork .sldr div {
+    width: 100%;
+    margin-left: 0;
+  }
+  .someofwork .sldr div div:first-of-type {
+    width: 55px;
+    height: 55px;
+    left: 10%;
+    top: 10%;
+  }
+  .someofwork .sldr div div:last-of-type {
+    left: 0;
+    top: 10%;
+    width: 100%;
+  }
+  .someofwork .sldr div div:last-of-type .spacer2 {
+    position: absolute;
+    left: 130px;
+    top: 40px;
+  }
+  .someofwork .sldr div div:last-of-type p {
+    position: absolute;
+    left: 130px;
+    top: -5px;
+    font-size: 0.75rem;
+    width: 30%;
+  }
+  .someofwork .sldr div div:last-of-type p:first-of-type {
+    position: absolute;
+    left: 30px;
+    top: 65px;
+    width: calc(100% - 60px);
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .someofwork .sldr {
+    height: 330px;
+  }
+  .someofwork .sldr div {
+    width: 100%;
+    margin-left: 0;
+  }
+  .someofwork .sldr div div:first-of-type {
+    width: 165px;
+    height: 165px;
+    left: 5%;
+    top: 25%;
+  }
+  .someofwork .sldr div div:last-of-type {
+    left: 250px;
+    top: 25%;
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .someofwork .sldr {
+    height: 330px;
+  }
+  .someofwork .sldr div {
+    width: 70%;
+    margin-left: 15%;
+  }
+  .someofwork .sldr div div:first-of-type {
+    width: 165px;
+    height: 165px;
+    left: 7%;
+    top: 25%;
+  }
+  .someofwork .sldr div div:last-of-type {
+    left: 250px;
+    top: 25%;
+    width: 70%;
+  }
+}
 .peopleSay {
-  height: 81.37vh;
+  height: 830px;
   position: relative;
   overflow: hidden;
 }
@@ -2218,7 +2409,7 @@ body {
   left: 18.75%;
   top: 278px;
   width: 62.5%;
-  height: calc(100% - 278px);
+  height: 552px;
   font-size: 0;
 }
 .peopleSay .peopleToSay .sayingPeople {
@@ -2230,9 +2421,9 @@ body {
 .peopleSay .peopleToSay .sayingPeople div:first-of-type {
   position: absolute;
   left: 6.4%;
-  width: 6vw;
-  height: 6vw;
-  border-radius: 3vw;
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
   overflow: hidden;
 }
 .peopleSay .peopleToSay .sayingPeople div:first-of-type img {
@@ -2244,7 +2435,7 @@ body {
 .peopleSay .peopleToSay .sayingPeople div:last-of-type {
   opacity: 1;
   position: absolute;
-  left: 10vw;
+  left: 35%;
   width: 20vw;
   height: 9vw;
   overflow: hidden;
@@ -2273,22 +2464,94 @@ body {
   font-family: "Montserrat";
 }
 .peopleSay .peopleToSay .sayingPeople div:last-of-type p:nth-of-type(2) {
-  font-size: 15px;
+  font-size: 1rem;
   line-height: 24px;
   font-weight: 300;
   font-style: italic;
   font-family: "Roboto";
 }
 .peopleSay .peopleToSay .sayingPeople div:last-of-type p:last-of-type {
-  font-size: 15px;
+  font-size: 1rem;
   line-height: 24px;
   color: #999999;
   font-family: "Roboto";
   margin-top: 30px;
 }
 
+@media screen and (max-width: 768px) {
+  .peopleSay {
+    height: 1430px;
+  }
+  .peopleSay img {
+    height: 100%;
+  }
+  .peopleSay .peopleToSay {
+    left: 0;
+    width: 100%;
+  }
+  .peopleSay .peopleToSay .sayingPeople {
+    width: 100%;
+    height: 288px;
+  }
+  .peopleSay .peopleToSay .sayingPeople div:first-of-type {
+    left: 9px;
+    top: 9px;
+  }
+  .peopleSay .peopleToSay .sayingPeople div:last-of-type {
+    left: 140px;
+    top: 9px;
+    width: calc(100% - 140px - 9px);
+    height: 270px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .peopleSay .peopleToSay {
+    left: 10vw;
+    width: 80vw;
+  }
+  .peopleSay .peopleToSay .sayingPeople {
+    width: 40vw;
+  }
+  .peopleSay .peopleToSay .sayingPeople div:last-of-type {
+    left: 3vw;
+    width: 34vw;
+    height: 100%;
+  }
+  .peopleSay .peopleToSay .sayingPeople div:last-of-type div {
+    background-color: #f38181;
+    height: 2px;
+    width: 120px;
+    left: 150px;
+    top: 100px;
+  }
+  .peopleSay .peopleToSay .sayingPeople div:last-of-type p {
+    position: absolute;
+    left: 150px;
+    top: 20px;
+  }
+  .peopleSay .peopleToSay .sayingPeople div:last-of-type p:nth-of-type(2) {
+    top: 60px;
+  }
+  .peopleSay .peopleToSay .sayingPeople div:last-of-type p:last-of-type {
+    left: 0;
+    top: 100px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .peopleSay .peopleToSay {
+    left: 10vw;
+    width: 80vw;
+  }
+  .peopleSay .peopleToSay .sayingPeople div:first-of-type {
+    left: 25px;
+  }
+  .peopleSay .peopleToSay .sayingPeople div:last-of-type {
+    left: 170px;
+    height: 250px;
+  }
+}
 .latestBlog {
-  height: 95vh;
+  height: 970px;
   font-size: 0;
 }
 .latestBlog .blog {
@@ -2320,7 +2583,7 @@ body {
   object-fit: cover;
   object-position: center;
 }
-.latestBlog .blog .stories .story .date {
+.latestBlog .blog .stories .story .img_cont .date {
   position: absolute;
   top: 33.33%;
   left: -2.6%;
@@ -2328,7 +2591,7 @@ body {
   height: 14%;
   background-color: #95e1d3;
 }
-.latestBlog .blog .stories .story .date p {
+.latestBlog .blog .stories .story .img_cont .date p {
   margin: 0;
   font-size: 30px;
   color: white;
@@ -2336,7 +2599,7 @@ body {
   font-family: "Montserrat";
   text-align: center;
 }
-.latestBlog .blog .stories .story .date p:last-of-type {
+.latestBlog .blog .stories .story .img_cont .date p:last-of-type {
   font-weight: lighter;
   font-size: 12px;
   font-style: italic;
@@ -2358,6 +2621,7 @@ body {
   padding-bottom: 5%;
 }
 .latestBlog .blog .stories .story span {
+  display: block;
   text-transform: none;
   padding: 0;
   padding-top: 5%;
@@ -2406,6 +2670,66 @@ body {
   border-color: #f38181;
 }
 
+@media screen and (max-width: 768px) {
+  .latestBlog {
+    height: auto;
+  }
+  .latestBlog .blog {
+    width: 100vw;
+    margin-left: 0;
+    height: 1620px;
+  }
+  .latestBlog .blog .stories .story {
+    width: 100%;
+    height: 450px;
+  }
+  .latestBlog .blog .stories .story .img_cont {
+    height: 230px;
+    width: 380px;
+    margin-left: calc(50vw - 180px);
+  }
+  .latestBlog .blog .stories .story .img_cont .date {
+    position: absolute;
+    top: 120px;
+    left: calc(50vw - 180px - 2.6vw);
+    width: 75px;
+    height: 75px;
+  }
+  .latestBlog .blog .stories .story .img_cont .date p {
+    padding-top: 5px;
+  }
+  .latestBlog .blog .stories .story .str_txt {
+    text-align: center;
+  }
+  .latestBlog .blog .stories .story span {
+    width: 300px;
+    margin-left: calc(50vw - 150px);
+    padding-top: 0;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1439px) {
+  .latestBlog {
+    height: auto;
+  }
+  .latestBlog .blog {
+    width: 95vw;
+    margin-left: 2.5vw;
+    height: 700px;
+  }
+  .latestBlog .blog .stories .story .img_cont {
+    max-width: 380px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .latestBlog {
+    height: auto;
+  }
+  .latestBlog .blog {
+    width: 62.5%;
+    margin-left: 18.75%;
+    height: 700px;
+  }
+}
 .footer {
   height: 54.9vh;
   background-color: #f8f8f8;
@@ -2460,7 +2784,6 @@ body {
   margin-top: 5%;
 }
 .footer .footer_cont .footer_cont_inner .mogo span img {
-  color: #95e1d3;
   display: inline-block;
   padding-right: 2.5%;
 }

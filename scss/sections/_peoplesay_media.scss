@@ -1,0 +1,81 @@
+// rearrange 425px
+@media screen and (max-width: 768px) {
+  .peopleSay {
+    height: 1430px;
+    img {
+      height: 100%;
+    }
+    .peopleToSay {
+      left: 0;
+      width: 100%;
+      .sayingPeople {
+        width: 100%;
+        height: calc((830px - 278px) / 4 + 150px);
+        div:first-of-type {
+          left: 9px;
+          top: 9px;
+        }
+        div:last-of-type {
+          left: 140px;
+          top: 9px;
+          width: calc(100% - 140px - 9px);
+          height: calc(138px - 2 * 9px + 150px);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .peopleSay {
+    .peopleToSay {
+      left: 10vw;
+      width: 80vw;
+      .sayingPeople {
+        width: 40vw;
+        div:last-of-type {
+          left: 3vw;
+          width: 34vw;
+          height: 100%;
+          div {
+            background-color: $HOVER_COLOR2;
+            height: 2px;
+            width: 120px;
+            left: 150px;
+            top: 100px;
+          }
+          p {
+            position: absolute;
+            left: 150px;
+            top: 20px;
+          }
+          p:nth-of-type(2) {
+            top: 60px;
+          }
+          p:last-of-type {
+            left: 0;
+            top: 100px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .peopleSay {
+    .peopleToSay {
+      left: 10vw;
+      width: 80vw;
+      .sayingPeople {
+        div:first-of-type {
+          left: 25px;
+        }
+        div:last-of-type {
+          left: 170px;
+          height: 250px;
+        }
+      }
+    }
+  }
+}

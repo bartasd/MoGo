@@ -1,9 +1,11 @@
 .someofwork {
-  height: 160vh;
+  height: auto;
+  position: static;
+  font-size: 16px;
   .intro {
     width: $CW;
     margin-left: $ML;
-    height: 40vh;
+    height: 408px;
     .spacer {
       border-color: $HOVER_COLOR2;
     }
@@ -20,7 +22,7 @@
   }
   .gallery {
     width: 100%;
-    height: 77vh;
+    height: 785.4px;
     font-size: 0;
 
     .vert_gal {
@@ -93,7 +95,7 @@
   }
   .sldr {
     width: 100%;
-    height: 43vh;
+    height: 440px;
     background-color: $GREY_BACK;
     div {
       width: 62.5%;
@@ -120,11 +122,11 @@
         position: absolute;
         left: 0;
         left: 5.7%;
-        width: calc(43vh * 0.5172);
-        height: calc(43vh * 0.5172);
+        width: calc(440px * 0.5172);
+        height: calc(440px * 0.5172);
         margin-right: 2.6%;
         overflow: hidden;
-        border-radius: calc(43vh * 0.5172 / 2);
+        border-radius: calc(440px * 0.5172 / 2);
         img {
           width: 100%;
           height: 100%;
@@ -132,7 +134,7 @@
       }
       div:last-of-type {
         position: absolute;
-        left: calc(43vh * 0.5172 + 11.4%);
+        left: calc(440px * 0.5172 + 11.4%);
         top: 32%;
         width: 35%;
         .spacer2 {
@@ -145,7 +147,7 @@
         p {
           margin: 0;
           font-family: "Roboto";
-          font-size: 16px;
+          font-size: 1rem;
           font-style: italic;
           line-height: 30px;
           color: #999999;
@@ -158,7 +160,6 @@
           margin-left: 5px;
           padding-top: 10px;
           font-family: "Kaushan-Script";
-          font-size: 16px;
           font-weight: 400;
           color: #444;
         }

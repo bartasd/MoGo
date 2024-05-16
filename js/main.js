@@ -15,7 +15,7 @@ const temp = [
 // ----- RESPONSIVE DEBUG -------
 // DELETE AFTER -----------------
 const sections = [];
-const debugginSection = 5;
+const debugginSection = 9;
 const start = debugginSection;
 const stop = start + 1;
 
@@ -25,7 +25,7 @@ for (let i = start; i < stop; i++) {
 // DELETE AFTER -----------------
 
 // JS FILES TO INCLUDE
-const files = ["navDropDown", "whatwedo", "slider1", "slider2"];
+const files = ["navDropDown", "whatwedo", "slider1", "slider2", "socialPicker"];
 
 function include(files) {
   files.forEach((file) => {

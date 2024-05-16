@@ -1,0 +1,76 @@
+// rearrange UI for tablets and smaller:
+@media screen and (max-width: 768px) {
+  .ourteam {
+    div:first-of-type {
+      height: auto;
+      .photos {
+        display: block;
+        font-size: 0;
+        height: 1683px;
+        .person {
+          position: static;
+          display: inline-block;
+          width: 100%;
+          height: auto;
+          .picture {
+            margin-left: calc(50% - 192.5px);
+            height: 470px;
+            width: 385px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+    .some_logos {
+      position: static;
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .ourteam {
+    .some_logos {
+      height: 200px;
+      .logos_cont {
+        width: 100%;
+        margin-left: 0;
+        .some_logo {
+          margin-top: 65px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .ourteam {
+    .some_logos {
+      height: 200px;
+      .logos_cont {
+        width: 100%;
+        margin-left: 0;
+        .some_logo {
+          margin-top: 45px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .ourteam {
+    .some_logos {
+      height: 230px;
+      .logos_cont {
+        width: 100%;
+        margin-left: 0;
+        .some_logo {
+          margin-top: 45px;
+        }
+      }
+    }
+  }
+}
