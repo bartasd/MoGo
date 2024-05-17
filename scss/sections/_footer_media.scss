@@ -1,0 +1,415 @@
+// 1st rearrange
+@media screen and (max-width: 768px) {
+  .footer {
+    height: 1070px;
+    .footer_cont {
+      width: 100%;
+      margin-left: 0;
+      .footer_cont_inner {
+        height: 1010px;
+        .mogo {
+          width: 100%;
+          height: 380px;
+          text-align: center;
+          h1,
+          p {
+            width: 100%;
+            margin-top: 5%;
+            span {
+              width: 100%;
+            }
+          }
+          p:nth-of-type(2) {
+            width: 100%;
+          }
+          span {
+            p {
+              margin-top: 0;
+            }
+          }
+          form {
+            margin-top: 0;
+            margin-left: calc(50% - 190px);
+          }
+        }
+        .blogs {
+          left: calc(50% - 150px + 5px);
+          top: 380px;
+          height: 300px;
+          width: 300px;
+          p:first-of-type {
+            top: -20px;
+          }
+          .blg {
+            div {
+              p {
+                margin: 0;
+                top: -5px;
+              }
+              p:last-of-type {
+                top: 50px;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+        .instagram {
+          position: relative;
+          display: inline-block;
+          left: calc(50% - 287px / 2);
+          top: 680px;
+          height: 330px;
+          width: 287px;
+          p:first-of-type {
+            top: -20px;
+          }
+          p:last-of-type {
+            top: 310px;
+          }
+          div {
+            .rw {
+              height: 95px;
+              div {
+                top: 0;
+                width: calc((100% - 2px) / 3);
+                height: 100%;
+                position: absolute;
+                overflow: hidden;
+                img {
+                  height: 100%;
+                }
+              }
+            }
+            .rw:nth-of-type(2) {
+              top: 96px;
+            }
+            .rw:last-of-type {
+              top: calc(96px * 2);
+            }
+          }
+        }
+      }
+      .credits {
+        height: 60px;
+        top: 1030px;
+      }
+    }
+  }
+}
+
+// 2nd rearrange
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .footer {
+    height: 810px;
+    .footer_cont {
+      .footer_cont_inner {
+        height: 750px;
+        .mogo {
+          width: 100%;
+          height: 380px;
+          text-align: center;
+          h1,
+          p {
+            width: 100%;
+            margin-top: 5%;
+            span {
+              width: 100%;
+            }
+          }
+          p:nth-of-type(2) {
+            width: 100%;
+          }
+          span {
+            p {
+              margin-top: 0;
+            }
+          }
+          form {
+            margin-top: 0;
+            margin-left: calc(50% - 190px);
+          }
+        }
+        .blogs {
+          left: calc((100% - 570px) / 2);
+          top: 380px;
+          height: 300px;
+          width: 285px;
+          p:first-of-type {
+            top: 0;
+          }
+          .blg {
+            div {
+              p {
+                margin: 0;
+              }
+              p:last-of-type {
+                top: 80%;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+        .instagram {
+          position: relative;
+          display: inline-block;
+          left: calc((100% - 570px) / 2 + 285px);
+          top: 380px;
+          height: 330px;
+          width: 287px;
+          p:last-of-type {
+            top: 325px;
+          }
+          div {
+            .rw {
+              height: 95px;
+              div {
+                top: 0;
+                width: calc((100% - 2px) / 3);
+                height: 100%;
+                position: absolute;
+                overflow: hidden;
+                img {
+                  height: 100%;
+                }
+              }
+            }
+            .rw:nth-of-type(2) {
+              top: 96px;
+            }
+            .rw:last-of-type {
+              top: calc(96px * 2);
+            }
+          }
+        }
+      }
+      .credits {
+        height: 60px;
+        top: 750px;
+      }
+    }
+  }
+}
+
+// media
+@media screen and (max-width: 425px) {
+  .footer {
+    height: 1210px;
+    .footer_cont {
+      height: 1140px;
+      .footer_cont_inner {
+        height: 1100px;
+        .mogo {
+          height: 470px;
+          p {
+            width: 70%;
+            margin-left: 15%;
+          }
+          p:nth-of-type(2) {
+            width: 100%;
+            margin-left: 0;
+          }
+          span {
+            p {
+              margin-top: 0;
+              margin-left: 0;
+            }
+          }
+          form {
+            input {
+              width: 50%;
+              left: 10%;
+            }
+            input:last-of-type {
+              width: 30%;
+            }
+          }
+        }
+        .blogs {
+          top: 470px;
+        }
+        .instagram {
+          top: 770px;
+        }
+      }
+      .credits {
+        height: 60px;
+        top: 1160px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  .footer {
+    height: 1580px;
+    .footer_cont {
+      height: 1520px;
+      .footer_cont_inner {
+        height: 1100px;
+        .mogo {
+          height: 470px;
+          p {
+            width: 70%;
+            margin-left: 15%;
+          }
+          p:nth-of-type(2) {
+            width: 100%;
+            margin-left: 0;
+          }
+          span {
+            p {
+              margin-top: 0;
+              margin-left: 0;
+            }
+          }
+          form {
+            input {
+              width: 50%;
+              left: 10%;
+            }
+            input:last-of-type {
+              width: 30%;
+            }
+          }
+        }
+        .blogs {
+          width: 425px;
+          height: 550px;
+          left: calc(50% - 212.5px);
+          top: 430px;
+          .blg {
+            height: 150px;
+            top: 5px;
+            .img_cnt {
+              width: 200px;
+              height: 150px;
+            }
+            div {
+              left: 230px;
+              width: 180px;
+              p {
+                font-size: 1rem;
+                top: 10px;
+              }
+              p:last-of-type {
+                font-size: 1rem;
+                top: 90px;
+              }
+            }
+          }
+        }
+        .instagram {
+          top: 1000px;
+          height: 500px;
+          width: 425px;
+          left: calc(50% - 212.5px);
+          p:last-of-type {
+            top: 450px;
+          }
+          div {
+            height: 425px;
+            width: 425px;
+            top: 25px;
+            margin: 0;
+            .rw {
+              height: 141px;
+              top: 0;
+            }
+            .rw:nth-of-type(2) {
+              top: 141px;
+            }
+            .rw:last-of-type {
+              top: 282px;
+            }
+          }
+        }
+      }
+      .credits {
+        height: 60px;
+        top: 1520px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .footer {
+    .footer_cont {
+      width: 80%;
+      margin-left: 10%;
+      height: 900px;
+      .footer_cont_inner {
+        .blogs {
+          height: 50%;
+          width: 300px;
+          left: calc(75% - 150px);
+          p:first-of-type {
+            top: 0;
+          }
+          top: 30px;
+          .blg {
+            div {
+              p {
+                top: -15px;
+              }
+            }
+          }
+        }
+        .instagram {
+          height: 350px;
+          width: 303px;
+          left: calc(75% - 150px);
+          top: 50%;
+          p:first-of-type {
+            top: 0;
+          }
+          p:last-of-type {
+            top: 370px;
+          }
+          div {
+            height: 303px;
+            .rw {
+              height: 101px;
+              div {
+                width: 100px;
+                height: 100px;
+              }
+            }
+            .rw:nth-of-type(2) {
+              top: 101px;
+            }
+            .rw:last-of-type {
+              top: 202px;
+            }
+          }
+        }
+      }
+      .credits {
+        height: 60px;
+        top: 840px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1919px) {
+  .footer {
+    .footer_cont {
+      .footer_cont_inner {
+        .blogs {
+          height: 60%;
+          .blg {
+            div {
+              p {
+                top: -15px;
+              }
+            }
+          }
+        }
+        .instagram {
+          height: 50%;
+        }
+      }
+    }
+  }
+}
