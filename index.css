@@ -540,7 +540,7 @@ body {
 }
 .aboutus {
   display: block;
-  height: 100vh;
+  height: 1020px;
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -568,21 +568,24 @@ body {
 .aboutus .container .photo-holder {
   position: relative;
   width: 62.5%;
-  height: 25vh;
+  height: 255px;
   margin-top: 50px;
   margin-left: 18.75%;
 }
 .aboutus .container .photo-holder div {
+  transition: all 0.3s ease-in-out;
+  background-color: red;
   position: absolute;
   display: inline-block;
   width: 32%;
-  height: 100%;
+  height: 255px;
   margin: 0;
   overflow: hidden;
+  cursor: pointer;
 }
 .aboutus .container .photo-holder div span {
   display: none;
-  padding-top: 9vh;
+  padding-top: 91.8px;
   color: white;
 }
 .aboutus .container .photo-holder div span i {
@@ -1725,6 +1728,9 @@ body {
   background-color: #f8f8f8;
 }
 .wedo .wedo_footer div {
+  transition: all 0.2s ease-in-out;
+  animation: slide linear forwards;
+  animation-timeline: view();
   width: 62.5%;
   height: 100%;
   margin-left: 18.75%;
@@ -1763,8 +1769,8 @@ body {
 }
 .wedo .wedo_footer div div:last-of-type {
   position: absolute;
-  left: 16.66vw;
-  width: 40vw;
+  left: 0;
+  width: 35vw;
 }
 .wedo .wedo_footer div div:last-of-type .spacer2 {
   all: unset;
@@ -1793,6 +1799,16 @@ body {
   font-size: 1rem;
   font-weight: 400;
   color: #444;
+}
+@keyframes slide {
+  0% {
+    scale: 0.8;
+    opacity: 0;
+  }
+  30% {
+    scale: 1;
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1979,7 +1995,6 @@ body {
   width: 100%;
   margin-left: 0;
   height: calc(100% - 100px);
-  background-size: cover;
 }
 .ourteam div:first-of-type .photos .person .picture .soc-sites {
   display: block;
@@ -1987,15 +2002,16 @@ body {
   width: 59.2%;
   height: 11.7%;
   z-index: 2;
-  margin-left: 20.4%;
+  margin-left: 20%;
   padding-top: 53.8974025974%;
   font-size: 0;
   display: none;
 }
 .ourteam div:first-of-type .photos .person .picture .soc-sites div {
+  transition: all 0.3s ease-in-out;
   display: inline-block;
   height: calc(100% - 2px);
-  width: calc(25% - 1px);
+  width: calc(25% - 2px);
   margin: 0;
   padding: 0;
   background-color: #fce38a;
@@ -2016,6 +2032,7 @@ body {
   background-color: #f38181;
 }
 .ourteam div:first-of-type .photos .person .picture:hover {
+  transition: all 0.3s ease-in-out;
   transform: translate(-0.5%, -0.5%);
   box-shadow: 0.5vw 0.5vw 0 0 #95e1d3;
 }
@@ -2024,12 +2041,15 @@ body {
 }
 .ourteam div:first-of-type .photos .person .pic1 {
   background: url(../../assets/person1.png);
+  background-size: cover;
 }
 .ourteam div:first-of-type .photos .person .pic2 {
   background: url(../../assets/person2.png);
+  background-size: cover;
 }
 .ourteam div:first-of-type .photos .person .pic3 {
   background: url(../../assets/person3.png);
+  background-size: cover;
 }
 .ourteam div:first-of-type .photos .person:nth-of-type(2) {
   left: 34.8333333333%;
@@ -2067,6 +2087,8 @@ body {
   overflow: hidden;
 }
 .ourteam .some_logos .logos_cont .some_logo {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
   display: inline-block;
   margin: 0;
   margin-top: 50px;
@@ -2078,6 +2100,9 @@ body {
   height: auto;
   margin-left: 10%;
   margin-top: 10%;
+}
+.ourteam .some_logos .logos_cont .some_logo:hover {
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 768px) {
@@ -2109,6 +2134,11 @@ body {
   }
 }
 @media screen and (max-width: 425px) {
+  .ourteam div:first-of-type .photos {
+    width: 320px;
+    overflow: hidden;
+    margin-left: calc(50% - 160px);
+  }
   .ourteam .some_logos {
     height: 200px;
   }
@@ -2144,6 +2174,12 @@ body {
     margin-top: 45px;
   }
 }
+@media screen and (min-width: 1025px) {
+  .ourteam .some_logos .logos_cont .some_logo {
+    margin-top: calc(130px - 6.25vw);
+    height: auto;
+  }
+}
 .someofwork {
   height: auto;
   position: static;
@@ -2171,8 +2207,10 @@ body {
   width: 100%;
   height: 785.4px;
   font-size: 0;
+  overflow: hidden;
 }
 .someofwork .gallery .vert_gal {
+  transition: all 0.3s ease-in-out;
   display: inline-block;
   width: 25%;
   height: 100%;
@@ -2181,11 +2219,19 @@ body {
   background-position: center bottom;
 }
 .someofwork .gallery .vert_gal div {
+  transition: all 0.3s ease-in-out;
   width: 100%;
   height: 50%;
   overflow: hidden;
   background-size: cover;
   background-position: center bottom;
+}
+.someofwork .gallery .vert_gal > div:hover,
+.someofwork .gallery .vert3:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  overflow: visible;
+  z-index: 1;
 }
 .someofwork .gallery .vert1 div:first-of-type {
   background-image: url("../../assets/gal1.png");
@@ -2237,6 +2283,8 @@ body {
   background-color: #f8f8f8;
 }
 .someofwork .sldr div {
+  animation: slide linear forwards;
+  animation-timeline: view();
   width: 62.5%;
   height: 100%;
   margin-left: 18.75%;
@@ -2303,6 +2351,16 @@ body {
   font-family: "Kaushan-Script";
   font-weight: 400;
   color: #444;
+}
+@keyframes slide {
+  0% {
+    scale: 0.5;
+    opacity: 0;
+  }
+  25% {
+    scale: 1;
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -2396,6 +2454,7 @@ body {
 }
 .peopleSay {
   height: 830px;
+  width: 100%;
   position: relative;
   overflow: hidden;
 }
@@ -2550,14 +2609,22 @@ body {
     height: 250px;
   }
 }
+@media screen and (min-width: 1950px) {
+  .peopleSay img {
+    width: 100vw;
+  }
+  .peopleToSay .sayingPeople div:first-of-type img {
+    width: 120px;
+  }
+}
 .latestBlog {
-  height: 970px;
+  height: auto;
   font-size: 0;
 }
 .latestBlog .blog {
   width: 62.5%;
   margin-left: 18.75%;
-  height: 75.5vh;
+  height: 770px;
 }
 .latestBlog .blog .spacer {
   border-color: #f38181;
@@ -2575,6 +2642,7 @@ body {
   position: relative;
 }
 .latestBlog .blog .stories .story .img_cont {
+  transition: all 0.3s ease-in-out;
   height: 50%;
   width: 100%;
   overflow: hidden;
@@ -2603,6 +2671,10 @@ body {
   font-weight: lighter;
   font-size: 12px;
   font-style: italic;
+}
+.latestBlog .blog .stories .story .img_cont:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 4px #95e1d3;
 }
 .latestBlog .blog .stories .story .str_txt {
   font-size: 14px;
@@ -2641,12 +2713,15 @@ body {
   padding-right: 2.5%;
   color: #95e1d3;
 }
+.latestBlog .blog .stories .story span:hover {
+  cursor: pointer;
+}
 .latestBlog .blog .stories .story:first-of-type {
   margin-left: 0;
 }
 .latestBlog .map {
   width: 100%;
-  height: 19.5vh;
+  height: 200px;
   position: relative;
   overflow: hidden;
   opacity: 1;
@@ -2654,7 +2729,10 @@ body {
 .latestBlog .map .bkg3 {
   position: absolute;
   width: 100%;
+  height: 200px;
   opacity: 0.2;
+  z-index: -1;
+  object-fit: cover;
 }
 .latestBlog .map .line1 {
   padding-top: 20px;
@@ -2666,8 +2744,17 @@ body {
   font-family: "Montserrat";
   text-align: center;
 }
+.latestBlog .map .line2:hover {
+  cursor: pointer;
+}
 .latestBlog .map .spacer {
   border-color: #f38181;
+}
+.latestBlog .map .theMap {
+  position: absolute;
+  height: 500px;
+  left: calc(50% - 240px);
+  top: 220px;
 }
 
 @media screen and (max-width: 768px) {
@@ -2705,6 +2792,18 @@ body {
     width: 300px;
     margin-left: calc(50vw - 150px);
     padding-top: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .latestBlog .blog {
+    width: 100vw;
+    margin-left: 2.5vw;
+    height: 1630px;
+    overflow: hidden;
+  }
+  .latestBlog .blog .stories .story .img_cont {
+    width: 320px;
+    max-width: 320px;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1439px) {
@@ -2786,6 +2885,11 @@ body {
 .footer .footer_cont .footer_cont_inner .mogo span img {
   display: inline-block;
   padding-right: 2.5%;
+  transition: all 0.3s ease-in-out;
+}
+.footer .footer_cont .footer_cont_inner .mogo span img:hover {
+  cursor: pointer;
+  transform: scale(1.5);
 }
 .footer .footer_cont .footer_cont_inner .mogo form {
   position: relative;
@@ -2808,6 +2912,7 @@ body {
   padding-left: 5%;
 }
 .footer .footer_cont .footer_cont_inner .mogo form input:last-of-type {
+  cursor: pointer;
   left: 232px;
   width: 150px;
   height: 40px;
@@ -2865,6 +2970,7 @@ body {
   height: 100%;
 }
 .footer .footer_cont .footer_cont_inner .blogs .blg div p {
+  cursor: pointer;
   position: absolute;
   font-size: 0.75rem;
   line-height: 18px;
@@ -2906,6 +3012,11 @@ body {
   font-weight: 300;
   font-style: italic;
   font-family: "Roboto";
+  transition: all 0.3s ease-in-out;
+}
+.footer .footer_cont .footer_cont_inner .instagram p:last-of-type:hover {
+  cursor: pointer;
+  transform: scale(1.2);
 }
 .footer .footer_cont .footer_cont_inner .instagram div {
   position: relative;
@@ -2926,9 +3037,15 @@ body {
   height: 100%;
   position: absolute;
   overflow: hidden;
+  transition: all 0.3s ease-in-out;
 }
 .footer .footer_cont .footer_cont_inner .instagram div .rw div img {
   height: 100%;
+}
+.footer .footer_cont .footer_cont_inner .instagram div .rw div:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  z-index: 1;
 }
 .footer .footer_cont .footer_cont_inner .instagram div .rw div:nth-of-type(2) {
   left: calc((100% - 2px) / 3 + 1px);

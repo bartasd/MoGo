@@ -79,3 +79,20 @@
     }
   }
 }
+
+@media screen and (min-width: 1950px) {
+  .peopleSay {
+    img {
+      width: 100vw;
+    }
+  }
+  .peopleToSay {
+    .sayingPeople {
+      div:first-of-type {
+        img {
+          width: 120px;
+        }
+      }
+    }
+  }
+}

@@ -56,21 +56,21 @@
           width: 100%;
           margin-left: 0;
           height: calc(100% - 100px);
-          background-size: cover;
           .soc-sites {
             display: block;
             position: static;
             width: 59.2%;
             height: 11.7%;
             z-index: 2;
-            margin-left: 20.4%;
+            margin-left: 20%;
             padding-top: calc(44.15% * 470 / 385);
             font-size: 0;
             display: none;
             div {
+              transition: all 0.3s ease-in-out;
               display: inline-block;
               height: calc(100% - 2px);
-              width: calc(25% - 1px);
+              width: calc(25% - 2px);
               margin: 0;
               padding: 0;
               background-color: $HOVER_COLOR;
@@ -93,6 +93,7 @@
           }
         }
         .picture:hover {
+          transition: all 0.3s ease-in-out;
           transform: translate(-0.5%, -0.5%);
           box-shadow: 0.5vw 0.5vw 0 0 $CUSTUM_GREEN;
         }
@@ -101,12 +102,15 @@
         }
         .pic1 {
           background: url(../../assets/person1.png);
+          background-size: cover;
         }
         .pic2 {
           background: url(../../assets/person2.png);
+          background-size: cover;
         }
         .pic3 {
           background: url(../../assets/person3.png);
+          background-size: cover;
         }
       }
       .person:nth-of-type(2) {
@@ -145,6 +149,8 @@
       font-size: 0;
       overflow: hidden;
       .some_logo {
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
         display: inline-block;
         margin: 0;
         margin-top: 50px;
@@ -156,6 +162,9 @@
           margin-left: 10%;
           margin-top: 10%;
         }
+      }
+      .some_logo:hover {
+        transform: scale(1.2);
       }
     }
   }

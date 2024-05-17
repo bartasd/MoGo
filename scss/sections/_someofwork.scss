@@ -24,8 +24,9 @@
     width: 100%;
     height: 785.4px;
     font-size: 0;
-
+    overflow: hidden;
     .vert_gal {
+      transition: all 0.3s ease-in-out;
       display: inline-block;
       width: 25%;
       height: 100%;
@@ -33,12 +34,20 @@
       background-size: cover;
       background-position: center bottom;
       div {
+        transition: all 0.3s ease-in-out;
         width: 100%;
         height: 50%;
         overflow: hidden;
         background-size: cover;
         background-position: center bottom;
       }
+    }
+    .vert_gal > div:hover,
+    .vert3:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+      overflow: visible;
+      z-index: 1;
     }
 
     .vert1 {
@@ -98,6 +107,8 @@
     height: 440px;
     background-color: $GREY_BACK;
     div {
+      animation: slide linear forwards;
+      animation-timeline: view();
       width: 62.5%;
       height: 100%;
       margin-left: $ML;
@@ -163,6 +174,16 @@
           font-weight: 400;
           color: #444;
         }
+      }
+    }
+    @keyframes slide {
+      0% {
+        scale: 0.5;
+        opacity: 0;
+      }
+      25% {
+        scale: 1;
+        opacity: 1;
       }
     }
   }

@@ -32,6 +32,13 @@
 
 @media screen and (max-width: 425px) {
   .ourteam {
+    div:first-of-type {
+      .photos {
+        width: 320px;
+        overflow: hidden;
+        margin-left: calc(50% - 160px);
+      }
+    }
     .some_logos {
       height: 200px;
       .logos_cont {
@@ -69,6 +76,19 @@
         margin-left: 0;
         .some_logo {
           margin-top: 45px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .ourteam {
+    .some_logos {
+      .logos_cont {
+        .some_logo {
+          margin-top: calc(130px - 6.25vw);
+          height: auto;
         }
       }
     }

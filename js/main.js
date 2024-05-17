@@ -1,5 +1,5 @@
 // HTML SECTIONS TO ADD
-const temp = [
+const sections = [
   "nav",
   "aboutus",
   "services",
@@ -12,20 +12,17 @@ const temp = [
   "footer",
 ];
 
-// ----- RESPONSIVE DEBUG -------
-// DELETE AFTER -----------------
-const sections = [];
-const debugginSection = 9;
-const start = debugginSection;
-const stop = start + 1;
-
-for (let i = start; i < stop; i++) {
-  sections.push(temp[i]);
-}
-// DELETE AFTER -----------------
+//const sections = [temp[8]];
 
 // JS FILES TO INCLUDE
-const files = ["navDropDown", "whatwedo", "slider1", "slider2", "socialPicker"];
+const files = [
+  "navDropDown",
+  "whatwedo",
+  "slider1",
+  "slider2",
+  "socialPicker",
+  "openMap",
+];
 
 function include(files) {
   files.forEach((file) => {

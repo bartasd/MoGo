@@ -135,6 +135,9 @@
     height: 28.4vh;
     background-color: $GREY_BACK;
     div {
+      transition: all 0.2s ease-in-out;
+      animation: slide linear forwards;
+      animation-timeline: view();
       width: $CW;
       height: 100%;
       margin-left: $ML;
@@ -172,8 +175,8 @@
       }
       div:last-of-type {
         position: absolute;
-        left: 16.66vw;
-        width: 40vw;
+        left: 0;
+        width: 35vw;
         .spacer2 {
           all: unset;
           width: 60px;
@@ -202,6 +205,16 @@
           font-weight: 400;
           color: #444;
         }
+      }
+    }
+    @keyframes slide {
+      0% {
+        scale: 0.8;
+        opacity: 0;
+      }
+      30% {
+        scale: 1;
+        opacity: 1;
       }
     }
   }

@@ -39,6 +39,25 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .latestBlog {
+    .blog {
+      width: 100vw;
+      margin-left: 2.5vw;
+      height: 1630px;
+      overflow: hidden;
+      .stories {
+        .story {
+          .img_cont {
+            width: 320px;
+            max-width: 320px;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 769px) and (max-width: 1439px) {
   .latestBlog {
     height: auto;
