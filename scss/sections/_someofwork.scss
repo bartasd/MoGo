@@ -147,7 +147,7 @@
         position: absolute;
         left: calc(440px * 0.5172 + 11.4%);
         top: 32%;
-        width: 35%;
+        width: calc(100% - 440px * 0.5172 - 11.4%);
         .spacer2 {
           all: unset;
           width: 60px;

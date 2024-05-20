@@ -56,8 +56,8 @@ body {
   font-size: 16px;
   height: 100vh;
   position: relative;
+  top: 0;
   background: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8));
-  overflow: hidden;
 }
 .nav img {
   width: 100%;
@@ -68,6 +68,7 @@ body {
 }
 .nav .links {
   position: relative;
+  top: 0;
   height: 7%;
   width: 100%;
 }
@@ -82,6 +83,9 @@ body {
   font-weight: bold;
   display: inline-block;
   color: white;
+}
+.nav .links #logo-one {
+  top: 10px;
 }
 .nav .links .right {
   position: absolute;
@@ -1756,7 +1760,7 @@ body {
 .wedo .wedo_footer div div:first-of-type {
   position: absolute;
   left: 0;
-  left: 5.7vw;
+  left: 50px;
   width: 14.68848vh;
   border: 2px solid #95e1d3;
   background-color: white;
@@ -1926,7 +1930,9 @@ body {
     width: 129.3px;
   }
   .wedo .wedo_footer div div:last-of-type {
-    left: 25vw;
+    left: 250px;
+    width: 100%;
+    width: calc(100% - 250px);
   }
   .wedo .wedo_footer div div:last-of-type p {
     font-size: 0.8rem;
@@ -2324,7 +2330,7 @@ body {
   position: absolute;
   left: calc(227.568px + 11.4%);
   top: 32%;
-  width: 35%;
+  width: calc(100% - 227.568px - 11.4%);
 }
 .someofwork .sldr div div:last-of-type .spacer2 {
   all: unset;

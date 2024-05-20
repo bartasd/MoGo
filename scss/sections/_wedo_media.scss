@@ -134,7 +134,9 @@
           width: calc(250px * 0.5172);
         }
         div:last-of-type {
-          left: 25vw;
+          left: 250px;
+          width: 100%;
+          width: calc(100% - 250px);
           p {
             font-size: 0.8rem;
             line-height: 1.5rem;
