@@ -5,11 +5,13 @@
     .blog {
       width: 100vw;
       margin-left: 0;
-      height: 1620px;
+      height: 1470px;
       .stories {
+        height: 1200px;
         .story {
           width: 100%;
-          height: 450px;
+          height: 400px;
+          margin-left: 0;
           .img_cont {
             height: 230px;
             width: 380px;
@@ -32,25 +34,6 @@
             width: 300px;
             margin-left: calc(50vw - 150px);
             padding-top: 0;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .latestBlog {
-    .blog {
-      width: 100vw;
-      margin-left: 2.5vw;
-      height: 1630px;
-      overflow: hidden;
-      .stories {
-        .story {
-          .img_cont {
-            width: 320px;
-            max-width: 320px;
           }
         }
       }

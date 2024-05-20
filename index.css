@@ -49,7 +49,7 @@ body {
 }
 
 .underline {
-  border-bottom: 2px solid lightgrey;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.5019607843);
 }
 
 .nav {
@@ -238,7 +238,7 @@ body {
   border: none;
 }
 .nav .logo .alt_nav a {
-  border-top: 2px solid white;
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
   position: absolute;
   left: 0;
   width: 23%;
@@ -251,6 +251,7 @@ body {
   font-family: "Montserrat";
   font-weight: normal;
   font-size: 1rem;
+  opacity: 0.5;
 }
 .nav .logo .alt_nav a p span {
   font-size: 1.5rem;
@@ -266,8 +267,11 @@ body {
 .nav .logo .alt_nav a:nth-of-type(4) {
   left: 75%;
 }
+.nav .logo .alt_nav a:hover {
+  border-color: white;
+}
 .nav .logo .alt_nav a:hover p {
-  color: #f38181;
+  opacity: 1;
 }
 .nav .logo .alt_nav a:hover::before {
   content: "";
@@ -286,6 +290,9 @@ body {
     width: 90vw;
     right: 5vw;
     top: 100%;
+  }
+  .nav .links #logo-one {
+    left: 8%;
   }
   .nav .logo {
     width: 100%;
@@ -309,8 +316,11 @@ body {
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  .links .right {
+  .nav .links .right {
     display: none;
+  }
+  .nav .links #logo-one {
+    left: 8%;
   }
   .nav .logo {
     width: 100%;
@@ -372,7 +382,7 @@ body {
 }
 @media screen and (min-width: 1025px) and (max-width: 1250px) {
   .nav .links .right {
-    width: 60%;
+    width: 45%;
     left: 48.96%;
   }
   .nav .links .right a {
@@ -409,7 +419,7 @@ body {
 }
 @media screen and (min-width: 1251px) and (max-width: 1510px) {
   .nav .links .right {
-    width: 60%;
+    width: 38%;
     left: 48.96%;
   }
   .nav .links .right a {
@@ -433,6 +443,7 @@ body {
 }
 @media screen and (min-width: 1511px) {
   .nav .links .right {
+    width: 38%;
     left: 48.96%;
   }
   .nav .links .right a {
@@ -558,11 +569,11 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 70%;
+  height: 714px;
 }
 .aboutus .container p {
   padding: 0 25%;
-  font-size: 1rem;
+  font-size: 15px;
   line-height: 1.5rem;
   color: #999999;
   font-weight: 400;
@@ -573,12 +584,11 @@ body {
   position: relative;
   width: 62.5%;
   height: 255px;
-  margin-top: 50px;
-  margin-left: 18.75%;
+  top: 50px;
+  left: 18.75%;
 }
 .aboutus .container .photo-holder div {
   transition: all 0.3s ease-in-out;
-  background-color: red;
   position: absolute;
   display: inline-block;
   width: 32%;
@@ -588,8 +598,11 @@ body {
   cursor: pointer;
 }
 .aboutus .container .photo-holder div span {
+  position: absolute;
+  top: calc(50% - 38px);
+  height: 100%;
+  width: 100%;
   display: none;
-  padding-top: 91.8px;
   color: white;
 }
 .aboutus .container .photo-holder div span i {
@@ -598,6 +611,8 @@ body {
   font-size: 1.5rem;
 }
 .aboutus .container .photo-holder div span p {
+  width: 100%;
+  text-align: center;
   margin-top: 15px;
   position: relative;
   color: white;
@@ -622,8 +637,8 @@ body {
   background-size: cover;
 }
 .aboutus .container .photo-holder div:hover {
-  box-shadow: 0.5vw 0.5vw 0 0 #95e1d3;
-  transform: translate(-0.5vw, -0.5vw);
+  box-shadow: 10px 10px 0 0 #95e1d3;
+  transform: translate(-10px, -10px);
 }
 .aboutus .container .photo-holder div:hover span {
   display: block;
@@ -641,8 +656,8 @@ body {
 .aboutus .container2 {
   position: absolute;
   width: 100%;
-  height: 30%;
-  top: 70%;
+  height: 306px;
+  top: 714px;
   background-color: #95e1d3;
 }
 .aboutus .container2 div {
@@ -655,14 +670,14 @@ body {
 .aboutus .container2 div p {
   color: white;
   font-size: 4.5rem;
-  font-weight: bold;
+  font-weight: 700;
   font-family: "Montserrat";
   margin-top: 32%;
   margin-bottom: 0;
 }
 .aboutus .container2 div p:last-of-type {
-  font-size: 1rem;
-  font-weight: normal;
+  font-size: 14px;
+  font-weight: 400;
   margin: 0 5%;
   margin-top: 10%;
 }
@@ -683,250 +698,52 @@ body {
   left: 56.25%;
 }
 
-@media screen and (max-width: 320px) {
-  .aboutus .container {
-    height: calc(100vh - 60px);
+@media screen and (max-width: 768px) {
+  .aboutus {
+    height: 1625px;
   }
   .aboutus .container p {
-    line-height: 2rem;
-    padding: 0;
+    text-align: justify;
+    padding: 0 10%;
   }
   .aboutus .container .photo-holder {
-    width: 100%;
-    margin-left: 0;
+    height: 840px;
   }
-  .aboutus .container .photo-holder div span {
-    padding-top: 9vh;
+  .aboutus .container .photo-holder div {
+    width: 90%;
+    left: 5%;
   }
-  .aboutus .container .photo-holder div span i {
-    font-size: 1rem;
+  .aboutus .container .photo-holder div:first-of-type {
+    left: 5%;
   }
-  .aboutus .container .photo-holder div span p {
-    font-size: 0.75rem;
+  .aboutus .container .photo-holder div:nth-of-type(2) {
+    left: 5%;
+    top: 280px;
+  }
+  .aboutus .container .photo-holder div:last-of-type {
+    left: 5%;
+    top: 560px;
   }
   .aboutus .container2 {
-    top: calc(100vh - 60px);
-    height: 60px;
-  }
-  .aboutus .container2 div {
-    width: 20%;
-  }
-  .aboutus .container2 div p {
-    color: white;
-    font-size: 1.5rem;
-    margin-top: 0;
-  }
-  .aboutus .container2 div p:last-of-type {
-    font-size: 8px;
-  }
-  .aboutus .container2 div:first-of-type {
-    left: 0;
-    border-left: none;
-  }
-  .aboutus .container2 div:last-of-type {
-    right: 0;
-    border-right: none;
-  }
-  .aboutus .container2 div:nth-of-type(2) {
-    left: 20%;
-  }
-  .aboutus .container2 div:nth-of-type(3) {
-    left: 40%;
-  }
-  .aboutus .container2 div:nth-of-type(4) {
-    left: 60%;
-  }
-}
-@media screen and (max-width: 320px) and (max-height: 820px) {
-  .aboutus .container .photo-holder {
-    height: 15vh;
-  }
-  .aboutus .container .photo-holder div span {
-    padding-top: 4vh;
-  }
-}
-@media screen and (max-width: 320px) and (max-height: 725px) {
-  .aboutus .container .line1 {
-    padding-top: 50px;
-    font-size: 1rem;
-  }
-  .aboutus .container .line2 {
-    font-size: 1.275rem;
-  }
-  .aboutus .container p {
-    font-size: 0.8rem;
-    line-height: 1.5rem;
-  }
-  .aboutus .container .photo-holder {
-    height: 15vh;
-  }
-  .aboutus .container .photo-holder div span {
-    padding-top: 4vh;
-  }
-}
-@media screen and (max-width: 320px) and (max-height: 560px) {
-  .aboutus .container .line1 {
-    padding-top: 10px;
-    font-size: 1rem;
-  }
-  .aboutus .container .line2 {
-    font-size: 1.275rem;
-  }
-  .aboutus .container p {
-    font-size: 0.8rem;
-    line-height: 1.5rem;
-  }
-  .aboutus .container .photo-holder {
-    height: 15vh;
-    margin-top: 10px;
-  }
-  .aboutus .container .photo-holder div span {
-    padding-top: 3vh;
-  }
-  .aboutus .container .photo-holder div span i {
-    font-size: 1rem;
-  }
-  .aboutus .container .photo-holder div span p {
-    font-size: 0.5rem;
-  }
-}
-@media screen and (min-width: 321px) and (max-width: 425px) {
-  .aboutus .container {
-    height: calc(100vh - 60px);
-  }
-  .aboutus .container p {
-    line-height: 2rem;
-    padding: 0;
-  }
-  .aboutus .container .photo-holder {
-    width: 100%;
-    margin-left: 0;
-  }
-  .aboutus .container .photo-holder div span {
-    padding-top: 9vh;
-  }
-  .aboutus .container .photo-holder div span i {
-    font-size: 1rem;
-  }
-  .aboutus .container .photo-holder div span p {
-    font-size: 0.75rem;
-  }
-  .aboutus .container2 {
-    top: calc(100vh - 60px);
-    height: 60px;
-  }
-  .aboutus .container2 div {
-    width: 20%;
-  }
-  .aboutus .container2 div p {
-    color: white;
-    font-size: 1.5rem;
-    margin-top: 3%;
-  }
-  .aboutus .container2 div p:last-of-type {
-    font-size: 8px;
-  }
-  .aboutus .container2 div:first-of-type {
-    left: 0;
-    border-left: none;
-  }
-  .aboutus .container2 div:last-of-type {
-    right: 0;
-    border-right: none;
-  }
-  .aboutus .container2 div:nth-of-type(2) {
-    left: 20%;
-  }
-  .aboutus .container2 div:nth-of-type(3) {
-    left: 40%;
-  }
-  .aboutus .container2 div:nth-of-type(4) {
-    left: 60%;
-  }
-}
-@media screen and (min-width: 321px) and (max-width: 425px) and (max-height: 780px) {
-  .aboutus .container .line1 {
-    padding-top: 50px;
-    font-size: 1rem;
-  }
-  .aboutus .container .line2 {
-    font-size: 1.275rem;
-  }
-  .aboutus .container p {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-  .aboutus .container .photo-holder {
-    height: 15vh;
-    margin-top: 70px;
-  }
-  .aboutus .container .photo-holder div span {
-    padding-top: 5vh;
-  }
-}
-@media screen and (min-width: 321px) and (max-width: 425px) and (max-height: 600px) {
-  .aboutus .container .line1 {
-    padding-top: 30px;
-    font-size: 1rem;
-  }
-  .aboutus .container .line2 {
-    font-size: 1.275rem;
-  }
-  .aboutus .container p {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-  .aboutus .container .photo-holder {
-    height: 15vh;
-    margin-top: 35px;
-  }
-  .aboutus .container .photo-holder div span {
-    padding-top: 3vh;
-  }
-}
-@media screen and (min-width: 426px) and (max-width: 768px) {
-  .aboutus .container {
-    height: calc(100vh - 100px);
-  }
-  .aboutus .container p {
-    line-height: 2rem;
-    padding: 0;
-  }
-  .aboutus .container .photo-holder {
-    width: 100%;
-    margin-left: 0;
-  }
-  .aboutus .container .photo-holder div span {
-    padding-top: 9vh;
-  }
-  .aboutus .container .photo-holder div span i {
-    font-size: 1rem;
-  }
-  .aboutus .container .photo-holder div span p {
-    font-size: 0.75rem;
-  }
-  .aboutus .container2 {
-    top: calc(100vh - 100px);
+    top: 1320px;
     height: 100px;
   }
   .aboutus .container2 div {
     width: 20%;
   }
   .aboutus .container2 div p {
-    color: white;
-    font-size: 1.5rem;
-    margin-top: 1rem;
+    font-size: 2rem;
+    margin-top: 18px;
   }
   .aboutus .container2 div p:last-of-type {
-    font-size: 8px;
+    font-size: 0.5rem;
   }
   .aboutus .container2 div:first-of-type {
     left: 0;
     border-left: none;
   }
   .aboutus .container2 div:last-of-type {
-    border-right: none;
-    right: 0;
+    left: 80%;
   }
   .aboutus .container2 div:nth-of-type(2) {
     left: 20%;
@@ -938,205 +755,63 @@ body {
     left: 60%;
   }
 }
-@media screen and (min-width: 426px) and (max-width: 768px) and (max-height: 800px) {
-  .aboutus .container .photo-holder {
-    height: 20vh;
+@media screen and (max-width: 320px) {
+  .aboutus {
+    height: 1500px;
   }
-  .aboutus .container .photo-holder div span {
-    padding-top: 6vh;
-  }
-}
-@media screen and (min-width: 426px) and (max-width: 768px) and (max-height: 750px) {
-  .aboutus .container .line1 {
-    padding-top: 30px;
-  }
-  .aboutus .container .photo-holder {
-    height: 16vh;
-  }
-  .aboutus .container .photo-holder div span {
-    padding-top: 5vh;
+  .aboutus .container2 {
+    top: 1400px;
   }
 }
-@media screen and (min-width: 426px) and (max-width: 768px) and (max-height: 640px) {
-  .aboutus .container .line1 {
-    line-height: 1.25rem;
+@media screen and (min-width: 321px) and (max-width: 425px) {
+  .aboutus {
+    height: 1460px;
   }
-  .aboutus .container .photo-holder {
-    margin-top: 20px;
+  .aboutus .container p {
+    padding: 0 10%;
   }
-  .aboutus .container .photo-holder div span {
-    padding-top: 3.5vh;
+  .aboutus .container2 {
+    top: 1370px;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .aboutus {
+    height: 1425px;
+  }
+  .aboutus .container p {
+    padding: 0 10%;
+  }
+  .aboutus .container2 {
+    top: 1325px;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .aboutus .container {
-    height: calc(100vh - 150px);
+  .aboutus {
+    height: 950px;
   }
   .aboutus .container p {
-    line-height: 2rem;
-    padding: 0 5%;
+    text-align: justify;
+    padding: 0 10%;
   }
   .aboutus .container2 {
-    top: calc(100vh - 150px);
-    height: 150px;
-  }
-  .aboutus .container2 div {
-    width: 12.5%;
+    top: 750px;
+    height: 204px;
   }
   .aboutus .container2 div p {
-    font-size: 2rem;
-    margin-top: 1.5rem;
-  }
-  .aboutus .container2 div p:last-of-type {
-    font-size: 1rem;
-  }
-  .aboutus .container2 div:first-of-type {
-    left: 18.75%;
-    border-left: 1px solid #b5eae0;
-  }
-  .aboutus .container2 div:last-of-type {
-    right: 18.75%;
-    border-right: 1px solid #b5eae0;
-  }
-  .aboutus .container2 div:nth-of-type(2) {
-    left: 31.25%;
-  }
-  .aboutus .container2 div:nth-of-type(3) {
-    left: 43.75%;
-  }
-  .aboutus .container2 div:nth-of-type(4) {
-    left: 56.25%;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) and (max-height: 770px) {
-  .aboutus .container p {
-    padding: 0 5%;
-  }
-  .aboutus .container .photo-holder {
-    height: 15vh;
-  }
-  .aboutus .container .photo-holder div span {
-    padding-top: 3vh;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) and (max-height: 680px) {
-  .aboutus .container .line1 {
-    padding-top: 20px;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) and (max-height: 600px) {
-  .aboutus .spacer {
-    margin-bottom: 20px;
-  }
-  .aboutus .container .line2 {
-    margin-bottom: 20px;
-  }
-  .aboutus .container .photo-holder {
-    margin-top: 20px;
+    font-size: 3rem;
   }
 }
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
-  .aboutus .container {
-    height: 70%;
-  }
-  .aboutus .container2 {
-    height: 15%;
-    top: 85%;
-  }
-  .aboutus .container2 div p {
-    margin-top: 10%;
-    font-size: 3rem;
-  }
-  .aboutus .container2 div p:last-of-type {
-    margin-top: 0;
-  }
-}
-@media screen and (min-width: 1025px) and (max-width: 1440px) and (max-height: 715px) {
-  .aboutus .line1 {
-    padding-top: 30px;
+  .aboutus {
+    height: 920px;
   }
   .aboutus .container p {
-    padding: 0 5%;
-  }
-  .aboutus .container .photo-holder {
-    margin-top: 15px;
-  }
-  .aboutus .container2 div p {
-    margin-top: 2%;
-  }
-}
-@media screen and (min-width: 1441px) and (max-width: 1919px) {
-  .aboutus .container {
-    height: 90%;
+    text-align: justify;
+    padding: 0 10%;
   }
   .aboutus .container2 {
-    height: 10%;
-    top: 90%;
-  }
-  .aboutus .container2 div p {
-    font-size: 2rem;
-    margin-top: 3%;
-  }
-  .aboutus .container2 div p:last-of-type {
-    font-size: 1rem;
-    margin-top: 0;
-  }
-}
-@media screen and (min-width: 1441px) and (max-width: 1919px) and (max-height: 820px) {
-  .aboutus .line1 {
-    padding-top: 30px;
-  }
-  .aboutus .container {
-    height: 85%;
-  }
-  .aboutus .container .photo-holder {
-    height: 20vh;
-  }
-  .aboutus .container .photo-holder div span {
-    padding-top: 6vh;
-  }
-  .aboutus .container2 {
-    height: 15%;
-    top: 85%;
-  }
-  .aboutus .container2 div p {
-    font-size: 2rem;
-    margin-top: 12%;
-  }
-  .aboutus .container2 div p:last-of-type {
-    font-size: 1rem;
-    margin-top: 0;
-  }
-}
-@media screen and (min-width: 1441px) and (max-width: 1919px) and (max-height: 680px) {
-  .aboutus .container2 div p {
-    margin-top: 3%;
-  }
-}
-@media screen and (min-width: 1920px) and (max-height: 900px) {
-  .aboutus .container {
-    height: 80%;
-  }
-  .aboutus .container2 {
-    height: 20%;
-    top: 80%;
-  }
-  .aboutus .container2 div p {
-    margin-top: 8%;
-  }
-  .aboutus .container2 div p:last-of-type {
-    margin-top: 5%;
-  }
-}
-@media screen and (min-width: 1920px) and (max-height: 760px) {
-  .aboutus .container .line1 {
-    padding-top: 20px;
-  }
-  .aboutus .container .photo-holder {
-    height: 18vh;
-  }
-  .aboutus .container .photo-holder div span {
-    padding-top: 5vh;
+    top: 720px;
+    height: 204px;
   }
   .aboutus .container2 div p {
     font-size: 3rem;
@@ -1157,7 +832,7 @@ body {
 .services .service-cont .service-cont-inner {
   position: relative;
   width: 100%;
-  height: 50%;
+  height: calc(50% - 30px);
 }
 .services .service-cont .service-cont-inner div {
   position: absolute;
@@ -1168,24 +843,23 @@ body {
   position: absolute;
   left: 8%;
   top: 20%;
+  width: 32px;
 }
 .services .service-cont .service-cont-inner div p {
   margin: 0;
   position: absolute;
-  left: 25%;
-  top: 20%;
-  font-size: 1rem;
-  font-weight: normal;
+  left: 20%;
+  top: 19%;
+  font-size: 14px;
   font-family: "Montserrat";
   font-weight: 400;
   color: #333333;
 }
 .services .service-cont .service-cont-inner div p:last-of-type {
   top: 35%;
-  font-size: 1rem;
+  font-size: 15px;
   line-height: 1.5rem;
   color: #999999;
-  font-weight: 400;
   font-family: "Roboto";
 }
 .services .service-cont .service-cont-inner div:nth-of-type(2) {
@@ -1195,7 +869,7 @@ body {
   left: 66.66%;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 620px) {
   .services {
     height: auto;
   }
@@ -1212,8 +886,9 @@ body {
   }
   .services .service-cont .service-cont-inner div {
     width: 100%;
-    height: 80px;
     position: relative;
+    height: 120px;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.5019607843);
   }
   .services .service-cont .service-cont-inner div:nth-of-type(2),
   .services .service-cont .service-cont-inner div:last-of-type {
@@ -1221,49 +896,48 @@ body {
   }
   .services .service-cont .service-cont-inner:last-of-type {
     margin-top: 0px;
+    margin-bottom: 60px;
   }
 }
-@media screen and (max-width: 320px) {
-  .services .line1 {
-    padding-top: 20px;
-  }
-  .services .service-cont .service-cont-inner div {
-    height: 120px;
-  }
-  .services .service-cont .service-cont-inner:last-of-type {
-    margin-top: 0px;
-  }
-}
-@media screen and (min-width: 321px) and (max-width: 425px) {
-  .services .line1 {
-    padding-top: 20px;
-  }
-  .services .service-cont .service-cont-inner div {
-    height: 120px;
-  }
-  .services .service-cont .service-cont-inner div p {
-    margin-right: 10%;
-  }
-  .services .service-cont .service-cont-inner:last-of-type {
-    margin-top: 0px;
-  }
-}
-@media screen and (min-width: 426px) and (max-width: 768px) {
+@media screen and (min-width: 621px) and (max-width: 768px) {
   .services {
-    height: 85vh;
+    height: 720px;
   }
-  .services .line1 {
-    padding-top: 20px;
+  .services .spacer {
+    margin-bottom: 20px;
   }
   .services .service-cont {
     width: 100%;
-    height: calc(100% - 278px);
+    height: 570px;
     margin-left: 0;
   }
+  .services .service-cont .service-cont-inner {
+    height: calc(50% - 50px);
+  }
   .services .service-cont .service-cont-inner div p {
-    left: 30%;
+    left: 50px;
     margin-left: 10%;
-    font-size: 0.7rem;
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .services {
+    height: 530px;
+  }
+  .services .spacer {
+    margin-bottom: 20px;
+  }
+  .services .service-cont {
+    width: 100%;
+    height: 570px;
+    margin-left: 0;
+  }
+  .services .service-cont .service-cont-inner {
+    height: calc(50% - 140px);
+  }
+  .services .service-cont .service-cont-inner div p {
+    left: 50px;
+    margin-left: 10%;
   }
   .services .service-cont .service-cont-inner div p:last-of-type {
     line-height: 1rem;
@@ -1272,134 +946,29 @@ body {
     font-size: 0.7rem;
   }
 }
-@media screen and (min-width: 426px) and (max-width: 768px) and (max-height: 750px) {
+@media screen and (min-width: 1025px) {
   .services {
-    height: 100vh;
+    height: 770px;
+  }
+  .services .spacer {
+    margin-bottom: 20px;
   }
   .services .service-cont {
-    height: 100%;
+    height: 570px;
   }
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .services {
-    height: 70vh;
-  }
-  .services .line1 {
-    padding-top: 90px;
-  }
-  .services .service-cont {
-    width: 90%;
-    margin-left: 5%;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) and (max-height: 810px) {
-  .services {
-    height: 80vh;
+  .services .service-cont .service-cont-inner {
+    height: calc(50% - 30px);
   }
   .services .service-cont .service-cont-inner div p {
-    font-size: 0.75rem;
+    left: 50px;
+    margin-left: 10%;
+    font-size: 14px;
   }
   .services .service-cont .service-cont-inner div p:last-of-type {
-    font-size: 0.75rem;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) and (max-height: 625px) {
-  .services {
-    height: 100vh;
-  }
-  .services .service-cont .service-cont-inner div p {
-    font-size: 0.6rem;
-  }
-  .services .service-cont .service-cont-inner div p:last-of-type {
-    font-size: 0.6rem;
-  }
-}
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
-  .services {
-    height: 80vh;
-  }
-  .services .service-cont .service-cont-inner div p {
-    font-size: 1rem;
-  }
-  .services .service-cont .service-cont-inner div p:last-of-type {
-    font-size: 1rem;
-  }
-}
-@media screen and (min-width: 1025px) and (max-width: 1440px) and (max-height: 720px) {
-  .services {
-    height: 90vh;
-  }
-  .services .service-cont .service-cont-inner div p {
-    font-size: 0.8rem;
-  }
-  .services .service-cont .service-cont-inner div p:last-of-type {
-    font-size: 0.8rem;
-  }
-}
-@media screen and (min-width: 1025px) and (max-width: 1440px) and (max-height: 570px) {
-  .services {
-    height: 100vh;
-  }
-  .services .service-cont .service-cont-inner div p {
-    font-size: 0.6rem;
-  }
-  .services .service-cont .service-cont-inner div p:last-of-type {
-    font-size: 0.6rem;
-  }
-}
-@media screen and (min-width: 1441px) and (max-width: 1919px) and (max-height: 820px) {
-  .services {
-    height: 70vh;
-  }
-  .services .service-cont .service-cont-inner div p {
-    font-size: 1rem;
-  }
-  .services .service-cont .service-cont-inner div p:last-of-type {
-    font-size: 1rem;
-  }
-}
-@media screen and (min-width: 1441px) and (max-width: 1919px) and (max-height: 720px) {
-  .services {
-    height: 85vh;
-  }
-  .services .service-cont .service-cont-inner div p {
-    font-size: 0.8rem;
-  }
-  .services .service-cont .service-cont-inner div p:last-of-type {
-    font-size: 0.8rem;
-  }
-}
-@media screen and (min-width: 1441px) and (max-width: 1919px) and (max-height: 570px) {
-  .services {
-    height: 100vh;
-  }
-  .services .service-cont .service-cont-inner div p {
-    font-size: 0.6rem;
-  }
-  .services .service-cont .service-cont-inner div p:last-of-type {
-    font-size: 0.6rem;
-  }
-}
-@media screen and (min-width: 1920px) and (max-height: 760px) {
-  .services {
-    height: 80vh;
-  }
-  .services .service-cont .service-cont-inner div p {
-    font-size: 0.8rem;
-  }
-  .services .service-cont .service-cont-inner div p:last-of-type {
-    font-size: 0.8rem;
-  }
-}
-@media screen and (min-width: 1920px) and (max-height: 600px) {
-  .services {
-    height: 100vh;
-  }
-  .services .service-cont .service-cont-inner div p {
-    font-size: 0.6rem;
-  }
-  .services .service-cont .service-cont-inner div p:last-of-type {
-    font-size: 0.6rem;
+    line-height: 1.5rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 15px;
   }
 }
 .design {
@@ -1608,7 +1177,7 @@ body {
 }
 .wedo .wedo_content p {
   margin: 0 6.5vw;
-  font-size: 1rem;
+  font-size: 15px;
   line-height: 1.5rem;
   color: #999999;
   font-weight: 400;
@@ -1669,9 +1238,9 @@ body {
   text-align: left;
   display: inline-block;
   font-family: "Montserat";
-  font-weight: normal;
-  font-size: 1rem;
-  color: #333;
+  font-weight: 400;
+  color: #333333;
+  font-size: 14px;
 }
 .wedo .wedo_content .wedo_content2 div:last-of-type .drop i {
   position: absolute;
@@ -1686,11 +1255,11 @@ body {
   left: 2.66%;
   top: 60px;
   margin-bottom: 10px;
-  font-weight: normal;
-  font-size: 1rem;
+  font-weight: 300;
+  font-size: 15px;
   font-style: italic;
   font-family: "Roboto";
-  color: #999;
+  color: #999999;
   min-height: calc(100% - 77px);
   max-height: calc(100% - 77px);
   min-width: 92.5%;
@@ -1728,7 +1297,7 @@ body {
 }
 .wedo .wedo_footer {
   width: 100%;
-  height: 28.4vh;
+  height: 290px;
   background-color: #f8f8f8;
 }
 .wedo .wedo_footer div {
@@ -1763,7 +1332,6 @@ body {
   left: 50px;
   width: 14.68848vh;
   border: 2px solid #95e1d3;
-  background-color: white;
 }
 .wedo .wedo_footer div div:first-of-type img {
   position: absolute;
@@ -1850,7 +1418,7 @@ body {
     width: 60vw;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 320px) {
   .wedo .wedo_content .line1 {
     padding-top: 30px;
   }
@@ -1867,6 +1435,44 @@ body {
   }
   .wedo .wedo_footer div div:first-of-type {
     width: 62.064px;
+  }
+  .wedo .wedo_footer div div:last-of-type {
+    left: 120px;
+  }
+  .wedo .wedo_footer div div:last-of-type p {
+    font-size: 0.4rem;
+    line-height: 0.8rem;
+    width: 80%;
+  }
+  .wedo .wedo_footer div div:last-of-type p:last-of-type {
+    position: absolute;
+    left: 60px;
+    top: 60px;
+  }
+  .wedo .wedo_footer div div:last-of-type .spacer2 {
+    width: 40px;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 425px) {
+  .wedo .wedo_content .line1 {
+    padding-top: 30px;
+  }
+  .wedo .wedo_footer {
+    height: 120px;
+  }
+  .wedo .wedo_footer div {
+    width: 100%;
+  }
+  .wedo .wedo_footer div div {
+    margin-left: 0;
+    height: 51.72%;
+    top: 24.14%;
+  }
+  .wedo .wedo_footer div div:first-of-type {
+    width: 62.064px;
+  }
+  .wedo .wedo_footer div div:last-of-type {
+    left: 130px;
   }
   .wedo .wedo_footer div div:last-of-type p {
     font-size: 0.625rem;
@@ -1899,6 +1505,9 @@ body {
   }
   .wedo .wedo_footer div div:first-of-type {
     width: 87.924px;
+  }
+  .wedo .wedo_footer div div:last-of-type {
+    left: 150px;
   }
   .wedo .wedo_footer div div:last-of-type p {
     font-size: 0.625rem;
@@ -1975,11 +1584,12 @@ body {
   margin-top: 120px;
 }
 .ourteam div:first-of-type .photos .person {
-  width: 30.3333333333%;
-  height: 100%;
+  width: calc(30.3333333333% + 10px);
+  height: 540px;
   margin-left: 0;
   position: absolute;
   text-align: center;
+  z-index: 3;
 }
 .ourteam div:first-of-type .photos .person p {
   font-family: "Montserrat";
@@ -1998,23 +1608,24 @@ body {
   margin-right: 0;
 }
 .ourteam div:first-of-type .photos .person .picture {
-  width: 100%;
+  position: relative;
+  width: calc(100% - 10px);
   margin-left: 0;
-  height: calc(100% - 100px);
+  height: 440px;
 }
 .ourteam div:first-of-type .photos .person .picture .soc-sites {
+  position: absolute;
   display: block;
-  position: static;
   width: 59.2%;
-  height: 11.7%;
+  height: 51.5px;
   z-index: 2;
-  margin-left: 20%;
-  padding-top: 53.8974025974%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 0;
   display: none;
 }
 .ourteam div:first-of-type .photos .person .picture .soc-sites div {
-  transition: all 0.3s ease-in-out;
   display: inline-block;
   height: calc(100% - 2px);
   width: calc(25% - 2px);
@@ -2039,8 +1650,8 @@ body {
 }
 .ourteam div:first-of-type .photos .person .picture:hover {
   transition: all 0.3s ease-in-out;
-  transform: translate(-0.5%, -0.5%);
-  box-shadow: 0.5vw 0.5vw 0 0 #95e1d3;
+  box-shadow: 10px 10px 0 0 #95e1d3;
+  transform: translate(-10px, -10px);
 }
 .ourteam div:first-of-type .photos .person .picture:hover > .soc-sites {
   display: block;
@@ -2102,6 +1713,7 @@ body {
   height: 100%;
 }
 .ourteam .some_logos .logos_cont .some_logo img {
+  scale: 0.7;
   width: 80%;
   height: auto;
   margin-left: 10%;
@@ -2133,6 +1745,9 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     overflow: hidden;
+  }
+  .ourteam div:first-of-type .photos .person .picture .soc-sites {
+    left: calc((100% - 20px) / 3);
   }
   .ourteam .some_logos {
     position: static;
@@ -2169,6 +1784,13 @@ body {
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+  .ourteam div:first-of-type {
+    width: 100%;
+    margin-left: 10px;
+  }
+  .ourteam div:first-of-type .photos .person .picture .soc-sites {
+    left: 45%;
+  }
   .ourteam .some_logos {
     height: 230px;
   }
@@ -2181,6 +1803,13 @@ body {
   }
 }
 @media screen and (min-width: 1025px) {
+  .ourteam div:first-of-type {
+    width: 62.5%;
+    margin-left: 18.75%;
+  }
+  .ourteam div:first-of-type .photos .person .picture .soc-sites {
+    left: 32.5%;
+  }
   .ourteam .some_logos .logos_cont .some_logo {
     margin-top: calc(130px - 6.25vw);
     height: auto;
@@ -2225,6 +1854,7 @@ body {
   background-position: center bottom;
 }
 .someofwork .gallery .vert_gal div {
+  position: relative;
   transition: all 0.3s ease-in-out;
   width: 100%;
   height: 50%;
@@ -2232,55 +1862,84 @@ body {
   background-size: cover;
   background-position: center bottom;
 }
-.someofwork .gallery .vert_gal > div:hover,
-.someofwork .gallery .vert3:hover {
-  cursor: pointer;
-  transform: scale(1.2);
-  overflow: visible;
-  z-index: 1;
+.someofwork .gallery .vert_gal div div {
+  display: none;
+  position: absolute;
+  width: 50%;
+  height: 100px;
+  top: calc(50% - 15px);
+  left: 25%;
 }
-.someofwork .gallery .vert1 div:first-of-type {
+.someofwork .gallery .vert_gal div div img {
+  position: absolute;
+  width: 30px;
+  left: calc(50% - 15px);
+}
+.someofwork .gallery .vert_gal div div p {
+  position: absolute;
+  transition: none;
+  width: 100%;
+  top: 30px;
+  font-size: 14px;
+  color: white;
+  font-weight: 400;
+  font-family: "Montserrat";
+  text-align: center;
+}
+.someofwork .gallery .vert_gal div div p:last-of-type {
+  top: 60px;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 300;
+  font-style: italic;
+  font-family: "Roboto";
+}
+.someofwork .gallery .vert_gal > div:hover > div {
+  display: block;
+}
+.someofwork .gallery .vert1 .one {
   background-image: url("../../assets/gal1.png");
 }
-.someofwork .gallery .vert1 div:last-of-type {
+.someofwork .gallery .vert1 .two {
   background-image: url("../../assets/gal2.png");
 }
-.someofwork .gallery .vert1 div:first-of-type:hover {
+.someofwork .gallery .vert1 .one:hover {
   background-image: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8)), url("../../assets/gal1.png");
 }
-.someofwork .gallery .vert1 div:last-of-type:hover {
+.someofwork .gallery .vert1 .two:hover {
   background-image: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8)), url("../../assets/gal2.png");
 }
-.someofwork .gallery .vert2 div:first-of-type {
+.someofwork .gallery .vert2 .three {
   background-image: url("../../assets/gal3.png");
 }
-.someofwork .gallery .vert2 div:last-of-type {
+.someofwork .gallery .vert2 .four {
   background-image: url("../../assets/gal4.png");
 }
-.someofwork .gallery .vert2 div:first-of-type:hover {
+.someofwork .gallery .vert2 .three:hover {
   background-image: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8)), url("../../assets/gal3.png");
 }
-.someofwork .gallery .vert2 div:last-of-type:hover {
+.someofwork .gallery .vert2 .four:hover {
   background-image: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8)), url("../../assets/gal4.png");
 }
-.someofwork .gallery .vert3 {
+.someofwork .gallery .vert3 .five {
+  height: 100%;
   background-image: url("../../assets/gal5.png");
 }
-.someofwork .gallery .vert3:hover {
+.someofwork .gallery .vert3 .five:hover {
   background-image: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8)), url("../../assets/gal5.png");
 }
-.someofwork .gallery .vert4 div:first-of-type {
+.someofwork .gallery .vert4 .six {
   background-image: url("../../assets/gal6.png");
   background-position: center top;
 }
-.someofwork .gallery .vert4 div:last-of-type {
+.someofwork .gallery .vert4 .seven {
   background-image: url("../../assets/gal7.png");
   background-position: top;
 }
-.someofwork .gallery .vert4 div:first-of-type:hover {
+.someofwork .gallery .vert4 .six:hover {
   background-image: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8)), url("../../assets/gal6.png");
 }
-.someofwork .gallery .vert4 div:last-of-type:hover {
+.someofwork .gallery .vert4 .seven:hover {
   background-image: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8)), url("../../assets/gal7.png");
 }
 .someofwork .sldr {
@@ -2464,6 +2123,10 @@ body {
   position: relative;
   overflow: hidden;
 }
+.peopleSay .spacer {
+  background-color: #f38181;
+  height: 4px;
+}
 .peopleSay img {
   object-fit: contain;
   opacity: 0.3;
@@ -2492,6 +2155,7 @@ body {
   overflow: hidden;
 }
 .peopleSay .peopleToSay .sayingPeople div:first-of-type img {
+  scale: 1.1;
   opacity: 1;
   margin: 0;
   padding: 0;
@@ -2687,6 +2351,7 @@ body {
   text-transform: uppercase;
   color: #333;
   font-family: "Montserrat";
+  padding-bottom: 0;
 }
 .latestBlog .blog .stories .story .str_txt:nth-of-type(2) {
   font-size: 15px;
@@ -2696,13 +2361,12 @@ body {
   font-family: "Roboto";
   text-transform: none;
   border-bottom: 1px solid #e5e5e5;
-  padding-bottom: 5%;
+  margin-bottom: 0;
 }
 .latestBlog .blog .stories .story span {
   display: block;
   text-transform: none;
   padding: 0;
-  padding-top: 5%;
   font-size: 15px;
 }
 .latestBlog .blog .stories .story span p {
@@ -2714,6 +2378,7 @@ body {
   line-height: 24px;
   color: #999;
   font-weight: 300;
+  margin-top: 0;
 }
 .latestBlog .blog .stories .story span i {
   padding-right: 2.5%;
@@ -2741,7 +2406,11 @@ body {
   object-fit: cover;
 }
 .latestBlog .map .line1 {
-  padding-top: 20px;
+  padding-top: 50px;
+}
+.latestBlog .map .line2 {
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 .latestBlog .map .line {
   font-size: 24px;
@@ -2770,11 +2439,15 @@ body {
   .latestBlog .blog {
     width: 100vw;
     margin-left: 0;
-    height: 1620px;
+    height: 1470px;
+  }
+  .latestBlog .blog .stories {
+    height: 1200px;
   }
   .latestBlog .blog .stories .story {
     width: 100%;
-    height: 450px;
+    height: 400px;
+    margin-left: 0;
   }
   .latestBlog .blog .stories .story .img_cont {
     height: 230px;
@@ -2798,18 +2471,6 @@ body {
     width: 300px;
     margin-left: calc(50vw - 150px);
     padding-top: 0;
-  }
-}
-@media screen and (max-width: 768px) {
-  .latestBlog .blog {
-    width: 100vw;
-    margin-left: 2.5vw;
-    height: 1630px;
-    overflow: hidden;
-  }
-  .latestBlog .blog .stories .story .img_cont {
-    width: 320px;
-    max-width: 320px;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1439px) {

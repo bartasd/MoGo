@@ -1,278 +1,42 @@
-@media screen and (max-width: 320px) {
+// rearrange UI for tablets and smaller:
+@media screen and (max-width: 768px) {
   .aboutus {
+    height: 1625px;
     .container {
-      height: calc(100vh - 60px);
       p {
-        line-height: 2rem;
-        padding: 0;
+        text-align: justify;
+        padding: 0 10%;
       }
       .photo-holder {
-        width: 100%;
-        margin-left: 0;
+        height: 840px;
         div {
-          span {
-            padding-top: 9vh;
-            i {
-              font-size: 1rem;
-            }
-            p {
-              font-size: 0.75rem;
-            }
-          }
+          width: 90%;
+          left: 5%;
+        }
+        div:first-of-type {
+          left: 5%;
+        }
+        div:nth-of-type(2) {
+          left: 5%;
+          top: 280px;
+        }
+        div:last-of-type {
+          left: 5%;
+          top: 560px;
         }
       }
     }
     .container2 {
-      top: calc(100vh - 60px);
-      height: 60px;
-      div {
-        width: 20%;
-        p {
-          color: $MAIN_COLOR;
-          font-size: 1.5rem;
-          margin-top: 0;
-        }
-        p:last-of-type {
-          font-size: 8px;
-        }
-      }
-      div:first-of-type {
-        left: 0;
-        border-left: none;
-      }
-      div:last-of-type {
-        right: 0;
-        border-right: none;
-      }
-      div:nth-of-type(2) {
-        left: 20%;
-      }
-      div:nth-of-type(3) {
-        left: 40%;
-      }
-      div:nth-of-type(4) {
-        left: 60%;
-      }
-    }
-  }
-}
-@media screen and (max-width: 320px) and (max-height: 820px) {
-  .aboutus {
-    .container {
-      .photo-holder {
-        height: 15vh;
-        div {
-          span {
-            padding-top: 4vh;
-          }
-        }
-      }
-    }
-  }
-}
-@media screen and (max-width: 320px) and (max-height: 725px) {
-  .aboutus {
-    .container {
-      .line1 {
-        padding-top: 50px;
-        font-size: 1rem;
-      }
-      .line2 {
-        font-size: 1.275rem;
-      }
-      p {
-        font-size: 0.8rem;
-        line-height: 1.5rem;
-      }
-      .photo-holder {
-        height: 15vh;
-        div {
-          span {
-            padding-top: 4vh;
-          }
-        }
-      }
-    }
-  }
-}
-@media screen and (max-width: 320px) and (max-height: 560px) {
-  .aboutus {
-    .container {
-      .line1 {
-        padding-top: 10px;
-        font-size: 1rem;
-      }
-      .line2 {
-        font-size: 1.275rem;
-      }
-      p {
-        font-size: 0.8rem;
-        line-height: 1.5rem;
-      }
-      .photo-holder {
-        height: 15vh;
-        margin-top: 10px;
-        div {
-          span {
-            padding-top: 3vh;
-            i {
-              font-size: 1rem;
-            }
-            p {
-              font-size: 0.5rem;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-@media screen and (min-width: 321px) and (max-width: 425px) {
-  .aboutus {
-    .container {
-      height: calc(100vh - 60px);
-      p {
-        line-height: 2rem;
-        padding: 0;
-      }
-      .photo-holder {
-        width: 100%;
-        margin-left: 0;
-        div {
-          span {
-            padding-top: 9vh;
-            i {
-              font-size: 1rem;
-            }
-            p {
-              font-size: 0.75rem;
-            }
-          }
-        }
-      }
-    }
-    .container2 {
-      top: calc(100vh - 60px);
-      height: 60px;
-      div {
-        width: 20%;
-        p {
-          color: $MAIN_COLOR;
-          font-size: 1.5rem;
-          margin-top: 3%;
-        }
-        p:last-of-type {
-          font-size: 8px;
-        }
-      }
-      div:first-of-type {
-        left: 0;
-        border-left: none;
-      }
-      div:last-of-type {
-        right: 0;
-        border-right: none;
-      }
-      div:nth-of-type(2) {
-        left: 20%;
-      }
-      div:nth-of-type(3) {
-        left: 40%;
-      }
-      div:nth-of-type(4) {
-        left: 60%;
-      }
-    }
-  }
-}
-@media screen and (min-width: 321px) and (max-width: 425px) and (max-height: 780px) {
-  .aboutus {
-    .container {
-      .line1 {
-        padding-top: 50px;
-        font-size: 1rem;
-      }
-      .line2 {
-        font-size: 1.275rem;
-      }
-      p {
-        font-size: 1rem;
-        line-height: 1.5rem;
-      }
-      .photo-holder {
-        height: 15vh;
-        margin-top: 70px;
-        div {
-          span {
-            padding-top: 5vh;
-          }
-        }
-      }
-    }
-  }
-}
-@media screen and (min-width: 321px) and (max-width: 425px) and (max-height: 600px) {
-  .aboutus {
-    .container {
-      .line1 {
-        padding-top: 30px;
-        font-size: 1rem;
-      }
-      .line2 {
-        font-size: 1.275rem;
-      }
-      p {
-        font-size: 1rem;
-        line-height: 1.5rem;
-      }
-      .photo-holder {
-        height: 15vh;
-        margin-top: 35px;
-        div {
-          span {
-            padding-top: 3vh;
-          }
-        }
-      }
-    }
-  }
-}
-@media screen and (min-width: 426px) and (max-width: 768px) {
-  .aboutus {
-    .container {
-      height: calc(100vh - 100px);
-      p {
-        line-height: 2rem;
-        padding: 0;
-      }
-      .photo-holder {
-        width: 100%;
-        margin-left: 0;
-        div {
-          span {
-            padding-top: 9vh;
-            i {
-              font-size: 1rem;
-            }
-            p {
-              font-size: 0.75rem;
-            }
-          }
-        }
-      }
-    }
-    .container2 {
-      top: calc(100vh - 100px);
+      top: 1320px;
       height: 100px;
       div {
         width: 20%;
         p {
-          color: $MAIN_COLOR;
-          font-size: 1.5rem;
-          margin-top: 1rem;
+          font-size: 2rem;
+          margin-top: 18px;
         }
         p:last-of-type {
-          font-size: 8px;
+          font-size: 0.5rem;
         }
       }
       div:first-of-type {
@@ -280,8 +44,7 @@
         border-left: none;
       }
       div:last-of-type {
-        border-right: none;
-        right: 0;
+        left: 80%;
       }
       div:nth-of-type(2) {
         left: 20%;
@@ -295,278 +58,76 @@
     }
   }
 }
-@media screen and (min-width: 426px) and (max-width: 768px) and (max-height: 800px) {
+
+@media screen and (max-width: 320px) {
   .aboutus {
-    .container {
-      .photo-holder {
-        height: 20vh;
-        div {
-          span {
-            padding-top: 6vh;
-          }
-        }
-      }
+    height: 1500px;
+    .container2 {
+      top: 1400px;
     }
   }
 }
-@media screen and (min-width: 426px) and (max-width: 768px) and (max-height: 750px) {
+
+@media screen and (min-width: 321px) and (max-width: 425px) {
   .aboutus {
+    height: 1460px;
     .container {
-      .line1 {
-        padding-top: 30px;
-      }
-      .photo-holder {
-        height: 16vh;
-        div {
-          span {
-            padding-top: 5vh;
-          }
-        }
-      }
-    }
-  }
-}
-@media screen and (min-width: 426px) and (max-width: 768px) and (max-height: 640px) {
-  .aboutus {
-    .container {
-      .line1 {
-        line-height: 1.25rem;
-      }
-      .photo-holder {
-        margin-top: 20px;
-        div {
-          span {
-            padding-top: 3.5vh;
-          }
-        }
-      }
-    }
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .aboutus {
-    .container {
-      height: calc(100vh - 150px);
       p {
-        line-height: 2rem;
-        padding: 0 5%;
+        padding: 0 10%;
       }
     }
     .container2 {
-      top: calc(100vh - 150px);
-      height: 150px;
-      div {
-        width: 12.5%;
-        p {
-          font-size: 2rem;
-          margin-top: 1.5rem;
-        }
-        p:last-of-type {
-          font-size: 1rem;
-        }
-      }
-      div:first-of-type {
-        left: $ML;
-        border-left: 1px solid $ALT_GREEN;
-      }
-      div:last-of-type {
-        right: $ML;
-        border-right: 1px solid $ALT_GREEN;
-      }
-      div:nth-of-type(2) {
-        left: 31.25%;
-      }
-      div:nth-of-type(3) {
-        left: 43.75%;
-      }
-      div:nth-of-type(4) {
-        left: 56.25%;
-      }
+      top: 1370px;
     }
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) and (max-height: 770px) {
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
   .aboutus {
+    height: 1425px;
     .container {
       p {
-        padding: 0 5%;
+        padding: 0 10%;
       }
-      .photo-holder {
-        height: 15vh;
-        div {
-          span {
-            padding-top: 3vh;
-          }
+    }
+    .container2 {
+      top: 1325px;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .aboutus {
+    height: 950px;
+    .container {
+      p {
+        text-align: justify;
+        padding: 0 10%;
+      }
+    }
+    .container2 {
+      top: 750px;
+      height: 204px;
+      div {
+        p {
+          font-size: 3rem;
         }
-      }
-    }
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) and (max-height: 680px) {
-  .aboutus {
-    .container {
-      .line1 {
-        padding-top: 20px;
-      }
-    }
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) and (max-height: 600px) {
-  .aboutus {
-    .spacer {
-      margin-bottom: 20px;
-    }
-    .container {
-      .line2 {
-        margin-bottom: 20px;
-      }
-      .photo-holder {
-        margin-top: 20px;
       }
     }
   }
 }
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
   .aboutus {
-    .container {
-      height: 70%;
-    }
-    .container2 {
-      height: 15%;
-      top: 85%;
-      div {
-        p {
-          margin-top: 10%;
-          font-size: 3rem;
-        }
-        p:last-of-type {
-          margin-top: 0;
-        }
-      }
-    }
-  }
-}
-@media screen and (min-width: 1025px) and (max-width: 1440px) and (max-height: 715px) {
-  .aboutus {
-    .line1 {
-      padding-top: 30px;
-    }
+    height: 920px;
     .container {
       p {
-        padding: 0 5%;
-      }
-      .photo-holder {
-        margin-top: 15px;
+        text-align: justify;
+        padding: 0 10%;
       }
     }
     .container2 {
-      div {
-        p {
-          margin-top: 2%;
-        }
-      }
-    }
-  }
-}
-@media screen and (min-width: 1441px) and (max-width: 1919px) {
-  .aboutus {
-    .container {
-      height: 90%;
-    }
-    .container2 {
-      height: 10%;
-      top: 90%;
-      div {
-        p {
-          font-size: 2rem;
-          margin-top: 3%;
-        }
-        p:last-of-type {
-          font-size: 1rem;
-          margin-top: 0;
-        }
-      }
-    }
-  }
-}
-@media screen and (min-width: 1441px) and (max-width: 1919px) and (max-height: 820px) {
-  .aboutus {
-    .line1 {
-      padding-top: 30px;
-    }
-    .container {
-      height: 85%;
-      .photo-holder {
-        height: 20vh;
-        div {
-          span {
-            padding-top: 6vh;
-          }
-        }
-      }
-    }
-    .container2 {
-      height: 15%;
-      top: 85%;
-      div {
-        p {
-          font-size: 2rem;
-          margin-top: 12%;
-        }
-        p:last-of-type {
-          font-size: 1rem;
-          margin-top: 0;
-        }
-      }
-    }
-  }
-}
-@media screen and (min-width: 1441px) and (max-width: 1919px) and (max-height: 680px) {
-  .aboutus {
-    .container2 {
-      div {
-        p {
-          margin-top: 3%;
-        }
-      }
-    }
-  }
-}
-@media screen and (min-width: 1920px) and (max-height: 900px) {
-  .aboutus {
-    .container {
-      height: 80%;
-    }
-    .container2 {
-      height: 20%;
-      top: 80%;
-      div {
-        p {
-          margin-top: 8%;
-        }
-        p:last-of-type {
-          margin-top: 5%;
-        }
-      }
-    }
-  }
-}
-@media screen and (min-width: 1920px) and (max-height: 760px) {
-  .aboutus {
-    .container {
-      .line1 {
-        padding-top: 20px;
-      }
-      .photo-holder {
-        height: 18vh;
-        div {
-          span {
-            padding-top: 5vh;
-          }
-        }
-      }
-    }
-    .container2 {
+      top: 720px;
+      height: 204px;
       div {
         p {
           font-size: 3rem;

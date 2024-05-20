@@ -58,6 +58,7 @@
           text-transform: uppercase;
           color: #333;
           font-family: "Montserrat";
+          padding-bottom: 0;
         }
         .str_txt:nth-of-type(2) {
           font-size: 15px;
@@ -67,13 +68,12 @@
           font-family: "Roboto";
           text-transform: none;
           border-bottom: 1px solid #e5e5e5;
-          padding-bottom: 5%;
+          margin-bottom: 0;
         }
         span {
           display: block;
           text-transform: none;
           padding: 0;
-          padding-top: 5%;
           font-size: 15px;
           p {
             font-style: italic;
@@ -84,6 +84,7 @@
             line-height: 24px;
             color: #999;
             font-weight: 300;
+            margin-top: 0;
           }
           i {
             padding-right: 2.5%;
@@ -114,7 +115,11 @@
       object-fit: cover;
     }
     .line1 {
-      padding-top: 20px;
+      padding-top: 50px;
+    }
+    .line2 {
+      margin-top: 10px;
+      margin-bottom: 15px;
     }
     .line {
       font-size: 24px;
@@ -123,6 +128,7 @@
       font-family: "Montserrat";
       text-align: center;
     }
+
     .line2:hover {
       cursor: pointer;
     }

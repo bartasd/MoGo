@@ -3,6 +3,10 @@
   width: 100%;
   position: relative;
   overflow: hidden;
+  .spacer {
+    background-color: $HOVER_COLOR2;
+    height: 4px;
+  }
   img {
     object-fit: contain;
     opacity: 0.3;
@@ -28,6 +32,7 @@
         border-radius: 60px;
         overflow: hidden;
         img {
+          scale: 1.1;
           opacity: 1;
           margin: 0;
           padding: 0;

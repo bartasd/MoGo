@@ -1,5 +1,5 @@
 // REARrANGE AT LOWER THAN 425px screens
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 620px) {
   .services {
     height: auto;
     .service-cont {
@@ -13,8 +13,9 @@
         height: auto;
         div {
           width: 100%;
-          height: 80px;
           position: relative;
+          height: 120px;
+          border-bottom: 1px solid #cccccc80;
         }
         div:nth-of-type(2),
         div:last-of-type {
@@ -23,66 +24,52 @@
       }
       .service-cont-inner:last-of-type {
         margin-top: 0px;
+        margin-bottom: 60px;
       }
     }
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 621px) and (max-width: 768px) {
   .services {
-    .line1 {
-      padding-top: 20px;
-    }
-    .service-cont {
-      .service-cont-inner {
-        div {
-          height: 120px;
-        }
-      }
-      .service-cont-inner:last-of-type {
-        margin-top: 0px;
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 321px) and (max-width: 425px) {
-  .services {
-    .line1 {
-      padding-top: 20px;
-    }
-    .service-cont {
-      .service-cont-inner {
-        div {
-          height: 120px;
-          p {
-            margin-right: 10%;
-          }
-        }
-      }
-      .service-cont-inner:last-of-type {
-        margin-top: 0px;
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 426px) and (max-width: 768px) {
-  .services {
-    height: 85vh;
-    .line1 {
-      padding-top: 20px;
+    height: 720px;
+    .spacer {
+      margin-bottom: 20px;
     }
     .service-cont {
       width: 100%;
-      height: calc(100% - 278px);
+      height: 570px;
       margin-left: 0;
       .service-cont-inner {
+        height: calc(50% - 50px);
         div {
           p {
-            left: 30%;
+            left: 50px;
             margin-left: 10%;
-            font-size: 0.7rem;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .services {
+    height: 530px;
+    .spacer {
+      margin-bottom: 20px;
+    }
+    .service-cont {
+      width: 100%;
+      height: 570px;
+      margin-left: 0;
+      .service-cont-inner {
+        height: calc(50% - 140px);
+        div {
+          p {
+            left: 50px;
+            margin-left: 10%;
           }
           p:last-of-type {
             line-height: 1rem;
@@ -96,203 +83,27 @@
   }
 }
 
-@media screen and (min-width: 426px) and (max-width: 768px) and (max-height: 750px) {
+@media screen and (min-width: 1025px) {
   .services {
-    height: 100vh;
-    .service-cont {
-      height: 100%;
-    }
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .services {
-    height: 70vh;
-    .line1 {
-      padding-top: 90px;
+    height: 770px;
+    .spacer {
+      margin-bottom: 20px;
     }
     .service-cont {
-      width: 90%;
-      margin-left: 5%;
+      height: 570px;
       .service-cont-inner {
-        div {
-        }
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) and (max-height: 810px) {
-  .services {
-    height: 80vh;
-    .service-cont {
-      .service-cont-inner {
+        height: calc(50% - 30px);
         div {
           p {
-            font-size: 0.75rem;
+            left: 50px;
+            margin-left: 10%;
+            font-size: 14px;
           }
           p:last-of-type {
-            font-size: 0.75rem;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) and (max-height: 625px) {
-  .services {
-    height: 100vh;
-    .service-cont {
-      .service-cont-inner {
-        div {
-          p {
-            font-size: 0.6rem;
-          }
-          p:last-of-type {
-            font-size: 0.6rem;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
-  .services {
-    height: 80vh;
-    .service-cont {
-      .service-cont-inner {
-        div {
-          p {
-            font-size: 1rem;
-          }
-          p:last-of-type {
-            font-size: 1rem;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1440px) and (max-height: 720px) {
-  .services {
-    height: 90vh;
-    .service-cont {
-      .service-cont-inner {
-        div {
-          p {
-            font-size: 0.8rem;
-          }
-          p:last-of-type {
-            font-size: 0.8rem;
-          }
-        }
-      }
-    }
-  }
-}
-@media screen and (min-width: 1025px) and (max-width: 1440px) and (max-height: 570px) {
-  .services {
-    height: 100vh;
-    .service-cont {
-      .service-cont-inner {
-        div {
-          p {
-            font-size: 0.6rem;
-          }
-          p:last-of-type {
-            font-size: 0.6rem;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 1441px) and (max-width: 1919px) and (max-height: 820px) {
-  .services {
-    height: 70vh;
-    .service-cont {
-      .service-cont-inner {
-        div {
-          p {
-            font-size: 1rem;
-          }
-          p:last-of-type {
-            font-size: 1rem;
-          }
-        }
-      }
-    }
-  }
-}
-@media screen and (min-width: 1441px) and (max-width: 1919px) and (max-height: 720px) {
-  .services {
-    height: 85vh;
-    .service-cont {
-      .service-cont-inner {
-        div {
-          p {
-            font-size: 0.8rem;
-          }
-          p:last-of-type {
-            font-size: 0.8rem;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 1441px) and (max-width: 1919px) and (max-height: 570px) {
-  .services {
-    height: 100vh;
-    .service-cont {
-      .service-cont-inner {
-        div {
-          p {
-            font-size: 0.6rem;
-          }
-          p:last-of-type {
-            font-size: 0.6rem;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 1920px) and (max-height: 760px) {
-  .services {
-    height: 80vh;
-    .service-cont {
-      .service-cont-inner {
-        div {
-          p {
-            font-size: 0.8rem;
-          }
-          p:last-of-type {
-            font-size: 0.8rem;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 1920px) and (max-height: 600px) {
-  .services {
-    height: 100vh;
-    .service-cont {
-      .service-cont-inner {
-        div {
-          p {
-            font-size: 0.6rem;
-          }
-          p:last-of-type {
-            font-size: 0.6rem;
+            line-height: 1.5rem;
+            margin-left: 10%;
+            margin-right: 10%;
+            font-size: 15px;
           }
         }
       }

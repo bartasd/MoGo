@@ -19,6 +19,9 @@
             background-size: contain;
             background-repeat: no-repeat;
             overflow: hidden;
+            .soc-sites {
+              left: calc((100% - 20px) / 3);
+            }
           }
         }
       }
@@ -69,6 +72,19 @@
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .ourteam {
+    div:first-of-type {
+      width: 100%;
+      margin-left: 10px;
+      .photos {
+        .person {
+          .picture {
+            .soc-sites {
+              left: calc(50% - 5%);
+            }
+          }
+        }
+      }
+    }
     .some_logos {
       height: 230px;
       .logos_cont {
@@ -84,6 +100,19 @@
 
 @media screen and (min-width: 1025px) {
   .ourteam {
+    div:first-of-type {
+      width: $CW;
+      margin-left: $ML;
+      .photos {
+        .person {
+          .picture {
+            .soc-sites {
+              left: 32.5%;
+            }
+          }
+        }
+      }
+    }
     .some_logos {
       .logos_cont {
         .some_logo {
@@ -94,3 +123,29 @@
     }
   }
 }
+
+// @media screen and (min-width: 1441px) {
+//   .ourteam {
+//     div:first-of-type {
+//       width: 100%;
+//       margin-left: 10px;
+//       .photos {
+//         .person {
+//           .picture {
+//             .soc-sites {
+//               left: calc(50% - 5%);
+//             }
+//           }
+//         }
+//       }
+//     }
+//     .some_logos {
+//       .logos_cont {
+//         .some_logo {
+//           margin-top: calc(130px - 6.25vw);
+//           height: auto;
+//         }
+//       }
+//     }
+//   }
+// }
