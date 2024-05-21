@@ -81,56 +81,56 @@
 
     .vert1 {
       .one {
-        background-image: url("../../assets/gal1.png");
+        background-image: url("./assets/gal1.png");
       }
       .two {
-        background-image: url("../../assets/gal2.png");
+        background-image: url("./assets/gal2.png");
       }
 
       .one:hover {
-        background-image: $CUSTUM_GRADIENT, url("../../assets/gal1.png");
+        background-image: $CUSTUM_GRADIENT, url("./assets/gal1.png");
       }
       .two:hover {
-        background-image: $CUSTUM_GRADIENT, url("../../assets/gal2.png");
+        background-image: $CUSTUM_GRADIENT, url("./assets/gal2.png");
       }
     }
     .vert2 {
       .three {
-        background-image: url("../../assets/gal3.png");
+        background-image: url("./assets/gal3.png");
       }
       .four {
-        background-image: url("../../assets/gal4.png");
+        background-image: url("./assets/gal4.png");
       }
       .three:hover {
-        background-image: $CUSTUM_GRADIENT, url("../../assets/gal3.png");
+        background-image: $CUSTUM_GRADIENT, url("./assets/gal3.png");
       }
       .four:hover {
-        background-image: $CUSTUM_GRADIENT, url("../../assets/gal4.png");
+        background-image: $CUSTUM_GRADIENT, url("./assets/gal4.png");
       }
     }
     .vert3 {
       .five {
         height: 100%;
-        background-image: url("../../assets/gal5.png");
+        background-image: url("./assets/gal5.png");
       }
       .five:hover {
-        background-image: $CUSTUM_GRADIENT, url("../../assets/gal5.png");
+        background-image: $CUSTUM_GRADIENT, url("./assets/gal5.png");
       }
     }
     .vert4 {
       .six {
-        background-image: url("../../assets/gal6.png");
+        background-image: url("./assets/gal6.png");
         background-position: center top;
       }
       .seven {
-        background-image: url("../../assets/gal7.png");
+        background-image: url("./assets/gal7.png");
         background-position: top;
       }
       .six:hover {
-        background-image: $CUSTUM_GRADIENT, url("../../assets/gal6.png");
+        background-image: $CUSTUM_GRADIENT, url("./assets/gal6.png");
       }
       .seven:hover {
-        background-image: $CUSTUM_GRADIENT, url("../../assets/gal7.png");
+        background-image: $CUSTUM_GRADIENT, url("./assets/gal7.png");
       }
     }
   }

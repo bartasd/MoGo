@@ -103,15 +103,15 @@
           display: block;
         }
         .pic1 {
-          background: url(../../assets/person1.png);
+          background: url(./assets/person1.png);
           background-size: cover;
         }
         .pic2 {
-          background: url(../../assets/person2.png);
+          background: url(./assets/person2.png);
           background-size: cover;
         }
         .pic3 {
-          background: url(../../assets/person3.png);
+          background: url(./assets/person3.png);
           background-size: cover;
         }
       }
@@ -127,15 +127,15 @@
       }
       .person:has(.soc-sites:hover) > .pic1,
       .person > .pic1:hover {
-        background: $CUSTUM_GRADIENT, url(../../assets/person1.png);
+        background: $CUSTUM_GRADIENT, url(./assets/person1.png);
       }
       .person:has(.soc-sites:hover) > .pic2,
       .person > .pic2:hover {
-        background: $CUSTUM_GRADIENT, url(../../assets/person2.png);
+        background: $CUSTUM_GRADIENT, url(./assets/person2.png);
       }
       .person:has(.soc-sites:hover) > .pic3,
       .person > .pic3:hover {
-        background: $CUSTUM_GRADIENT, url(../../assets/person3.png);
+        background: $CUSTUM_GRADIENT, url(./assets/person3.png);
       }
     }
   }
