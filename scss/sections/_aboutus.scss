@@ -64,18 +64,18 @@
         }
       }
       div:first-of-type {
-        background: url(../../assets/pc.png);
+        background: url(./assets/pc.png);
         background-size: cover;
       }
       div:nth-of-type(2) {
         left: 34%;
-        background: url(../../assets/headphones.png);
+        background: url(./assets/headphones.png);
         background-size: cover;
       }
       div:last-of-type {
         left: 68%;
         margin-right: 0;
-        background: url(../../assets/grass.png);
+        background: url(./assets/grass.png);
         background-size: cover;
       }
       div:hover {
@@ -86,14 +86,14 @@
         }
       }
       div:first-of-type:hover {
-        background: $CUSTUM_GRADIENT, url(../../assets/pc.png);
+        background: $CUSTUM_GRADIENT, url(./assets/pc.png);
       }
       div:nth-of-type(2):hover {
-        background: $CUSTUM_GRADIENT, url(../../assets/headphones.png);
+        background: $CUSTUM_GRADIENT, url(./assets/headphones.png);
       }
       div:last-of-type:hover {
         margin-right: 0;
-        background: $CUSTUM_GRADIENT, url(../../assets/grass.png);
+        background: $CUSTUM_GRADIENT, url(./assets/grass.png);
       }
     }
   }
