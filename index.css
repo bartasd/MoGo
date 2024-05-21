@@ -6,8 +6,7 @@ body {
 
 @font-face {
   font-family: "Montserrat";
-  src: url("./fonts/static/Montserrat-Bold.ttf") format("truetype"),
-    url("./fonts/static/Montserrat-Regular.ttf") format "truetype";
+  src: url("./fonts/static/Montserrat-Bold.ttf") format("truetype"), url("./fonts/static/Montserrat-Regular.ttf") format "truetype";
 }
 @font-face {
   font-family: "Kaushan-Script";
@@ -15,8 +14,7 @@ body {
 }
 @font-face {
   font-family: "Roboto";
-  src: url("./fonts/static/Roboto-Regular.ttf") format("truetype"),
-    url("./fonts/static/Roboto-LightItalic.ttf") format("truetype");
+  src: url("./fonts/static/Roboto-Regular.ttf") format("truetype"), url("./fonts/static/Roboto-LightItalic.ttf") format("truetype");
 }
 .spacer {
   width: 60px;
@@ -59,10 +57,7 @@ body {
   height: 100vh;
   position: relative;
   top: 0;
-  background: linear-gradient(
-    rgba(233, 130, 131, 0.8),
-    rgba(240, 217, 138, 0.8)
-  );
+  background: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8));
 }
 .nav img {
   width: 100%;
@@ -627,18 +622,18 @@ body {
   font-family: "Montserrat";
 }
 .aboutus .container .photo-holder div:first-of-type {
-  background: url(../../assets/pc.png);
+  background: url(./assets/pc.png);
   background-size: cover;
 }
 .aboutus .container .photo-holder div:nth-of-type(2) {
   left: 34%;
-  background: url(../../assets/headphones.png);
+  background: url(./assets/headphones.png);
   background-size: cover;
 }
 .aboutus .container .photo-holder div:last-of-type {
   left: 68%;
   margin-right: 0;
-  background: url(../../assets/grass.png);
+  background: url(./assets/grass.png);
   background-size: cover;
 }
 .aboutus .container .photo-holder div:hover {
@@ -649,26 +644,14 @@ body {
   display: block;
 }
 .aboutus .container .photo-holder div:first-of-type:hover {
-  background: linear-gradient(
-      rgba(233, 130, 131, 0.8),
-      rgba(240, 217, 138, 0.8)
-    ),
-    url(../../assets/pc.png);
+  background: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8)), url(./assets/pc.png);
 }
 .aboutus .container .photo-holder div:nth-of-type(2):hover {
-  background: linear-gradient(
-      rgba(233, 130, 131, 0.8),
-      rgba(240, 217, 138, 0.8)
-    ),
-    url(../../assets/headphones.png);
+  background: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8)), url(./assets/headphones.png);
 }
 .aboutus .container .photo-holder div:last-of-type:hover {
   margin-right: 0;
-  background: linear-gradient(
-      rgba(233, 130, 131, 0.8),
-      rgba(240, 217, 138, 0.8)
-    ),
-    url(../../assets/grass.png);
+  background: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8)), url(./assets/grass.png);
 }
 .aboutus .container2 {
   position: absolute;
@@ -1286,29 +1269,14 @@ body {
   border: none;
   outline: none;
 }
-.wedo
-  .wedo_content
-  .wedo_content2
-  div:last-of-type
-  .drop
-  textarea::-webkit-scrollbar {
+.wedo .wedo_content .wedo_content2 div:last-of-type .drop textarea::-webkit-scrollbar {
   width: 5px;
 }
-.wedo
-  .wedo_content
-  .wedo_content2
-  div:last-of-type
-  .drop
-  textarea::-webkit-scrollbar-thumb {
+.wedo .wedo_content .wedo_content2 div:last-of-type .drop textarea::-webkit-scrollbar-thumb {
   background-color: #95e1d3;
   border-radius: 2px;
 }
-.wedo
-  .wedo_content
-  .wedo_content2
-  div:last-of-type
-  .drop
-  textarea::-webkit-scrollbar-thumb:hover {
+.wedo .wedo_content .wedo_content2 div:last-of-type .drop textarea::-webkit-scrollbar-thumb:hover {
   background-color: #f38181;
 }
 .wedo .wedo_content .wedo_content2 div:last-of-type .drop:last-of-type {
@@ -1673,13 +1641,7 @@ body {
   height: 80%;
   padding: 10%;
 }
-.ourteam
-  div:first-of-type
-  .photos
-  .person
-  .picture
-  .soc-sites
-  div:last-of-type {
+.ourteam div:first-of-type .photos .person .picture .soc-sites div:last-of-type {
   border-right: 1px solid #f38181;
   width: calc(25% - 2px);
 }
@@ -1695,15 +1657,15 @@ body {
   display: block;
 }
 .ourteam div:first-of-type .photos .person .pic1 {
-  background: url(../../assets/person1.png);
+  background: url(./assets/person1.png);
   background-size: cover;
 }
 .ourteam div:first-of-type .photos .person .pic2 {
-  background: url(../../assets/person2.png);
+  background: url(./assets/person2.png);
   background-size: cover;
 }
 .ourteam div:first-of-type .photos .person .pic3 {
-  background: url(../../assets/person3.png);
+  background: url(./assets/person3.png);
   background-size: cover;
 }
 .ourteam div:first-of-type .photos .person:nth-of-type(2) {
@@ -1718,27 +1680,15 @@ body {
 }
 .ourteam div:first-of-type .photos .person:has(.soc-sites:hover) > .pic1,
 .ourteam div:first-of-type .photos .person > .pic1:hover {
-  background: linear-gradient(
-      rgba(233, 130, 131, 0.8),
-      rgba(240, 217, 138, 0.8)
-    ),
-    url(../../assets/person1.png);
+  background: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8)), url(./assets/person1.png);
 }
 .ourteam div:first-of-type .photos .person:has(.soc-sites:hover) > .pic2,
 .ourteam div:first-of-type .photos .person > .pic2:hover {
-  background: linear-gradient(
-      rgba(233, 130, 131, 0.8),
-      rgba(240, 217, 138, 0.8)
-    ),
-    url(../../assets/person2.png);
+  background: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8)), url(./assets/person2.png);
 }
 .ourteam div:first-of-type .photos .person:has(.soc-sites:hover) > .pic3,
 .ourteam div:first-of-type .photos .person > .pic3:hover {
-  background: linear-gradient(
-      rgba(233, 130, 131, 0.8),
-      rgba(240, 217, 138, 0.8)
-    ),
-    url(../../assets/person3.png);
+  background: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8)), url(./assets/person3.png);
 }
 .ourteam .some_logos {
   display: block;
@@ -1948,77 +1898,49 @@ body {
   display: block;
 }
 .someofwork .gallery .vert1 .one {
-  background-image: url("../../assets/gal1.png");
+  background-image: url("./assets/gal1.png");
 }
 .someofwork .gallery .vert1 .two {
-  background-image: url("../../assets/gal2.png");
+  background-image: url("./assets/gal2.png");
 }
 .someofwork .gallery .vert1 .one:hover {
-  background-image: linear-gradient(
-      rgba(233, 130, 131, 0.8),
-      rgba(240, 217, 138, 0.8)
-    ),
-    url("../../assets/gal1.png");
+  background-image: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8)), url("./assets/gal1.png");
 }
 .someofwork .gallery .vert1 .two:hover {
-  background-image: linear-gradient(
-      rgba(233, 130, 131, 0.8),
-      rgba(240, 217, 138, 0.8)
-    ),
-    url("../../assets/gal2.png");
+  background-image: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8)), url("./assets/gal2.png");
 }
 .someofwork .gallery .vert2 .three {
-  background-image: url("../../assets/gal3.png");
+  background-image: url("./assets/gal3.png");
 }
 .someofwork .gallery .vert2 .four {
-  background-image: url("../../assets/gal4.png");
+  background-image: url("./assets/gal4.png");
 }
 .someofwork .gallery .vert2 .three:hover {
-  background-image: linear-gradient(
-      rgba(233, 130, 131, 0.8),
-      rgba(240, 217, 138, 0.8)
-    ),
-    url("../../assets/gal3.png");
+  background-image: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8)), url("./assets/gal3.png");
 }
 .someofwork .gallery .vert2 .four:hover {
-  background-image: linear-gradient(
-      rgba(233, 130, 131, 0.8),
-      rgba(240, 217, 138, 0.8)
-    ),
-    url("../../assets/gal4.png");
+  background-image: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8)), url("./assets/gal4.png");
 }
 .someofwork .gallery .vert3 .five {
   height: 100%;
-  background-image: url("../../assets/gal5.png");
+  background-image: url("./assets/gal5.png");
 }
 .someofwork .gallery .vert3 .five:hover {
-  background-image: linear-gradient(
-      rgba(233, 130, 131, 0.8),
-      rgba(240, 217, 138, 0.8)
-    ),
-    url("../../assets/gal5.png");
+  background-image: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8)), url("./assets/gal5.png");
 }
 .someofwork .gallery .vert4 .six {
-  background-image: url("../../assets/gal6.png");
+  background-image: url("./assets/gal6.png");
   background-position: center top;
 }
 .someofwork .gallery .vert4 .seven {
-  background-image: url("../../assets/gal7.png");
+  background-image: url("./assets/gal7.png");
   background-position: top;
 }
 .someofwork .gallery .vert4 .six:hover {
-  background-image: linear-gradient(
-      rgba(233, 130, 131, 0.8),
-      rgba(240, 217, 138, 0.8)
-    ),
-    url("../../assets/gal6.png");
+  background-image: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8)), url("./assets/gal6.png");
 }
 .someofwork .gallery .vert4 .seven:hover {
-  background-image: linear-gradient(
-      rgba(233, 130, 131, 0.8),
-      rgba(240, 217, 138, 0.8)
-    ),
-    url("../../assets/gal7.png");
+  background-image: linear-gradient(rgba(233, 130, 131, 0.8), rgba(240, 217, 138, 0.8)), url("./assets/gal7.png");
 }
 .someofwork .sldr {
   width: 100%;
