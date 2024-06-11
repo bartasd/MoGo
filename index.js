@@ -99,7 +99,7 @@ async function changeCommentator(negative = false, initial = false) {
       id = 0;
     }
   }
-  fetch("http://127.0.0.1:8080/data/comments.json")
+  fetch("https://bartasd.github.io/MoGo/data/comments.json")
     .then((response) => {
       if (!response.ok) {
         throw new Error("Network response was not ok");
@@ -147,7 +147,7 @@ async function changeSldrCommentator(negative = false, initial = false) {
       id = 0;
     }
   }
-  fetch("http://127.0.0.1:8080/data/comments.json")
+  fetch("https://bartasd.github.io/MoGo/data/comments.json")
     .then((response) => {
       if (!response.ok) {
         throw new Error("Network response was not ok");
